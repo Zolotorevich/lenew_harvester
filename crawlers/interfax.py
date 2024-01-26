@@ -27,9 +27,12 @@ class Economy(Crawler):
             
             # Get info
             info = {
+                'category': self.category,
                 'title': news.get_text(),
                 'url': 'https://www.interfax.ru' + url,
             }
 
             # Save result
             self.payload.append(News(**info))
+
+# TODO Class for search results

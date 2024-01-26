@@ -36,6 +36,7 @@ class RBC(Crawler):
 
             # Get info
             info = {
+                'category': self.category,
                 'url': url,
                 'title': title,
             }

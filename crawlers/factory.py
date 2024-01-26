@@ -28,8 +28,8 @@ class CrawlersFactory():
 
         if crawler == 'news':
             return [
-                    interfax.Technology(),
-                    rbc.AllNews(),
+                    interfax.Economy(),
+                    rbc.Cryptocurrency(),
                     ]
 
         else:

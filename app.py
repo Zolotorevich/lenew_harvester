@@ -1,4 +1,5 @@
 import argparse
+import asyncio
 
 import connection
 import logger
@@ -6,36 +7,49 @@ from crawlers.abstract import Crawler
 from crawlers.factory import CrawlersFactory
 
 
-def main(crawlers_list: list[Crawler], dry_run: bool) -> None:
+async def main(crawlers_list: list[Crawler], dry_run: bool) -> None:
 
-    total_affected_rows: int = 0
+    affected_rows: int = 0
 
-    # Launch crawlers and save data
     for crawler in crawlers_list:
-        try:
-            # Collect data
-            crawler.collect()
-
-            # Check for dry run
-            if dry_run:
-                for item in crawler.payload:
-                    print(f'\n{item}')
-                continue
-
-            # Write to database
-            data = [item.__dict__ for item in crawler.payload]
-            rows = connection.write(data)
-            logger.log(f'{crawler} +{rows}')
-
-            total_affected_rows += rows
-            
-        except (ConnectionError, AttributeError, TimeoutError) as error:
-            logger.log(f'[ERROR] {crawler}: {error}')
+        affected_rows += await asyncio.to_thread(collect_and_save, *(crawler, dry_run))
 
     if dry_run:
-        logger.log(f'Dry run complete, total: +{total_affected_rows}')
+        logger.log(f'Dry run: +{affected_rows}')
     else:
-        logger.log(f'Run complete, total: +{total_affected_rows}')
+        logger.log(f'Run: +{affected_rows}')
+
+def collect_and_save(crawler: Crawler, dry_run: bool) -> int:
+    """Launch crawlers and save data
+
+    Args:
+        crawler: Crawler object
+        dry_run: don't write to DB
+
+    Returns:
+        Number of affected rows
+    """
+
+    affected_rows: int = 0
+    
+    try:
+        # Run crawler
+        crawler.collect()
+
+        if dry_run:
+            # Print results
+            for item in crawler.payload:
+                print(f'\n{item}')
+        else:
+            # Write to database
+            data = [item.__dict__ for item in crawler.payload]
+            affected_rows = connection.write(data)
+            logger.log(f'{crawler} +{affected_rows}')
+
+    except (ConnectionError, AttributeError, TimeoutError) as error:
+            logger.log(f'[ERROR] {crawler}: {error}')
+
+    return affected_rows
 
 if __name__ == "__main__":
 
@@ -54,4 +68,4 @@ if __name__ == "__main__":
     factory = CrawlersFactory()
     crawlers_list = factory.register(args.crawler)
 
-    main(crawlers_list, args.dry)
+    asyncio.run(main(crawlers_list, args.dry))
