@@ -17,14 +17,3 @@ def dump_to_file(content,
 def add_to_file(content, filename='flow.html'):
     with open(f'{DEBUG_DIR}/{filename}', 'a') as file:
         file.write(f'{str(content)}\n\n')
-
-"""IDEAS
-+ timeprofile
-+ dump object
-+ check if debug left in files
-+ decorator: return False, True, Other + run original def?
-+ decorator: sleep(60)
-+ decorator: change def input
-+ 
-
-"""

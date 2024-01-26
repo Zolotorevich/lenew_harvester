@@ -1,7 +1,7 @@
 import argparse
-from datetime import datetime
 
 import connection
+import logger
 from crawlers.abstract import Crawler
 from crawlers.factory import CrawlersFactory
 
@@ -25,15 +25,17 @@ def main(crawlers_list: list[Crawler], dry_run: bool) -> None:
             # Write to database
             data = [item.__dict__ for item in crawler.payload]
             rows = connection.write(data)
-            print(f'{crawler} +{rows}')
+            logger.log(f'{crawler} +{rows}')
 
             total_affected_rows += rows
             
         except (ConnectionError, AttributeError, TimeoutError) as error:
-            print(f'[!] {crawler}: {error}')
-            # TODO add logging
+            logger.log(f'[ERROR] {crawler}: {error}')
 
-    print(f'\nTotal: +{total_affected_rows} @ {datetime.now().strftime("%H:%M")}')
+    if dry_run:
+        logger.log(f'Dry run complete, total: +{total_affected_rows}')
+    else:
+        logger.log(f'Run complete, total: +{total_affected_rows}')
 
 if __name__ == "__main__":
 
