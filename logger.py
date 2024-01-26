@@ -10,5 +10,3 @@ def log(messgae:str):
         file.write(f'{event}\n')
         
     print(event)
-
-# TODO add TG bot

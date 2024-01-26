@@ -9,15 +9,16 @@ from crawlers.factory import CrawlersFactory
 
 async def main(crawlers_list: list[Crawler], dry_run: bool) -> None:
 
+    logger.log(f'=== RUN START ===')
     affected_rows: int = 0
 
     for crawler in crawlers_list:
         affected_rows += await asyncio.to_thread(collect_and_save, *(crawler, dry_run))
 
     if dry_run:
-        logger.log(f'Dry run: +{affected_rows}')
+        logger.log(f'=== DRY RUN COMPLETE: +{affected_rows} ===\n\n')
     else:
-        logger.log(f'Run: +{affected_rows}')
+        logger.log(f'=== RUN COMPLETE: +{affected_rows} ===\n\n')
 
 def collect_and_save(crawler: Crawler, dry_run: bool) -> int:
     """Launch crawlers and save data
@@ -49,6 +50,7 @@ def collect_and_save(crawler: Crawler, dry_run: bool) -> int:
     except (ConnectionError, AttributeError, TimeoutError) as error:
             logger.log(f'[ERROR] {crawler}: {error}')
 
+    logger.log(f'{crawler} +{affected_rows}')
     return affected_rows
 
 if __name__ == "__main__":
