@@ -14,8 +14,7 @@ def write(data: list[dict[str, Any]]) -> int:
     """Write data to database
 
     Args:
-        table: table name
-        data: dict with data {category, title, url, preview, date}
+        data: crawler payload
 
     Returns:
         Number of affected rows
@@ -30,8 +29,8 @@ def write(data: list[dict[str, Any]]) -> int:
         on_duplicate = 'ON DUPLICATE KEY UPDATE url=url'
 
     # Generate query
-    query = ('INSERT INTO "news" (category, title, url, preview, date) '
-             'VALUES (%(category)s, %(title)s, %(url)s, %(preview)s, %(date)s) '
+    query = ('INSERT INTO news (category, title, url, preview) '
+             'VALUES (%(category)s, %(title)s, %(url)s, %(preview)s) '
              f'{on_duplicate}')
 
     try:

@@ -2,11 +2,7 @@
 
 import importlib
 
-from crawlers import (apress, arstechnica, coindesk, engadget, futurism,
-                      gadgetsnow, guardian, hackaday, ieee, interfax,
-                      itchannel, media404, news3d, nine2five, nine2five_linux,
-                      opennet, rbc, register, reuters, servernews, techcrunch,
-                      techradar, tomshardware, venturebeat, verge, xakep)
+from crawlers import interfax, rbc
 from crawlers.abstract import Crawler
 
 
@@ -32,42 +28,8 @@ class CrawlersFactory():
 
         if crawler == 'news':
             return [
-                    apress.Technology(),
-                    arstechnica.AllNews(),
-                    coindesk.AllNews(),
-                    engadget.AllNews(),
-                    futurism.Latest(),
-                    futurism.Byte(),
-                    gadgetsnow.AllNews(),
-                    guardian.Technology(),
-                    hackaday.AllNews(),
-                    ieee.Spectrum(),
-                    interfax.Digital(),
-                    itchannel.AllNews(),
-                    media404.AllNews(),
-                    news3d.AllNews(),
-                    nine2five_linux.AllNews(),
-                    nine2five.Google(),
-                    nine2five.Mac(),
-                    opennet.AllNews(),
-                    rbc.Cryptocurrency(),
-                    rbc.Technology(),
-                    register.OnPrem(),
-                    register.Software(),
-                    register.Security(),
-                    register.Offbeat(),
-                    register.OffPrem(),
-                    reuters.Technology(),
-                    reuters.MediaTelecom(),
-                    servernews.AllNews(),
-                    techcrunch.AllNews(),
-                    techradar.AllNews(),
-                    tomshardware.AllNews(),
-                    venturebeat.AllNews(),
-                    verge.Entertainment(),
-                    verge.Tech(),
-                    verge.Science(),
-                    xakep.AllNews(),
+                    interfax.Technology(),
+                    rbc.AllNews(),
                     ]
 
         else:
