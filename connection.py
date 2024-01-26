@@ -24,9 +24,11 @@ def write(data: list[dict[str, Any]]) -> int:
     """
 
     # Check category for resolve duplicates
-    on_duplicate = 'ON DUPLICATE KEY UPDATE category=category'
-    if data[0].category in ['politics', 'economy']:
+    category = data[0]["category"]
+    if category in ['politics', 'economy']:
         on_duplicate = 'ON DUPLICATE KEY UPDATE url=url'
+    else:
+        on_duplicate = f'ON DUPLICATE KEY UPDATE category="{category}"'
 
     # Generate query
     query = ('INSERT INTO news (category, title, url, preview) '

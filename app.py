@@ -25,7 +25,7 @@ def collect_and_save(crawler: Crawler, dry_run: bool) -> int:
 
     Args:
         crawler: Crawler object
-        dry_run: don't write to DB
+        dry_run: if true -> don't write to DB
 
     Returns:
         Number of affected rows
@@ -36,7 +36,7 @@ def collect_and_save(crawler: Crawler, dry_run: bool) -> int:
     try:
         # Run crawler
         crawler.collect()
-
+        
         if dry_run:
             # Print results
             for item in crawler.payload:
@@ -45,7 +45,6 @@ def collect_and_save(crawler: Crawler, dry_run: bool) -> int:
             # Write to database
             data = [item.__dict__ for item in crawler.payload]
             affected_rows = connection.write(data)
-            logger.log(f'{crawler} +{affected_rows}')
 
     except (ConnectionError, AttributeError, TimeoutError) as error:
             logger.log(f'[ERROR] {crawler}: {error}')

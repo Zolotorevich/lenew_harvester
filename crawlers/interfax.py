@@ -9,6 +9,7 @@ from crawlers.abstract import Crawler, News
 class Economy(Crawler):
     category: str = 'economy'
     url: str = 'https://www.interfax.ru/digital/'
+    payload: list[News] = []
 
     def __str__(self) -> str:
         return 'Interfax Economy'

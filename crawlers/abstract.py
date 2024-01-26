@@ -33,19 +33,12 @@ class News():
 class Crawler(ABC):
     """Abstract crawler
 
-    Attributes:
-        url: website page address
-        payload: collected data in News() objects
-
     Methods:
         __str__: crawler name
         collect: get data from website or other source
         request_and_parse_HTML: get HTML by requests + BeautifulSoup
         request_RSS: get RSS feed
     """
-
-    url: str
-    payload: list[News] = []
 
     @abstractmethod
     def __str__(self) -> str:

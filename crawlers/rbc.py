@@ -10,9 +10,6 @@ from crawlers.abstract import Crawler, News
 class RBC(Crawler):
     """Parent class"""
 
-    category: str
-    url: str
-
     def __str__(self) -> str:
         return 'RBC parent class'
 
@@ -47,6 +44,7 @@ class RBC(Crawler):
 class Cryptocurrency(RBC):
     category: str = 'economy'
     url: str = 'https://www.rbc.ru/crypto/tags/?tag=Криптовалюта'
+    payload: list[News] = []
 
     def __str__(self) -> str:
         return 'RBC Cryptocurrency'
@@ -54,6 +52,7 @@ class Cryptocurrency(RBC):
 class Technology(RBC):
     category: str = 'economy'
     url: str = 'https://www.rbc.ru/technology_and_media/'
+    payload: list[News] = []
 
     def __str__(self) -> str:
         return 'RBC Technology'
