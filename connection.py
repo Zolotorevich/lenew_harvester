@@ -7,15 +7,15 @@ DB_OPTIONS = {
   'host': 'localhost',
   'user': 'root',
   'password': '',
-  'database': 'ntab'
+  'database': 'lenew'
 }
 
-def write(table: str, data: list[dict[str, Any]]) -> int:
+def write(data: list[dict[str, Any]]) -> int:
     """Write data to database
 
     Args:
-        table: table name postfix e.g. 'news' for 'harvester_news'
-        data: dict with data {title, url, preview, date}
+        table: table name
+        data: dict with data {category, title, url, preview, date}
 
     Returns:
         Number of affected rows
@@ -24,9 +24,15 @@ def write(table: str, data: list[dict[str, Any]]) -> int:
         ConnectionError: for SQL errors
     """
 
-    query = (f'INSERT INTO harvester_{table} (title, url, preview, date) '
-             'VALUES (%(title)s, %(url)s, %(preview)s, %(date)s) '
-             'ON DUPLICATE KEY UPDATE url=url')
+    # Check category for resolve duplicates
+    on_duplicate = 'ON DUPLICATE KEY UPDATE category=category'
+    if data[0].category in ['politics', 'economy']:
+        on_duplicate = 'ON DUPLICATE KEY UPDATE url=url'
+
+    # Generate query
+    query = ('INSERT INTO "news" (category, title, url, preview, date) '
+             'VALUES (%(category)s, %(title)s, %(url)s, %(preview)s, %(date)s) '
+             f'{on_duplicate}')
 
     try:
         connection = mysql.connector.connect(**DB_OPTIONS)

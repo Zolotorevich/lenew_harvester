@@ -8,7 +8,7 @@ from crawlers.factory import CrawlersFactory
 
 def main(crawlers_list: list[Crawler], dry_run: bool) -> None:
 
-    total: int = 0
+    total_affected_rows: int = 0
 
     # Launch crawlers and save data
     for crawler in crawlers_list:
@@ -24,16 +24,16 @@ def main(crawlers_list: list[Crawler], dry_run: bool) -> None:
 
             # Write to database
             data = [item.__dict__ for item in crawler.payload]
-            rows = connection.write(crawler.table, data)
+            rows = connection.write(data)
             print(f'{crawler} +{rows}')
 
-            total += rows
+            total_affected_rows += rows
             
         except (ConnectionError, AttributeError, TimeoutError) as error:
-            # TODO Request website or SQL error
             print(f'[!] {crawler}: {error}')
+            # TODO add logging
 
-    print(f'\nTotal: +{total} @ {datetime.now().strftime("%H:%M")}')
+    print(f'\nTotal: +{total_affected_rows} @ {datetime.now().strftime("%H:%M")}')
 
 if __name__ == "__main__":
 
