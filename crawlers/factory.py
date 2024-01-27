@@ -34,15 +34,10 @@ class CrawlersFactory():
 
         else:
             # Find crawler by name
-            try:
-                moduleName = crawler[:crawler.find('.')]
-                className = crawler[crawler.find('.') + 1:]
+            moduleName = crawler[:crawler.find('.')]
+            className = crawler[crawler.find('.') + 1:]
 
-                module = importlib.import_module('crawlers.' + moduleName)
-                requested_crawler = getattr(module, className)
+            module = importlib.import_module('crawlers.' + moduleName)
+            requested_crawler = getattr(module, className)
 
-                return [requested_crawler()]
-            
-            except AttributeError:
-                print(f'FAIL: Category or crawler {crawler} not found')
-                exit(1)
+            return [requested_crawler()]

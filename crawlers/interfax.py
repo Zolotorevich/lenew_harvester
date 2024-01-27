@@ -14,9 +14,9 @@ class Economy(Crawler):
     def __str__(self) -> str:
         return 'Interfax Economy'
 
-    def collect(self) -> None:
+    def collect(self, session) -> None:
         # Get HTML
-        soup = self.request_and_parse_HTML(self.url, 'windows-1251')
+        soup = self.request_and_parse_HTML(self.url, session, 'windows-1251')
 
         # Find news
         news_container = soup.select('.timeline h3')

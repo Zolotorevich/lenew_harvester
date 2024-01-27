@@ -50,6 +50,7 @@ class Crawler(ABC):
 
     @staticmethod
     def request_and_parse_HTML(url: str,
+                     session: requests.Session,
                      encoding: str='utf-8',
                      timeout_in_sec: int=20,
                      headers: Optional[dict[str, str]]=None) -> BeautifulSoup:
@@ -57,6 +58,7 @@ class Crawler(ABC):
 
         Args:
             url: website page address
+            session: requests session
             encoding: page encoding, def: utf-8
             timeout_in_sec: total timeout for reqest, def: 20
             headers: request headers {User-Agent, Content-Type}
@@ -75,7 +77,7 @@ class Crawler(ABC):
                             }
 
         # Send request
-        response = requests.get(url, headers=headers, timeout=timeout_in_sec)
+        response = session.get(url, headers=headers, timeout=timeout_in_sec)
 
         # Check return code
         if response.status_code != 200:

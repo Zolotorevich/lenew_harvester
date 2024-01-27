@@ -13,9 +13,9 @@ class RBC(Crawler):
     def __str__(self) -> str:
         return 'RBC parent class'
 
-    def collect(self) -> None:
+    def collect(self, session) -> None:
         # Get HTML
-        soup = self.request_and_parse_HTML(self.url)
+        soup = self.request_and_parse_HTML(self.url, session)
 
         # Find news
         news_container = soup.find_all('div', class_='item__wrap')
