@@ -70,9 +70,9 @@ if __name__ == "__main__":
     try:
         factory = CrawlersFactory()
         crawlers_list = factory.register(args.crawler)
-    except AttributeError:
+    except (AttributeError, ModuleNotFoundError):
         print(f'FAIL: Category or crawler {args.crawler} not found')
-        exit(1) 
+        exit(1)
 
     # Run main
     asyncio.run(main(crawlers_list, args.dry))

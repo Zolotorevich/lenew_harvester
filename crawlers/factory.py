@@ -24,9 +24,10 @@ class CrawlersFactory():
 
         Raises:
             AttributeError: category or crawler not found
+            ModuleNotFoundError: category or crawler not found
         """
 
-        if crawler == 'news':
+        if crawler == 'all':
             return [
                     interfax.Economy(),
                     rbc.Cryptocurrency(),
