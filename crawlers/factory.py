@@ -30,7 +30,7 @@ class CrawlersFactory():
         if crawler == 'all':
             return [
                     interfax.Economy(),
-                    rbc.Cryptocurrency(),
+                    interfax.Main(),
                     ]
 
         else:

@@ -1,6 +1,0 @@
-27.01 23:11:59 === RUN START ===
-27.01 23:11:59 Interfax Economy +0
-27.01 23:12:00 RBC Cryptocurrency +0
-27.01 23:12:00 === DRY RUN COMPLETE: +0 ===
-
-

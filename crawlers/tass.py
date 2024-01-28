@@ -1,21 +1,23 @@
-# TODO Ignore AD and clear sports-interfax
 """
 Crawlers:
     Economy: https://www.interfax.ru/business/
 """
 
 from crawlers.abstract import Crawler, News
+from debug import debug
 
 
-class Interfax(Crawler):
+class TASS(Crawler):
     """Parent class"""
 
     def __str__(self) -> str:
-        return 'Interfax Parent Class'
+        return 'TASS Parent Class'
 
     def collect(self, session) -> None:
         # Get HTML
-        soup = self.request_and_parse_HTML(self.url, session, 'windows-1251')
+        soup = self.request_and_parse_HTML(self.url, session)
+
+        debug.dump_to_file(soup, terminate=True)
 
         # Find news
         news_container = soup.select('.timeline h3')
@@ -29,24 +31,16 @@ class Interfax(Crawler):
             info = {
                 'category': self.category,
                 'title': news.get_text(),
-                'url': 'https://www.interfax.ru' + url,
+                'url': 'https://www.tass.ru' + url,
             }
 
             # Save result
             self.payload.append(News(**info))
 
-class Economy(Interfax):
+class Economy(TASS):
     category: str = 'economy'
-    url: str = 'https://www.interfax.ru/business/'
+    url: str = 'https://tass.ru/ekonomika'
     payload: list[News] = []
 
     def __str__(self) -> str:
-        return 'Interfax Economy'
-
-class Main(Interfax):
-    category: str = 'politics'
-    url: str = 'https://www.interfax.ru/'
-    payload: list[News] = []
-
-    def __str__(self) -> str:
-        return 'Interfax Main page'
+        return 'TASS Economy'

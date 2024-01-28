@@ -6,7 +6,7 @@ def log(messgae:str):
 
     event = f'{datetime.now().strftime("%d.%m %H:%M:%S")} {messgae}'
     
-    with open(f'log.txt', 'a') as file:
+    with open('log.txt', 'a') as file:
         file.write(f'{event}\n')
         
     print(event)
