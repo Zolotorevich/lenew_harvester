@@ -1,0 +1,14 @@
+29.01 16:13:40 === all ===
+29.01 16:13:41 Interfax Main page +0
+29.01 16:13:41 TASS World +0
+29.01 16:13:41 Interfax Economy +0
+29.01 16:13:42 TASS Real estate +0
+29.01 16:13:42 TASS Country +0
+29.01 16:13:42 TASS Small business +0
+29.01 16:13:42 TASS Economy +0
+29.01 16:13:42 TASS Society +0
+29.01 16:13:42 TASS National projects +0
+29.01 16:13:42 TASS Politics +0
+29.01 16:13:42 === Dry run complete, +0 ===
+
+

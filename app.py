@@ -13,7 +13,7 @@ async def main(crawlers_list: list[Crawler], dry_run: bool) -> None:
 
     with requests.Session() as session:
         affected_rows = await asyncio.gather(
-            *[collect_and_save(crawler, session, dry_run) for crawler in crawlers_list]
+            *(collect_and_save(crawler, session, dry_run) for crawler in crawlers_list)
             )
             
     logger.log(f'=== {"Dry run" if dry_run else "Run"} complete, +{sum(affected_rows)} ===\n\n')
@@ -46,7 +46,7 @@ async def collect_and_save(crawler: Crawler, session: requests.Session, dry_run:
             data = [item.__dict__ for item in crawler.payload]
             affected_rows = connection.write(data)
 
-    except (ConnectionError, AttributeError, TimeoutError,
+    except (AttributeError, TimeoutError, ConnectionError,
             requests.ReadTimeout, requests.ConnectionError) as error:
             logger.log(f'[ERROR] {crawler}: {error}')
 
