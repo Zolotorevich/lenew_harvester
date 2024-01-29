@@ -1,6 +1,7 @@
 """
 Crawlers:
     Economy: https://www.interfax.ru/business/
+    Main: https://www.interfax.ru/
 """
 
 from crawlers.abstract import Crawler, News
@@ -37,6 +38,8 @@ class Interfax(Crawler):
             self.payload.append(News(**info))
 
 class Economy(Interfax):
+    """economy: https://www.interfax.ru/business/"""
+    
     category: str = 'economy'
     url: str = 'https://www.interfax.ru/business/'
     payload: list[News] = []
@@ -45,6 +48,7 @@ class Economy(Interfax):
         return 'Interfax Economy'
 
 class Main(Interfax):
+    """politics: https://www.interfax.ru/"""
     category: str = 'politics'
     url: str = 'https://www.interfax.ru/'
     payload: list[News] = []
