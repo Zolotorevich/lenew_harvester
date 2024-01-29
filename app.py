@@ -39,18 +39,20 @@ async def collect_and_save(crawler: Crawler, session: requests.Session, dry_run:
         
         if dry_run:
             # Print results
-            for item in crawler.payload:
-                print(f'\n{item}')
+            print(*crawler.payload, sep = "\n\n")
+            affected_rows = len(crawler.payload)
         else:
             # Write to database
             data = [item.__dict__ for item in crawler.payload]
             affected_rows = connection.write(data)
 
+        # Log results
+        logger.log(f'{crawler} +{affected_rows}')
+
     except (AttributeError, TimeoutError, ConnectionError,
             requests.ReadTimeout, requests.ConnectionError) as error:
             logger.log(f'[ERROR] {crawler}: {error}')
 
-    logger.log(f'{crawler} +{affected_rows}')
     return affected_rows
 
 if __name__ == "__main__":

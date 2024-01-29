@@ -12,3 +12,45 @@
 29.01 16:13:42 === Dry run complete, +0 ===
 
 
+29.01 16:22:03 === all ===
+29.01 16:22:03 Interfax Main page +50
+29.01 16:22:03 TASS World +15
+29.01 16:22:03 Interfax Economy +50
+29.01 16:22:03 TASS Real estate +15
+29.01 16:22:03 TASS Politics +15
+29.01 16:22:04 TASS Small business +15
+29.01 16:22:04 TASS Society +15
+29.01 16:22:04 TASS Economy +15
+29.01 16:22:04 TASS Country +15
+29.01 16:22:04 TASS National projects +15
+29.01 16:22:04 === Dry run complete, +220 ===
+
+
+29.01 16:24:22 === all ===
+29.01 16:24:22 TASS Economy +15
+29.01 16:24:22 Interfax Main page +50
+29.01 16:24:22 Interfax Economy +50
+29.01 16:24:23 TASS National projects +15
+29.01 16:24:23 TASS Real estate +15
+29.01 16:24:23 TASS Country +15
+29.01 16:24:24 TASS Small business +15
+29.01 16:24:27 TASS Politics +15
+29.01 16:24:38 TASS World +15
+29.01 16:24:39 TASS Society +15
+29.01 16:24:39 === Dry run complete, +220 ===
+
+
+29.01 16:24:43 === all ===
+29.01 16:24:43 TASS Politics +15
+29.01 16:24:43 TASS World +15
+29.01 16:24:43 TASS National projects +15
+29.01 16:24:43 Interfax Main page +50
+29.01 16:24:43 Interfax Economy +50
+29.01 16:24:44 TASS Country +15
+29.01 16:24:44 TASS Real estate +15
+29.01 16:24:45 TASS Small business +15
+29.01 16:24:47 TASS Society +15
+29.01 16:24:47 TASS Economy +15
+29.01 16:24:48 === Dry run complete, +220 ===
+
+
