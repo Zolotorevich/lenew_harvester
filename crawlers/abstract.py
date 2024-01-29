@@ -27,7 +27,7 @@ class News():
         self.__dict__[__name] = __value
 
     def __str__(self) -> str:
-        return f'{self.category} | {self.title} | {self.url} | {self.preview}'
+        return f'{self.title} | {self.preview} | {self.url} | {self.category}'
 
 
 class Crawler(ABC):

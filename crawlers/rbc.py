@@ -1,7 +1,8 @@
 """
 Crawlers:
-    Cryptocurrency: https://www.rbc.ru/crypto/tags/?tag=Криптовалюта
-    Technology: https://www.rbc.ru/technology_and_media/
+    Economics: https://www.rbc.ru/economics/
+    Business: https://www.rbc.ru/business/
+    Finances: https://www.rbc.ru/finances/
 """
 
 from crawlers.abstract import Crawler, News
@@ -41,18 +42,32 @@ class RBC(Crawler):
             # Save result
             self.payload.append(News(**info))
 
-class Cryptocurrency(RBC):
+class Economics(RBC):
+    """economy: https://www.rbc.ru/economics/"""
+    
     category: str = 'economy'
-    url: str = 'https://www.rbc.ru/crypto/tags/?tag=Криптовалюта'
+    url: str = 'https://www.rbc.ru/economics/'
     payload: list[News] = []
 
     def __str__(self) -> str:
-        return 'RBC Cryptocurrency'
+        return 'RBC Economics'
 
-class Technology(RBC):
+class Business(RBC):
+    """economy: https://www.rbc.ru/business/"""
+    
     category: str = 'economy'
-    url: str = 'https://www.rbc.ru/technology_and_media/'
+    url: str = 'https://www.rbc.ru/business/'
     payload: list[News] = []
 
     def __str__(self) -> str:
-        return 'RBC Technology'
+        return 'RBC Business'
+
+class Finances(RBC):
+    """economy: https://www.rbc.ru/finances/"""
+    
+    category: str = 'economy'
+    url: str = 'https://www.rbc.ru/finances/'
+    payload: list[News] = []
+
+    def __str__(self) -> str:
+        return 'RBC Finances'

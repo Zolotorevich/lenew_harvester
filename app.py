@@ -11,11 +11,13 @@ from crawlers.factory import CrawlersFactory
 
 async def main(crawlers_list: list[Crawler], dry_run: bool) -> None:
 
+    # Launch crawlers async and in one session
     with requests.Session() as session:
         affected_rows = await asyncio.gather(
             *(collect_and_save(crawler, session, dry_run) for crawler in crawlers_list)
             )
-            
+
+    # Log results
     logger.log(f'=== {"Dry run" if dry_run else "Run"} complete, +{sum(affected_rows)} ===\n\n')
 
 
