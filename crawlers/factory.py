@@ -2,7 +2,7 @@
 
 import importlib
 
-from crawlers import interfax, kommersant, rbc, tass
+from crawlers import forbes, interfax, kommersant, rbc, tass
 from crawlers.abstract import Crawler
 
 
@@ -29,6 +29,10 @@ class CrawlersFactory():
 
         if crawler == 'all':
             return [
+                    forbes.Business(),
+                    forbes.Corporate(),
+                    forbes.Finance(),
+                    forbes.Invest(),
                     interfax.Main(),
                     interfax.Economy(),
                     kommersant.Business(),

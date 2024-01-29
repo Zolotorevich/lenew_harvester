@@ -57,3 +57,33 @@
 29.01 19:19:24 === Dry run complete, +50 in 0.12 sec ===
 
 
+29.01 19:42:12 === forbes.Business ===
+29.01 19:52:47 === forbes.Business ===
+29.01 19:53:28 === forbes.Invest ===
+29.01 19:56:01 === forbes.Business ===
+29.01 20:01:30 === forbes.Business ===
+29.01 20:17:25 === forbes.Business ===
+29.01 20:17:25 Forbes Business +8
+29.01 20:17:25 === Dry run complete, +8 in 0.34 sec ===
+
+
+29.01 20:17:50 === forbes.Finance ===
+29.01 20:17:51 Forbes Finance +8
+29.01 20:17:51 === Dry run complete, +8 in 0.58 sec ===
+
+
+29.01 20:17:59 === forbes.Invest ===
+29.01 20:17:59 Forbes Invest +8
+29.01 20:17:59 === Dry run complete, +8 in 0.43 sec ===
+
+
+29.01 20:18:07 === forbes.Corporate ===
+29.01 20:18:07 Forbes Corporate +8
+29.01 20:18:07 === Dry run complete, +8 in 0.37 sec ===
+
+
+29.01 20:19:06 === forbes.Corporate ===
+29.01 20:19:06 Forbes Corporate +8
+29.01 20:19:06 === Dry run complete, +8 in 0.38 sec ===
+
+
