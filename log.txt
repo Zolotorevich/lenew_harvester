@@ -1,0 +1,206 @@
+29.01 13:19:04 === all ===
+29.01 13:19:04 Interfax Economy +21
+29.01 13:19:04 Interfax Main page +28
+29.01 13:19:04 === Run complete, +49 ===
+
+
+29.01 13:19:59 === tass.Economy ===
+29.01 13:34:56 === tass.Economy ===
+29.01 13:34:57 TASS Economy +0
+29.01 13:34:57 === Dry run complete, +0 ===
+
+
+29.01 13:56:18 === tass.Politics ===
+29.01 13:56:18 TASS Economy +0
+29.01 13:56:18 === Dry run complete, +0 ===
+
+
+29.01 14:14:23 === all ===
+29.01 14:14:23 Interfax Economy +0
+29.01 14:14:23 Interfax Main page +0
+29.01 14:14:23 TASS Economy +0
+29.01 14:14:25 TASS National projects +0
+29.01 14:14:28 TASS Real estate +0
+29.01 14:14:29 TASS Small business +0
+29.01 14:14:30 TASS Politics +0
+29.01 14:14:32 TASS World +0
+29.01 14:14:34 TASS Society +0
+29.01 14:14:34 TASS Country +0
+29.01 14:14:34 === Dry run complete, +0 ===
+
+
+29.01 14:15:25 === all ===
+29.01 14:15:25 TASS Economy +0
+29.01 14:15:27 TASS National projects +0
+29.01 14:17:25 === all ===
+29.01 14:17:26 TASS Economy +0
+29.01 14:17:27 TASS National projects +0
+29.01 14:17:27 TASS Real estate +0
+29.01 14:17:33 TASS Small business +0
+29.01 14:17:45 TASS Politics +0
+29.01 14:17:45 TASS World +0
+29.01 14:17:47 TASS Society +0
+29.01 14:17:47 TASS Country +0
+29.01 14:17:47 Interfax Economy +0
+29.01 14:17:47 Interfax Main page +0
+29.01 14:17:47 === Dry run complete, +0 ===
+
+
+29.01 14:19:09 === all ===
+29.01 14:19:09 Interfax Main page +0
+29.01 14:19:09 TASS Economy +0
+29.01 14:19:26 TASS National projects +0
+29.01 14:19:27 TASS Real estate +0
+29.01 14:19:33 TASS Small business +0
+29.01 14:19:36 TASS Politics +0
+29.01 14:19:39 TASS World +0
+29.01 14:19:39 TASS Society +0
+29.01 14:19:40 TASS Country +0
+29.01 14:19:40 Interfax Economy +0
+29.01 14:19:40 === Dry run complete, +0 ===
+
+
+29.01 14:21:11 === all ===
+29.01 14:21:11 Interfax Main page +0
+29.01 14:21:11 TASS Economy +0
+29.01 14:21:16 TASS National projects +0
+29.01 14:21:18 TASS Real estate +0
+29.01 14:21:19 TASS Small business +0
+29.01 14:21:54 === all ===
+29.01 14:23:56 === all ===
+29.01 14:24:42 === all ===
+29.01 14:24:42 === Dry run complete ===
+
+
+29.01 14:26:01 === all ===
+29.01 14:26:01 === Dry run complete ===
+
+
+29.01 14:26:25 === all ===
+29.01 14:26:25 === Dry run complete ===
+
+
+29.01 14:26:50 === all ===
+29.01 14:26:50 === Dry run complete ===
+
+
+29.01 14:28:11 === all ===
+29.01 14:28:34 === all ===
+29.01 14:28:34 === Dry run complete, +<coroutine object collect_and_save at 0x10d53ae60> ===
+
+
+29.01 14:33:43 === all ===
+29.01 14:33:43 Interfax Main page +0
+29.01 14:33:44 TASS Economy +0
+29.01 14:33:44 TASS National projects +0
+29.01 14:33:45 TASS Real estate +0
+29.01 14:33:45 TASS Small business +0
+29.01 14:33:46 TASS Politics +0
+29.01 14:33:47 TASS World +0
+29.01 14:33:47 TASS Society +0
+29.01 14:33:48 TASS Country +0
+29.01 14:33:48 Interfax Economy +0
+29.01 14:33:48 === Dry run complete, +0 ===
+
+
+29.01 14:34:16 === all ===
+29.01 14:34:16 Interfax Main page +0
+29.01 14:34:16 TASS Economy +0
+29.01 14:34:16 TASS National projects +0
+29.01 14:34:19 TASS Real estate +0
+29.01 14:34:23 TASS Small business +0
+29.01 14:34:23 TASS Politics +0
+29.01 14:34:23 TASS World +0
+29.01 14:34:23 TASS Society +0
+29.01 14:34:25 TASS Country +0
+29.01 14:34:25 Interfax Economy +0
+29.01 14:34:25 === Dry run complete, +0 ===
+
+
+29.01 14:37:33 === all ===
+29.01 14:41:00 === all ===
+29.01 14:41:15 === all ===
+29.01 14:42:42 === all ===
+29.01 14:48:04 === all ===
+29.01 14:49:43 === all ===
+29.01 14:49:43 TASS Economy +0
+29.01 14:49:43 Interfax Main page +0
+29.01 14:49:43 Interfax Economy +0
+29.01 14:49:43 TASS National projects +0
+29.01 14:49:43 TASS Country +0
+29.01 14:49:43 TASS Real estate +0
+29.01 14:49:44 TASS Politics +0
+29.01 14:49:45 TASS Small business +0
+29.01 14:49:45 TASS World +0
+29.01 14:49:46 TASS Society +0
+29.01 14:49:46 === Dry run complete, +[0, 0, 0, 0, 0, 0, 0, 0, 0, 0] ===
+
+
+29.01 14:51:19 === all ===
+29.01 14:51:19 TASS Country +0
+29.01 14:51:19 TASS Economy +0
+29.01 14:51:19 TASS World +0
+29.01 14:51:19 TASS Society +0
+29.01 14:51:20 Interfax Main page +0
+29.01 14:51:20 Interfax Economy +0
+29.01 14:51:20 TASS Real estate +0
+29.01 14:51:20 TASS Politics +0
+29.01 14:51:20 TASS National projects +0
+29.01 14:51:21 TASS Small business +0
+29.01 14:52:03 === all ===
+29.01 14:52:04 TASS Economy +0
+29.01 14:52:04 TASS Society +0
+29.01 14:52:04 TASS Politics +0
+29.01 14:52:04 Interfax Main page +0
+29.01 14:52:04 Interfax Economy +0
+29.01 14:52:06 TASS World +0
+29.01 14:52:08 TASS Small business +0
+29.01 14:52:08 TASS Real estate +0
+29.01 14:52:13 TASS National projects +0
+29.01 14:52:14 TASS Country +0
+29.01 14:52:15 === Dry run complete, +0 ===
+
+
+29.01 14:53:27 === all ===
+29.01 14:53:27 Interfax Main page +2
+29.01 14:53:27 Interfax Economy +2
+29.01 14:53:27 TASS Society +2
+29.01 14:53:28 TASS National projects +2
+29.01 14:53:28 TASS Country +2
+29.01 14:53:29 TASS Economy +2
+29.01 14:53:29 TASS Politics +2
+29.01 14:53:29 TASS World +2
+29.01 14:53:29 TASS Real estate +2
+29.01 14:53:30 TASS Small business +2
+29.01 14:53:30 === Dry run complete, +20 ===
+
+
+29.01 14:54:13 === all ===
+29.01 14:54:13 TASS Economy +15
+29.01 14:54:13 TASS Country +15
+29.01 14:54:14 TASS Politics +14
+29.01 14:54:14 TASS Society +15
+29.01 14:54:14 Interfax Main page +21
+29.01 14:54:14 Interfax Economy +0
+29.01 14:54:14 TASS National projects +14
+29.01 14:54:15 TASS Small business +15
+29.01 14:54:21 TASS World +12
+29.01 14:54:21 TASS Real estate +13
+29.01 14:54:21 === Run complete, +134 ===
+
+
+29.01 14:55:51 === interfax.Economy ===
+29.01 14:55:51 Interfax Economy +0
+29.01 14:55:51 === Dry run complete, +0 ===
+
+
+29.01 14:56:07 === interfax.Main ===
+29.01 14:56:07 Interfax Main page +0
+29.01 14:56:07 === Dry run complete, +0 ===
+
+
+29.01 15:00:25 === interfax.Main ===
+29.01 15:00:25 Interfax Main page +0
+29.01 15:00:25 === Dry run complete, +0 ===
+
+

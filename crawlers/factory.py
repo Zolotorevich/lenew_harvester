@@ -2,7 +2,7 @@
 
 import importlib
 
-from crawlers import interfax, rbc
+from crawlers import interfax, tass
 from crawlers.abstract import Crawler
 
 
@@ -29,8 +29,16 @@ class CrawlersFactory():
 
         if crawler == 'all':
             return [
-                    interfax.Economy(),
                     interfax.Main(),
+                    interfax.Economy(),
+                    tass.Economy(),
+                    tass.National_projects(),
+                    tass.Real_estate(),
+                    tass.Small_business(),
+                    tass.Politics(),
+                    tass.World(),
+                    tass.Society(),
+                    tass.Country(),
                     ]
 
         else:

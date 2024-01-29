@@ -11,17 +11,15 @@ from crawlers.factory import CrawlersFactory
 
 async def main(crawlers_list: list[Crawler], dry_run: bool) -> None:
 
-    logger.log(f'=== RUN START ===')
-    affected_rows: int = 0
-
     with requests.Session() as session:
-        for crawler in crawlers_list:
-            affected_rows += await asyncio.to_thread(collect_and_save, *(crawler, session, dry_run))
+        affected_rows = await asyncio.gather(
+            *[collect_and_save(crawler, session, dry_run) for crawler in crawlers_list]
+            )
+            
+    logger.log(f'=== {"Dry run" if dry_run else "Run"} complete, +{sum(affected_rows)} ===\n\n')
 
-    logger.log(f'=== {"DRY RUN" if dry_run else "RUN"} COMPLETE: +{affected_rows} ===\n\n')
-    
 
-def collect_and_save(crawler: Crawler, session: requests.Session, dry_run: bool) -> int:
+async def collect_and_save(crawler: Crawler, session: requests.Session, dry_run: bool) -> int:
     """Launch crawlers and save data
 
     Args:
@@ -33,10 +31,10 @@ def collect_and_save(crawler: Crawler, session: requests.Session, dry_run: bool)
     """
 
     affected_rows: int = 0
-    
+
     try:
         # Run crawler
-        crawler.collect(session)
+        await asyncio.to_thread(crawler.collect, session)
         
         if dry_run:
             # Print results
@@ -47,7 +45,7 @@ def collect_and_save(crawler: Crawler, session: requests.Session, dry_run: bool)
             data = [item.__dict__ for item in crawler.payload]
             affected_rows = connection.write(data)
 
-    except (ConnectionError, AttributeError, TimeoutError) as error:
+    except (ConnectionError, AttributeError, TimeoutError, requests.ReadTimeout) as error:
             logger.log(f'[ERROR] {crawler}: {error}')
 
     logger.log(f'{crawler} +{affected_rows}')
@@ -66,7 +64,7 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
 
-    # Get objects from crawlers factory
+    # Get crawlers from factory
     try:
         factory = CrawlersFactory()
         crawlers_list = factory.register(args.crawler)
@@ -75,4 +73,5 @@ if __name__ == "__main__":
         exit(1)
 
     # Run main
+    logger.log(f'=== {args.crawler} ===')
     asyncio.run(main(crawlers_list, args.dry))

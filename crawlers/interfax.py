@@ -1,4 +1,3 @@
-# TODO Ignore AD and clear sports-interfax
 """
 Crawlers:
     Economy: https://www.interfax.ru/business/
@@ -22,14 +21,16 @@ class Interfax(Crawler):
 
         for news in news_container:
             
-            # Find url
+            # Find url and check if it's relative
             url = news.parent.get('href')
+            if url[:1] == '/':
+                url = 'https://www.interfax.ru' + url
             
             # Get info
             info = {
                 'category': self.category,
                 'title': news.get_text(),
-                'url': 'https://www.interfax.ru' + url,
+                'url': url,
             }
 
             # Save result
