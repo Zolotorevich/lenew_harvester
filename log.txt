@@ -87,3 +87,25 @@
 29.01 20:19:06 === Dry run complete, +8 in 0.38 sec ===
 
 
+29.01 20:33:21 === bfm.Companies ===
+29.01 23:34:27 === prime1.Economy ===
+29.01 23:39:01 === prime1.Economy ===
+29.01 23:39:01 Prime Economy +30
+29.01 23:39:01 === Dry run complete, +30 in 0.56 sec ===
+
+
+29.01 23:39:42 === prime1.Economy ===
+29.01 23:39:43 Prime Economy +30
+29.01 23:39:43 === Dry run complete, +30 in 0.36 sec ===
+
+
+29.01 23:41:49 === test ===
+29.01 23:41:49 Prime IT +30
+29.01 23:41:49 Prime Business +30
+29.01 23:41:49 Prime Economy +30
+29.01 23:41:49 Prime Fin_market +30
+29.01 23:41:49 Prime Finance +30
+29.01 23:41:49 Prime Energy +30
+29.01 23:41:49 === Dry run complete, +180 in 0.79 sec ===
+
+

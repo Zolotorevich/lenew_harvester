@@ -2,7 +2,7 @@
 
 import importlib
 
-from crawlers import forbes, interfax, kommersant, rbc, tass
+from crawlers import forbes, interfax, kommersant, prime1, rbc, tass
 from crawlers.abstract import Crawler
 
 
@@ -39,6 +39,12 @@ class CrawlersFactory():
                     kommersant.Finance(),
                     kommersant.Market(),
                     kommersant.Economy(),
+                    prime1.Business(),
+                    prime1.Economy(),
+                    prime1.Finance(),
+                    prime1.Fin_market(),
+                    prime1.IT(),
+                    prime1.Energy(),
                     rbc.Business(),
                     rbc.Economics(),
                     rbc.Finances(),
