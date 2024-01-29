@@ -39,7 +39,7 @@ async def collect_and_save(crawler: Crawler, session: requests.Session, dry_run:
         
         if dry_run:
             # Print results
-            print(*crawler.payload, sep = "\n\n")
+            print(*crawler.payload, sep='\n\n')
             affected_rows = len(crawler.payload)
         else:
             # Write to database
