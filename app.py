@@ -45,7 +45,8 @@ async def collect_and_save(crawler: Crawler, session: requests.Session, dry_run:
             data = [item.__dict__ for item in crawler.payload]
             affected_rows = connection.write(data)
 
-    except (ConnectionError, AttributeError, TimeoutError, requests.ReadTimeout) as error:
+    except (ConnectionError, AttributeError, TimeoutError,
+            requests.ReadTimeout, requests.ConnectionError) as error:
             logger.log(f'[ERROR] {crawler}: {error}')
 
     logger.log(f'{crawler} +{affected_rows}')
