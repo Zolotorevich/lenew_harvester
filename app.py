@@ -25,10 +25,10 @@ async def collect_and_save(crawler: Crawler, session: requests.Session, dry_run:
     Args:
         crawler: Crawler object
         session: requests Session
-        dry_run: print results and don't write to DB
+        dry_run: print results and don't write them to DB
 
     Returns:
-        Number of affected rows
+        Number of affected rows or would have been affected if not dry_run
     """
 
     affected_rows: int = 0
