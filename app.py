@@ -24,6 +24,7 @@ async def collect_and_save(crawler: Crawler, session: requests.Session, dry_run:
 
     Args:
         crawler: Crawler object
+        session: requests Session
         dry_run: print results and don't write to DB
 
     Returns:

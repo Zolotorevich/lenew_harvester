@@ -11,7 +11,6 @@ Crawlers:
 """
 
 from crawlers.abstract import Crawler, News
-from debug import debug
 
 
 class TASS(Crawler):
