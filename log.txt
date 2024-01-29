@@ -31,3 +31,29 @@
 29.01 19:07:54 === Run complete, +60 ===
 
 
+29.01 19:18:21 === all ===
+29.01 19:18:22 RBC Finances +20
+29.01 19:18:23 Interfax Main page +50
+29.01 19:18:23 RBC Business +20
+29.01 19:18:23 RBC Economics +20
+29.01 19:18:23 Interfax Economy +50
+29.01 19:18:23 Kommersant Economy +20
+29.01 19:18:23 Kommersant Business +20
+29.01 19:18:23 Kommersant Finance +20
+29.01 19:18:23 Kommersant Market +20
+29.01 19:18:23 TASS World +15
+29.01 19:18:23 TASS Real estate +15
+29.01 19:18:24 TASS Small business +15
+29.01 19:18:24 TASS Economy +15
+29.01 19:18:26 TASS Society +15
+29.01 19:18:27 TASS Country +15
+29.01 19:18:27 TASS Politics +15
+29.01 19:18:31 TASS National projects +15
+29.01 19:18:31 === Dry run complete, +360 in 9.094996759085916 sec ===
+
+
+29.01 19:19:24 === interfax.Main ===
+29.01 19:19:24 Interfax Main page +50
+29.01 19:19:24 === Dry run complete, +50 in 0.12 sec ===
+
+

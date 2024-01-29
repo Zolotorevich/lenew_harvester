@@ -48,11 +48,6 @@ class CrawlersFactory():
                     tass.Country(),
                     ]
 
-        elif crawler == 'test':
-            return [
-                    tass.Country(),
-                    ]
-
         else:
             # Find crawler by name
             moduleName = crawler[:crawler.find('.')]

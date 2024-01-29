@@ -1,5 +1,6 @@
 import argparse
 import asyncio
+from time import perf_counter
 
 import requests
 
@@ -11,6 +12,8 @@ from crawlers.factory import CrawlersFactory
 
 async def main(crawlers_list: list[Crawler], dry_run: bool) -> None:
 
+    time_start = perf_counter()
+
     # Launch crawlers async and in one session
     with requests.Session() as session:
         affected_rows = await asyncio.gather(
@@ -18,7 +21,9 @@ async def main(crawlers_list: list[Crawler], dry_run: bool) -> None:
             )
 
     # Log results
-    logger.log(f'=== {"Dry run" if dry_run else "Run"} complete, +{sum(affected_rows)} ===\n\n')
+    elapsed_time = perf_counter() - time_start
+    logger.log(f'=== {"Dry run" if dry_run else "Run"} complete, '
+               f'+{sum(affected_rows)} in {round(elapsed_time, 2)} sec ===\n\n')
 
 
 async def collect_and_save(crawler: Crawler, session: requests.Session, dry_run: bool) -> int:
