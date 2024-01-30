@@ -15,9 +15,9 @@ class Forbes(Crawler):
     def __str__(self) -> str:
         return 'Forbes Parent Class'
 
-    def collect(self, session) -> None:
+    def collect(self) -> None:
         # Get HTML
-        soup = self.request_and_parse_HTML(self.url, session)
+        soup = self.request_and_parse_HTML(self.url)
 
         # Find news
         news_container = soup.select('h3')

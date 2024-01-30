@@ -40,6 +40,8 @@ class Crawler(ABC):
         request_RSS: get RSS feed
     """
 
+    session = requests.Session()
+
     @abstractmethod
     def __str__(self) -> str:
         """Return crawler name"""
@@ -48,9 +50,8 @@ class Crawler(ABC):
     def collect(self) -> None:
         """Collect data and store in payload"""
 
-    @staticmethod
-    def request_and_parse_HTML(url: str,
-                     session: requests.Session,
+    def request_and_parse_HTML(self,
+                     url: str,
                      encoding: str='utf-8',
                      timeout_in_sec: int=20,
                      headers: Optional[dict[str, str]]=None) -> BeautifulSoup:
@@ -58,16 +59,17 @@ class Crawler(ABC):
 
         Args:
             url: website page address
-            session: requests session
             encoding: page encoding, def: utf-8
             timeout_in_sec: total timeout for reqest, def: 20
             headers: request headers {User-Agent, Content-Type}
 
         Returns:
-            BeautifulSoup object
+            HTML as BeautifulSoup object
 
         Raises:
-            ConnectionError: if website returns any code other than 200
+            ConnectionError: website returns any code other than 200
+            requests.ConnectionError: any network error
+            requests.ReadTimeout: connection timeout
         """
 
         # Set default headers if None provided
@@ -77,7 +79,7 @@ class Crawler(ABC):
                             }
 
         # Send request
-        response = session.get(url, headers=headers, timeout=timeout_in_sec)
+        response = self.session.get(url, headers=headers, timeout=timeout_in_sec)
 
         # Check return code
         if response.status_code != 200:
@@ -88,7 +90,6 @@ class Crawler(ABC):
 
         return BeautifulSoup(response.text, 'html.parser')
 
-    @staticmethod
     def request_RSS(url: str) -> feedparser.util.FeedParserDict:
         """Get RSS and return dict or None if RSS not found
 
@@ -101,6 +102,7 @@ class Crawler(ABC):
         Raises:
             AttributeError: RSS unavailable
         """
+        
         feed = feedparser.parse(url)
         getattr(feed, 'status')
         return feed

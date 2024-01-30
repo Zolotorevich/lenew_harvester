@@ -17,9 +17,9 @@ class Kommersant(Crawler):
     def __str__(self) -> str:
         return 'Kommersant parent class'
 
-    def collect(self, session) -> None:
+    def collect(self) -> None:
         # Get HTML
-        soup = self.request_and_parse_HTML(self.url, session)
+        soup = self.request_and_parse_HTML(self.url)
 
         # Parse JSON
         script = soup.find_all('script', type='application/ld+json')[1].string

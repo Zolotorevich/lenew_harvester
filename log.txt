@@ -109,3 +109,48 @@
 29.01 23:41:49 === Dry run complete, +180 in 0.79 sec ===
 
 
+29.01 23:48:41 === cbr.News ===
+29.01 23:53:20 === cbr.News ===
+30.01 18:25:02 === corporate ===
+31.01 00:14:46 === interfax.Main ===
+31.01 00:15:03 === interfax.Main ===
+31.01 00:15:04 Interfax Main page +50
+31.01 00:15:04 === Dry run complete, +50 in 0.14 sec ===
+
+
+31.01 00:24:10 === interfax.Main ===
+31.01 00:24:10 Interfax Main page +50
+31.01 00:24:10 === Dry run complete, +50 in 0.13 sec ===
+
+
+31.01 00:25:21 === media ===
+31.01 00:25:22 Interfax Main page +50
+31.01 00:25:22 Interfax Economy +50
+31.01 00:25:22 Kommersant Business +20
+31.01 00:25:23 Kommersant Economy +20
+31.01 00:25:23 Kommersant Market +20
+31.01 00:25:23 Kommersant Finance +20
+31.01 00:25:23 Forbes Corporate +8
+31.01 00:25:23 Forbes Finance +8
+31.01 00:25:23 Prime Business +30
+31.01 00:25:23 Forbes Business +8
+31.01 00:25:23 Prime Economy +30
+31.01 00:25:23 Forbes Invest +8
+31.01 00:25:23 Prime Finance +30
+31.01 00:25:23 Prime Fin_market +30
+31.01 00:25:23 Prime IT +31
+31.01 00:25:23 TASS Economy +15
+31.01 00:25:23 RBC Business +20
+31.01 00:25:23 TASS Country +15
+31.01 00:25:23 Prime Energy +30
+31.01 00:25:23 TASS Real estate +15
+31.01 00:25:23 RBC Finances +20
+31.01 00:25:23 TASS Society +15
+31.01 00:25:23 TASS Politics +15
+31.01 00:25:23 TASS World +15
+31.01 00:25:23 RBC Economics +20
+31.01 00:25:23 TASS National projects +15
+31.01 00:25:23 TASS Small business +15
+31.01 00:25:23 === Dry run complete, +573 in 1.88 sec ===
+
+

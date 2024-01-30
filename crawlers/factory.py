@@ -4,6 +4,7 @@ import importlib
 
 from crawlers import forbes, interfax, kommersant, prime1, rbc, tass
 from crawlers.abstract import Crawler
+from crawlers.corporate import mkb
 
 
 class CrawlersFactory():
@@ -56,6 +57,11 @@ class CrawlersFactory():
                     tass.World(),
                     tass.Society(),
                     tass.Country(),
+                    ]
+
+        elif crawler == 'test':
+            return [
+                    mkb.News(),
                     ]
 
         else:

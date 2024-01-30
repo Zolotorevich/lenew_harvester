@@ -1,21 +1,27 @@
-"""
+"""Московский кредитный банк
+
 Crawlers:
-    Economy:
+    News: https://mkb.ru/news
+    Invest: https://ir.mkb.ru/investor-relations/news
 """
 
 from crawlers.abstract import Crawler, News
 from debug import debug
 
 
-class Vedomosti(Crawler):
-    """Parent class"""
+class News(Crawler):
+    """News: https://mkb.ru/news"""
+    
+    category: str = 'mkb'
+    url: str = 'https://mkb.ru/news'
+    payload: list[News] = []
 
     def __str__(self) -> str:
-        return 'Vedomosti Parent Class'
+        return 'МКБ News'
 
-    def collect(self, session) -> None:
+    def collect(self) -> None:
         # Get HTML
-        soup = self.request_and_parse_HTML(self.url, session)
+        soup = self.request_and_parse_HTML(self.url)
         debug.dump_to_file(soup)
 
         # Find news
@@ -23,6 +29,7 @@ class Vedomosti(Crawler):
 
         for news in news_container:
             
+            # Find url
             url = news.parent.get('href')
             
             # Get info
@@ -34,13 +41,3 @@ class Vedomosti(Crawler):
 
             # Save result
             self.payload.append(News(**info))
-
-class Economy(Vedomosti):
-    """economy: """
-    
-    category: str = 'economy'
-    url: str = ''
-    payload: list[News] = []
-
-    def __str__(self) -> str:
-        return 'Vedomosti '

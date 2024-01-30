@@ -14,11 +14,10 @@ async def main(crawlers_list: list[Crawler], dry_run: bool) -> None:
 
     time_start = perf_counter()
 
-    # Launch crawlers async and in one session
-    with requests.Session() as session:
-        affected_rows = await asyncio.gather(
-            *(collect_and_save(crawler, session, dry_run) for crawler in crawlers_list)
-            )
+    # Launch crawlers
+    affected_rows = await asyncio.gather(
+        *(collect_and_save(crawler, dry_run) for crawler in crawlers_list)
+        )
 
     # Log results
     elapsed_time = perf_counter() - time_start
@@ -26,12 +25,11 @@ async def main(crawlers_list: list[Crawler], dry_run: bool) -> None:
                f'+{sum(affected_rows)} in {round(elapsed_time, 2)} sec ===\n\n')
 
 
-async def collect_and_save(crawler: Crawler, session: requests.Session, dry_run: bool) -> int:
+async def collect_and_save(crawler: Crawler, dry_run: bool) -> int:
     """Launch crawlers and save data
 
     Args:
         crawler: Crawler object
-        session: requests Session
         dry_run: print results and don't write them to DB
 
     Returns:
@@ -42,7 +40,7 @@ async def collect_and_save(crawler: Crawler, session: requests.Session, dry_run:
 
     try:
         # Run crawler
-        await asyncio.to_thread(crawler.collect, session)
+        await asyncio.to_thread(crawler.collect)
         
         if dry_run:
             # Print results
