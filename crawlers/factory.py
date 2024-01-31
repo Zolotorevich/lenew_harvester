@@ -2,23 +2,79 @@
 
 import importlib
 
-from crawlers import forbes, interfax, kommersant, prime1, rbc, tass
 from crawlers.abstract import Crawler
-from crawlers.corporate import mkb
 
 
 class CrawlersFactory():
     """Factory for Crawler objects
 
     Methods:
-        register: generate crawlers by name or category
+        get_crawler: generate one crawler by category and name
+        register: generate list of crawlers by category or search by name
     """
 
-    def register(self, crawler: str) -> list[Crawler]:
-        """Generate crawlers
+    media = [
+            'forbes.Business',
+            'forbes.Corporate',
+            'forbes.Finance',
+            'forbes.Invest',
+            'interfax.Main',
+            'interfax.Economy',
+            'kommersant.Business',
+            'kommersant.Finance',
+            'kommersant.Market',
+            'kommersant.Economy',
+            'prime1.Business',
+            'prime1.Economy',
+            'prime1.Finance',
+            'prime1.Fin_market',
+            'prime1.IT',
+            'prime1.Energy',
+            'rbc.Business',
+            'rbc.Economics',
+            'rbc.Finances',
+            'tass.Economy',
+            'tass.National_projects',
+            'tass.Real_estate',
+            'tass.Small_business',
+            'tass.Politics',
+            'tass.World',
+            'tass.Society',
+            'tass.Country',
+        ]
+
+    corporate = [
+            'mkb.News',
+            'mkb.Invest',
+        ]
+    
+
+    def get_crawler(self, category: str, name: str) -> Crawler:
+        """Generate one crawler
 
         Args:
-            crawler: crawler or category name
+            category: aka module directory
+            name: filename.Class
+
+        Returns:
+            One crawler object
+        """
+
+        # Get module and class names
+        moduleName = name[:name.find('.')]
+        className = name[name.find('.') + 1:]
+
+        # Find crawler
+        module = importlib.import_module(f'crawlers.{category}.' + moduleName)
+        requested_crawler = getattr(module, className)
+
+        return requested_crawler()
+
+    def register(self, category: str) -> list[Crawler]:
+        """Generate list of crawlers by category
+
+        Args:
+            crawler: category or crawler full name, e.g. directory.file.Class
 
         Returns:
             List with Crawler objects
@@ -28,49 +84,21 @@ class CrawlersFactory():
             ModuleNotFoundError: category or crawler not found
         """
 
-        if crawler == 'all':
-            return [
-                    forbes.Business(),
-                    forbes.Corporate(),
-                    forbes.Finance(),
-                    forbes.Invest(),
-                    interfax.Main(),
-                    interfax.Economy(),
-                    kommersant.Business(),
-                    kommersant.Finance(),
-                    kommersant.Market(),
-                    kommersant.Economy(),
-                    prime1.Business(),
-                    prime1.Economy(),
-                    prime1.Finance(),
-                    prime1.Fin_market(),
-                    prime1.IT(),
-                    prime1.Energy(),
-                    rbc.Business(),
-                    rbc.Economics(),
-                    rbc.Finances(),
-                    tass.Economy(),
-                    tass.National_projects(),
-                    tass.Real_estate(),
-                    tass.Small_business(),
-                    tass.Politics(),
-                    tass.World(),
-                    tass.Society(),
-                    tass.Country(),
-                    ]
+        if category == 'all':
+            media = [self.get_crawler('media', crawler) for crawler in self.media]
+            corporate = [self.get_crawler('corporate', crawler) for crawler in self.corporate]
+            return media + corporate
+            
+        elif category == 'media':
+            return [self.get_crawler('media', crawler) for crawler in self.media]
 
-        elif crawler == 'test':
-            return [
-                    mkb.News(),
-                    mkb.Invest(),
-                    ]
+        elif category == 'corporate':
+            return [self.get_crawler('corporate', crawler) for crawler in self.corporate]
 
         else:
             # Find crawler by name
-            moduleName = crawler[:crawler.find('.')]
-            className = crawler[crawler.find('.') + 1:]
-
-            module = importlib.import_module('crawlers.' + moduleName)
-            requested_crawler = getattr(module, className)
-
-            return [requested_crawler()]
+            crawler_category = category[:category.find('.')]
+            crawler_name = category[category.find('.') + 1:]
+            print(f'{crawler_category=}')
+            print(f'{crawler_name=}')
+            return [self.get_crawler(crawler_category, crawler_name)]

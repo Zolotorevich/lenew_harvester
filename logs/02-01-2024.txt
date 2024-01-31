@@ -1,0 +1,100 @@
+00:14:46 === all ===
+00:14:47 Interfax Main page +50
+00:14:48 Interfax Economy +50
+00:14:48 Kommersant Economy +20
+00:14:48 Kommersant Business +20
+00:14:48 Kommersant Finance +20
+00:14:48 Kommersant Market +20
+00:14:48 Prime Business +30
+00:14:48 Prime Economy +30
+00:14:48 Forbes Invest +8
+00:14:48 Forbes Finance +8
+00:14:48 Prime Finance +30
+00:14:48 Prime Energy +31
+00:14:48 TASS Economy +15
+00:14:48 Prime Fin_market +30
+00:14:48 Prime IT +30
+00:14:48 Forbes Corporate +8
+00:14:48 RBC Economics +20
+00:14:48 RBC Business +20
+00:14:48 TASS Real estate +15
+00:14:48 RBC Finances +20
+00:14:48 TASS National projects +15
+00:14:48 TASS Small business +15
+00:14:48 TASS Country +15
+00:14:48 TASS World +15
+00:14:48 TASS Politics +15
+00:14:49 TASS Society +15
+00:14:49 Forbes Business +8
+00:14:49 === Dry run complete, +573 in 3.09 sec ===
+
+
+00:37:07 === media ===
+00:37:08 Interfax Main page +50
+00:37:08 Interfax Economy +50
+00:37:09 Kommersant Finance +20
+00:37:09 Kommersant Business +20
+00:37:09 Kommersant Market +20
+00:37:09 Kommersant Economy +20
+00:37:09 Forbes Invest +8
+00:37:09 Prime Business +30
+00:37:09 Forbes Business +8
+00:37:09 Prime Economy +30
+00:37:09 Forbes Corporate +8
+00:37:09 Forbes Finance +8
+00:37:09 Prime Fin_market +30
+00:37:09 Prime Finance +30
+00:37:09 Prime IT +30
+00:37:09 Prime Energy +31
+00:37:09 RBC Economics +20
+00:37:09 RBC Business +20
+00:37:09 TASS Real estate +15
+00:37:09 TASS National projects +15
+00:37:09 TASS Society +15
+00:37:09 TASS Small business +15
+00:37:09 TASS Economy +15
+00:37:09 RBC Finances +20
+00:37:09 TASS Politics +15
+00:37:09 TASS Country +15
+00:37:09 TASS World +15
+00:37:09 === Dry run complete, +573 in 2.17 sec ===
+
+
+00:37:14 === all ===
+00:37:15 Interfax Main page +50
+00:37:16 Interfax Economy +50
+00:37:16 Kommersant Finance +20
+00:37:16 Kommersant Business +20
+00:37:16 Kommersant Market +20
+00:37:16 Kommersant Economy +20
+00:37:16 Forbes Corporate +8
+00:37:16 Prime Business +30
+00:37:16 Forbes Business +8
+00:37:16 Forbes Invest +8
+00:37:16 Prime Economy +30
+00:37:16 Prime Finance +30
+00:37:16 Forbes Finance +8
+00:37:16 Prime IT +30
+00:37:16 Prime Fin_market +30
+00:37:16 TASS National projects +15
+00:37:16 Prime Energy +31
+00:37:16 TASS Politics +15
+00:37:16 TASS World +15
+00:37:16 TASS Economy +15
+00:37:16 RBC Business +20
+00:37:16 TASS Small business +15
+00:37:16 TASS Real estate +15
+00:37:16 RBC Economics +20
+00:37:16 TASS Country +15
+00:37:16 TASS Society +15
+00:37:16 RBC Finances +20
+00:37:17 МКБ News +0
+00:37:17 МКБ Invest News +0
+00:37:17 === Dry run complete, +573 in 2.79 sec ===
+
+
+00:40:40 === media.tass.World ===
+00:40:41 TASS World +15
+00:40:41 === Dry run complete, +15 in 0.45 sec ===
+
+
