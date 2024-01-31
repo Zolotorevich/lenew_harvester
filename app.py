@@ -24,7 +24,6 @@ async def main(crawlers_list: list[Crawler], dry_run: bool) -> None:
     logger.log(f'=== {"Dry run" if dry_run else "Run"} complete, '
                f'+{sum(affected_rows)} in {round(elapsed_time, 2)} sec ===\n\n')
 
-
 async def collect_and_save(crawler: Crawler, dry_run: bool) -> int:
     """Launch crawlers and save data
 
@@ -74,6 +73,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Get crawlers from factory
+    # NOTE: they will start one Selenium driver as parent Class property
     try:
         factory = CrawlersFactory()
         crawlers_list = factory.register(args.crawler)
@@ -84,3 +84,6 @@ if __name__ == "__main__":
     # Run main
     logger.log(f'=== {args.crawler} ===')
     asyncio.run(main(crawlers_list, args.dry))
+
+    # Stop crawler's Selenium driver
+    crawlers_list[0].driver.stop()

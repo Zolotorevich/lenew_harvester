@@ -62,6 +62,7 @@ class CrawlersFactory():
         elif crawler == 'test':
             return [
                     mkb.News(),
+                    mkb.Invest(),
                     ]
 
         else:

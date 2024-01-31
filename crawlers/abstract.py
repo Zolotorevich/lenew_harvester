@@ -8,6 +8,8 @@ import feedparser
 import requests
 from bs4 import BeautifulSoup
 
+from driver import Selenium_Driver
+
 
 @dataclass
 class News():
@@ -37,10 +39,12 @@ class Crawler(ABC):
         __str__: crawler name
         collect: get data from website or other source
         request_and_parse_HTML: get HTML by requests + BeautifulSoup
+        selenium_and_parse_HTML: get HTML by Selenium + BeautifulSoup
         request_RSS: get RSS feed
     """
 
     session = requests.Session()
+    driver = Selenium_Driver()
 
     @abstractmethod
     def __str__(self) -> str:
@@ -63,13 +67,13 @@ class Crawler(ABC):
             timeout_in_sec: total timeout for reqest, def: 20
             headers: request headers {User-Agent, Content-Type}
 
-        Returns:
-            HTML as BeautifulSoup object
-
         Raises:
             ConnectionError: website returns any code other than 200
             requests.ConnectionError: any network error
             requests.ReadTimeout: connection timeout
+
+        Returns:
+            HTML as BeautifulSoup object
         """
 
         # Set default headers if None provided
@@ -90,6 +94,19 @@ class Crawler(ABC):
 
         return BeautifulSoup(response.text, 'html.parser')
 
+    def selenium_and_parse_HTML(self, url:str) -> BeautifulSoup:
+        """Get website HTML by Selenium and parse HTML using BeautifulSoup
+
+        Args:
+            url: website page address
+
+        Returns:
+            HTML as BeautifulSoup object
+        """
+        
+        return BeautifulSoup(self.driver.get(url), 'html.parser')
+
+    @staticmethod
     def request_RSS(url: str) -> feedparser.util.FeedParserDict:
         """Get RSS and return dict or None if RSS not found
 

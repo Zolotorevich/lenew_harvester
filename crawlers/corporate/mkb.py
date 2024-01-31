@@ -21,23 +21,38 @@ class News(Crawler):
 
     def collect(self) -> None:
         # Get HTML
-        soup = self.request_and_parse_HTML(self.url)
-        debug.dump_to_file(soup)
+        soup = self.selenium_and_parse_HTML(self.url)
+        debug.dump_to_file(soup, terminate=False)
 
-        # Find news
-        news_container = soup.select('.timeline h3')
+        # # Find news
+        # news_container = soup.select('.timeline h3')
 
-        for news in news_container:
+        # for news in news_container:
             
-            # Find url
-            url = news.parent.get('href')
+        #     # Find url
+        #     url = news.parent.get('href')
             
-            # Get info
-            info = {
-                'category': self.category,
-                'title': news.get_text(),
-                'url': url,
-            }
+        #     # Get info
+        #     info = {
+        #         'category': self.category,
+        #         'title': news.get_text(),
+        #         'url': url,
+        #     }
 
-            # Save result
-            self.payload.append(News(**info))
+        #     # Save result
+        #     self.payload.append(News(**info))
+
+class Invest(Crawler):
+    """Invest news: https://ir.mkb.ru/investor-relations/news"""
+    
+    category: str = 'mkb'
+    url: str = 'https://ir.mkb.ru/investor-relations/news'
+    payload: list[News] = []
+
+    def __str__(self) -> str:
+        return 'МКБ Invest News'
+
+    def collect(self) -> None:
+        # Get HTML
+        soup = self.selenium_and_parse_HTML(self.url)
+        debug.dump_to_file(soup, filename='dump1.html', terminate=False)
