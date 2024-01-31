@@ -5,9 +5,9 @@ from time import perf_counter
 import requests
 
 import connection
-import logger
 from crawlers.abstract import Crawler
 from crawlers.factory import CrawlersFactory
+from debug import debug
 
 
 async def main(crawlers_list: list[Crawler], dry_run: bool) -> None:
@@ -21,7 +21,7 @@ async def main(crawlers_list: list[Crawler], dry_run: bool) -> None:
 
     # Log results
     elapsed_time = perf_counter() - time_start
-    logger.log(f'=== {"Dry run" if dry_run else "Run"} complete, '
+    debug.log(f'=== {"Dry run" if dry_run else "Run"} complete, '
                f'+{sum(affected_rows)} in {round(elapsed_time, 2)} sec ===\n\n')
 
 async def collect_and_save(crawler: Crawler, dry_run: bool) -> int:
@@ -51,11 +51,11 @@ async def collect_and_save(crawler: Crawler, dry_run: bool) -> int:
             affected_rows = connection.write(data)
 
         # Log results
-        logger.log(f'{crawler} +{affected_rows}')
+        debug.log(f'{crawler} +{affected_rows}')
 
     except (AttributeError, TimeoutError, ConnectionError,
             requests.ReadTimeout, requests.ConnectionError) as error:
-            logger.log(f'[ERROR] {crawler}: {error}')
+            debug.log(f'[ERROR] {crawler}: {error}')
 
     return affected_rows
 
@@ -82,7 +82,7 @@ if __name__ == "__main__":
         exit(1)
 
     # Run main
-    logger.log(f'=== {args.crawler} ===')
+    debug.log(f'=== {args.crawler} ===')
     asyncio.run(main(crawlers_list, args.dry))
 
     # Stop crawler's Selenium driver
