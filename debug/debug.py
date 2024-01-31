@@ -21,7 +21,7 @@ def add_to_file(content: str, filename: str='flow.html') -> None:
 
 def log(messgae: str) -> None:
 
-    event = f'{datetime.now().strftime("%d.%m %H:%M:%S")} {messgae}'
+    event = f'{datetime.now().strftime("%H:%M:%S")} {messgae}'
     
     with open(f'logs/{datetime.now().strftime("%m-%d-%Y")}.txt', 'a') as file:
         file.write(f'{event}\n')
