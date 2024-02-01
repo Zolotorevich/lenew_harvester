@@ -98,3 +98,52 @@
 00:40:41 === Dry run complete, +15 in 0.45 sec ===
 
 
+00:43:48 === all ===
+00:43:49 Interfax Main page +50
+00:43:49 Interfax Economy +50
+00:43:50 Kommersant Market +20
+00:43:50 Kommersant Economy +20
+00:43:50 Kommersant Business +20
+00:43:50 Kommersant Finance +20
+00:43:50 Forbes Finance +8
+00:43:50 Forbes Invest +8
+00:43:50 Forbes Corporate +8
+00:43:50 Prime Business +30
+00:43:50 Prime Economy +30
+00:43:50 Forbes Business +8
+00:43:50 Prime Finance +30
+00:43:50 Prime Fin_market +30
+00:43:50 Prime Energy +31
+00:43:50 TASS Economy +15
+00:43:50 Prime IT +30
+00:43:50 TASS Real estate +15
+00:43:50 TASS Small business +15
+00:43:50 RBC Economics +20
+00:43:50 RBC Business +20
+00:43:50 TASS National projects +15
+00:43:50 RBC Finances +20
+00:43:50 TASS World +15
+00:43:50 TASS Country +15
+00:43:50 TASS Politics +15
+00:43:50 TASS Society +15
+00:43:51 МКБ News +0
+00:43:52 МКБ Invest News +0
+00:43:52 === Dry run complete, +573 in 3.95 sec ===
+
+
+03:05:39 === media.cbr.News ===
+03:05:42 ЦБ РФ Новости +0
+03:05:42 === Dry run complete, +0 in 2.88 sec ===
+
+
+03:28:14 === media.cbr.News ===
+03:29:47 === media.cbr.All_News ===
+03:29:49 ЦБ РФ Новости +20
+03:29:49 === Dry run complete, +20 in 2.68 sec ===
+
+
+03:30:34 === media.cbr.All_News ===
+03:30:36 ЦБ РФ Новости +20
+03:30:36 === Dry run complete, +20 in 2.67 sec ===
+
+

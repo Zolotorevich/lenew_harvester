@@ -14,6 +14,7 @@ class CrawlersFactory():
     """
 
     media = [
+            'cbr.All_News',
             'forbes.Business',
             'forbes.Corporate',
             'forbes.Finance',
@@ -65,13 +66,13 @@ class CrawlersFactory():
         className = name[name.find('.') + 1:]
 
         # Find crawler
-        module = importlib.import_module(f'crawlers.{category}.' + moduleName)
+        module = importlib.import_module(f'crawlers.{category}.{moduleName}')
         requested_crawler = getattr(module, className)
 
         return requested_crawler()
 
     def register(self, category: str) -> list[Crawler]:
-        """Generate list of crawlers by category
+        """Generate crawlers by category
 
         Args:
             crawler: category or crawler full name, e.g. directory.file.Class
@@ -86,9 +87,13 @@ class CrawlersFactory():
 
         if category == 'all':
             media = [self.get_crawler('media', crawler) for crawler in self.media]
-            corporate = [self.get_crawler('corporate', crawler) for crawler in self.corporate]
-            return media + corporate
+            return media
+
+            # TODO replace when corporate ready
+            # corporate = [self.get_crawler('corporate', crawler) for crawler in self.corporate]
+            # return media + corporate
             
+
         elif category == 'media':
             return [self.get_crawler('media', crawler) for crawler in self.media]
 
@@ -99,6 +104,4 @@ class CrawlersFactory():
             # Find crawler by name
             crawler_category = category[:category.find('.')]
             crawler_name = category[category.find('.') + 1:]
-            print(f'{crawler_category=}')
-            print(f'{crawler_name=}')
             return [self.get_crawler(crawler_category, crawler_name)]
