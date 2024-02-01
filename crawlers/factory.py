@@ -25,7 +25,7 @@ class CrawlersFactory():
             'kommersant.Finance',
             'kommersant.Market',
             'kommersant.Economy',
-            'minfin.All_News'
+            'minfin.All_News',
             'prime1.Business',
             'prime1.Economy',
             'prime1.Finance',
@@ -47,7 +47,6 @@ class CrawlersFactory():
 
     corporate = [
             'mkb.All_News',
-            'mkb.Invest',
         ]
     
 
@@ -88,13 +87,9 @@ class CrawlersFactory():
 
         if category == 'all':
             media = [self.get_crawler('media', crawler) for crawler in self.media]
-            return media
-
-            # TODO replace when corporate ready
-            # corporate = [self.get_crawler('corporate', crawler) for crawler in self.corporate]
-            # return media + corporate
+            corporate = [self.get_crawler('corporate', crawler) for crawler in self.corporate]
+            return media + corporate
             
-
         elif category == 'media':
             return [self.get_crawler('media', crawler) for crawler in self.media]
 

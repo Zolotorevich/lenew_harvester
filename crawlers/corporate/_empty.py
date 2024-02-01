@@ -9,35 +9,37 @@ from crawlers.abstract import Crawler, News
 from debug import debug
 
 
-class News(Crawler):
-    """News: """
-
-    category: str = ''
-    url: str = ''
-    payload: list[News] = []
+class EMPTY(Crawler):
+    """Parent class"""
 
     def __str__(self) -> str:
-        return ''
+        return 'ORGANIZASTION Parent Class'
 
     def collect(self) -> None:
         # Get HTML
         soup = self.request_and_parse_HTML(self.url)
-        debug.dump_to_file(soup)
-        
+
         # Find news
-        news_container = soup.select('.timeline h3')
+        news_container = soup.select('.news_title')
 
         for news in news_container:
-            
-            # Find url
-            url = news.parent.get('href')
-            
+
             # Get info
             info = {
                 'category': self.category,
                 'title': news.get_text(),
-                'url': url,
+                'url': 'https://minfin.gov.ru' + news.get('href'),
             }
 
             # Save result
             self.payload.append(News(**info))
+
+class All_News(EMPTY):
+    """economy: """
+    
+    category: str = 'economy'
+    url: str = ''
+    payload: list[News] = []
+
+    def __str__(self) -> str:
+        return 'ORGANIZASTION News'

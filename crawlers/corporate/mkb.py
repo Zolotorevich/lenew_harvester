@@ -1,58 +1,43 @@
-"""Московский кредитный банк
+"""Московский кредитный банк [CBOM]
 
 Crawlers:
     News: https://mkb.ru/news
-    Invest: https://ir.mkb.ru/investor-relations/news
 """
 
 from crawlers.abstract import Crawler, News
-from debug import debug
 
 
 class MKB(Crawler):
-    """News: https://mkb.ru/news"""
+    """Parent class"""
+
+    def __str__(self) -> str:
+        return 'МКБ Parent Class'
+
+class All_News(MKB):
+    """MKB: Новости"""
     
-    category: str = 'mkb'
+    category: str = 'MKB'
     url: str = 'https://mkb.ru/news'
     payload: list[News] = []
 
     def __str__(self) -> str:
-        return 'МКБ News'
+        return 'MKB Новости'
 
     def collect(self) -> None:
         # Get HTML
         soup = self.selenium_and_parse_HTML(self.url)
-        debug.dump_to_file(soup, terminate=False)
 
-        # # Find news
-        # news_container = soup.select('.timeline h3')
+        # Find news
+        news_container = soup.select('h3')
 
-        # for news in news_container:
-            
-        #     # Find url
-        #     url = news.parent.get('href')
-            
-        #     # Get info
-        #     info = {
-        #         'category': self.category,
-        #         'title': news.get_text(),
-        #         'url': url,
-        #     }
+        for news in news_container:
 
-        #     # Save result
-        #     self.payload.append(News(**info))
+            # Get info
+            info = {
+                'category': self.category,
+                'title': news.get_text(),
+                'url': 'https://mkb.ru' + news.parent.get('href'),
+            }
 
-class Invest(MKB):
-    """Invest news: https://ir.mkb.ru/investor-relations/news"""
-    
-    category: str = 'mkb'
-    url: str = 'https://ir.mkb.ru/investor-relations/news'
-    payload: list[News] = []
-
-    def __str__(self) -> str:
-        return 'МКБ Invest News'
-
-    def collect(self) -> None:
-        # Get HTML
-        soup = self.selenium_and_parse_HTML(self.url)
-        debug.dump_to_file(soup, filename='dump1.html', terminate=False)
+            # Save result
+            self.payload.append(News(**info))
