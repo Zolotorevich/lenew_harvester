@@ -147,3 +147,9 @@
 03:30:36 === Dry run complete, +20 in 2.67 sec ===
 
 
+03:34:22 === media.minfin.All_News ===
+03:35:31 === media.minfin.All_News ===
+03:35:31 Минфин новости +18
+03:35:31 === Dry run complete, +18 in 0.32 sec ===
+
+

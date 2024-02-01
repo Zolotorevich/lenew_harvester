@@ -9,7 +9,7 @@ from crawlers.abstract import Crawler, News
 from debug import debug
 
 
-class News(Crawler):
+class MKB(Crawler):
     """News: https://mkb.ru/news"""
     
     category: str = 'mkb'
@@ -42,7 +42,7 @@ class News(Crawler):
         #     # Save result
         #     self.payload.append(News(**info))
 
-class Invest(Crawler):
+class Invest(MKB):
     """Invest news: https://ir.mkb.ru/investor-relations/news"""
     
     category: str = 'mkb'

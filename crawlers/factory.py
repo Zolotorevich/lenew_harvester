@@ -25,6 +25,7 @@ class CrawlersFactory():
             'kommersant.Finance',
             'kommersant.Market',
             'kommersant.Economy',
+            'minfin.All_News'
             'prime1.Business',
             'prime1.Economy',
             'prime1.Finance',
@@ -45,7 +46,7 @@ class CrawlersFactory():
         ]
 
     corporate = [
-            'mkb.News',
+            'mkb.All_News',
             'mkb.Invest',
         ]
     
