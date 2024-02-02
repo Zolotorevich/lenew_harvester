@@ -25,5 +25,9 @@ def log(messgae: str) -> None:
     
     with open(f'logs/{datetime.now().strftime("%m-%d-%Y")}.txt', 'a') as file:
         file.write(f'{event}\n')
+
+    # Uncomment on prod
+    # with open(f'/var/www/flintroot/logs/{datetime.now().strftime("%m-%d-%Y")}.txt', 'a') as file:
+    #     file.write(f'{event}\n')
         
     print(event)

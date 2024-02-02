@@ -53,8 +53,11 @@ async def collect_and_save(crawler: Crawler, dry_run: bool) -> int:
         # Log results
         debug.log(f'{crawler} +{affected_rows}')
 
-    except (AttributeError, TimeoutError, ConnectionError,
-            requests.ReadTimeout, requests.ConnectionError) as error:
+    # except (AttributeError, TimeoutError, ConnectionError,
+    #         requests.ReadTimeout, requests.ConnectionError) as error:
+    #         debug.log(f'[ERROR] {crawler}: {error}')
+
+    except Exception as error:
             debug.log(f'[ERROR] {crawler}: {error}')
 
     return affected_rows
