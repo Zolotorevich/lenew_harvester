@@ -1,0 +1,62 @@
+15:09:22 === corporate.mkb.Interfax ===
+15:09:22 Search Interfax: Московский кредитный банк +0
+15:09:22 === Dry run complete, +0 in 0.11 sec ===
+
+
+17:36:55 === corporate.aeroflot.All_News ===
+17:36:55 [ERROR] Аэрофлот Новости: Fail to load https://www.aeroflot.ru/ru-ru/news
+17:36:55 === Dry run complete, +0 in 0.06 sec ===
+
+
+17:37:06 === corporate.aeroflot.All_News ===
+17:39:42 === corporate.utair.All_News ===
+17:49:14 === corporate.utair.All_News ===
+17:49:14 [ERROR] ЮТэйр Новости: 'NoneType' object has no attribute 'get_text'
+17:49:14 === Dry run complete, +0 in 0.17 sec ===
+
+
+17:49:40 === corporate.utair.All_News ===
+17:50:05 === corporate.utair.All_News ===
+17:50:05 [ERROR] ЮТэйр Новости: unsupported operand type(s) for +: 'Tag' and 'str'
+17:50:05 === Dry run complete, +0 in 0.27 sec ===
+
+
+17:50:23 === corporate.utair.All_News ===
+17:50:47 === corporate.utair.All_News ===
+17:52:59 === corporate.utair.All_News ===
+17:53:40 === corporate.utair.All_News ===
+17:54:20 === corporate.utair.All_News ===
+17:54:20 ЮТэйр Новости +6
+17:54:20 === Dry run complete, +6 in 0.19 sec ===
+
+
+17:56:49 === corporate.utair.All_News ===
+17:56:49 ЮТэйр Новости +6
+17:56:49 === Dry run complete, +6 in 0.21 sec ===
+
+
+17:57:47 === corporate.utair.All_News ===
+17:57:47 ЮТэйр Новости +6
+17:57:47 === Dry run complete, +6 in 0.17 sec ===
+
+
+17:59:25 === corporate.utair.All_News ===
+17:59:25 ЮТэйр Новости +6
+17:59:25 === Dry run complete, +6 in 0.2 sec ===
+
+
+18:00:19 === corporate.utair.All_News ===
+18:00:19 [ERROR] ЮТэйр Новости: 'generator' object has no attribute 'strip'
+18:00:19 === Dry run complete, +0 in 0.16 sec ===
+
+
+18:01:57 === corporate.utair.All_News ===
+18:01:57 [ERROR] ЮТэйр Новости: 'NoneType' object has no attribute 'get_text'
+18:01:57 === Dry run complete, +0 in 0.19 sec ===
+
+
+18:02:33 === corporate.utair.All_News ===
+18:02:33 ЮТэйр Новости +6
+18:02:33 === Dry run complete, +6 in 0.22 sec ===
+
+

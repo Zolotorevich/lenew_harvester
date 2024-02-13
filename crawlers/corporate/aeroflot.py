@@ -1,33 +1,37 @@
-"""Московский кредитный банк [CBOM]
+"""Аэрофлот [AFLT]
 
 Crawlers:
-    News: https://mkb.ru/news
+    News: https://www.aeroflot.ru/ru-ru/news
 """
 
 from crawlers.abstract import Crawler, News
 from crawlers.search.interfax import Search_Interfax
+from debug import debug
 
 
-class mkb(Crawler):
+class aeroflot(Crawler):
     """Parent class"""
 
-    category: str = 'mkb'
+    category: str = 'aeroflot'
 
     def __str__(self) -> str:
-        return 'МКБ Parent Class'
+        return 'Аэрофлот Parent Class'
 
-class All_News(mkb):
-    """Московский кредитный банк: Новости"""
+class All_News(aeroflot):
+    """Аэрофлот: Новости"""
 
-    url: str = 'https://mkb.ru/news'
+    url: str = 'https://www.aeroflot.ru/ru-ru/news'
     payload: list[News] = []
 
     def __str__(self) -> str:
-        return 'Московский кредитный банк Новости'
+        return 'Аэрофлот Новости'
 
     def collect(self) -> None:
         # Get HTML
         soup = self.selenium_and_parse_HTML(self.url)
+        # soup = self.request_and_parse_HTML(self.url)
+
+        debug.dump_to_file(soup)
 
         # Find news
         news_container = soup.select('h3')
@@ -43,12 +47,4 @@ class All_News(mkb):
 
             # Save result
             self.payload.append(News(**info))
-
-class Interfax(Search_Interfax):
-    """Search Interfax"""
-    
-    search_query: str = 'Московский кредитный банк'
-    payload: list[News] = []
-
-    def __str__(self) -> str:
-        return f'Search Interfax: {self.search_query}'
+            
