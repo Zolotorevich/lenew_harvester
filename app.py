@@ -80,8 +80,8 @@ if __name__ == "__main__":
     try:
         factory = CrawlersFactory()
         crawlers_list = factory.register(args.crawler)
-    except (AttributeError, ModuleNotFoundError):
-        print(f'FAIL: Category or crawler {args.crawler} not found')
+    except (AttributeError, ModuleNotFoundError) as error:
+        print(f'FAIL: Category or crawler {args.crawler} not found. {error}')
         exit(1)
 
     # Run main

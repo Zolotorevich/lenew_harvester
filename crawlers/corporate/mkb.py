@@ -5,7 +5,6 @@ Crawlers:
 """
 
 from crawlers.abstract import Crawler, News
-from crawlers.search.interfax import Search_Interfax
 
 
 class mkb(Crawler):

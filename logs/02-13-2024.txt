@@ -133,3 +133,44 @@
 19:45:01 === Dry run complete, +20 in 0.21 sec ===
 
 
+19:51:24 === all ===
+19:51:25 Interfax Main page +50
+19:51:25 Interfax Economy +50
+19:51:25 Kommersant Business +20
+19:51:25 Forbes Invest +8
+19:51:25 Kommersant Finance +20
+19:51:25 Forbes Finance +8
+19:51:25 Kommersant Economy +20
+19:51:26 Минфин новости +18
+19:51:26 Forbes Business +8
+19:51:27 Kommersant Market +20
+19:51:27 Forbes Corporate +8
+19:51:27 Prime Business +30
+19:51:27 Prime Economy +30
+19:51:27 Prime Finance +30
+19:51:27 Prime IT +30
+19:51:27 Prime Energy +30
+19:51:27 Prime Fin_market +30
+19:51:27 TASS Economy +15
+19:51:27 RBC Finances +20
+19:51:27 RBC Economics +20
+19:51:27 RBC Business +20
+19:51:27 TASS World +15
+19:51:27 ЦБ РФ Новости +20
+19:51:27 ЮТэйр Новости +6
+19:51:27 Мечел Новости +10
+19:51:27 TASS Politics +15
+19:51:27 Search Korabel: vyborgshipyard +15
+19:51:27 Выборгский судозавод Новости +2
+19:51:27 TASS Country +15
+19:51:27 TASS Society +15
+19:51:27 РКК Энергия Новости +20
+19:51:27 TASS National projects +15
+19:51:28 FESCO Новости +12
+19:51:28 Московский кредитный банк Новости +10
+19:51:30 Henderson Новости +3
+19:51:34 TASS Small business +15
+19:51:36 TASS Real estate +15
+19:51:36 === Dry run complete, +688 in 12.18 sec ===
+
+
