@@ -111,3 +111,9 @@
 19:23:43 === Dry run complete, +10 in 0.26 sec ===
 
 
+19:33:11 === corporate.fesco.All_News ===
+19:37:17 === corporate.fesco.All_News ===
+19:37:18 FESCO Новости +12
+19:37:18 === Dry run complete, +12 in 1.16 sec ===
+
+
