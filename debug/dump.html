@@ -1,1260 +1,1224 @@
-
 <!DOCTYPE html>
 
-<html lang="ru">
+<html>
 <head>
-<meta charset="utf-8"/>
 <title>Новости</title>
-<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
-<meta content="bbe0a59997a595d2" name="yandex-verification">
-<link href="/bitrix/templates/.default/img/favicon/favicon.ico" rel="icon"/>
-<link href="/bitrix/templates/.default/img/favicon/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
-<link href="/bitrix/cache/css/s1/news/page_6b11e3d0a0e2616bbde8752a9544b03b/page_6b11e3d0a0e2616bbde8752a9544b03b_v1.css?1654024127699" rel="stylesheet" type="text/css">
-<link data-template-style="true" href="/bitrix/cache/css/s1/news/template_c32537aa5de7c34a69ac3d2deffbb145/template_c32537aa5de7c34a69ac3d2deffbb145_v1.css?1654024096446699" rel="stylesheet" type="text/css">
-<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
-<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
-<script src="/bitrix/js/main/core/core.min.js?1654022062216224" type="text/javascript"></script>
-<script>BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
-BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);</script>
-<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','UTF_MODE':'Y','SITE_ID':'s1','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1707853699','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'4538b228d7dc711000039689b1d35630'});</script>
-<script src="/bitrix/cache/js/s1/news/kernel_main/kernel_main_v1.js?1666267132152850" type="text/javascript"></script>
-<script src="/bitrix/js/yandex.metrika/script.js?16662671306591" type="text/javascript"></script>
-<script type="text/javascript">BX.setJSList(['/bitrix/js/main/session.js','/bitrix/js/main/pageobject/pageobject.js','/bitrix/js/main/core/core_window.js','/bitrix/js/main/date/main.date.js','/bitrix/js/main/core/core_date.js','/bitrix/js/main/utils.js','/bitrix/js/main/core/core_fx.js','/bitrix/templates/.default/js/scripts.min.js','/bitrix/templates/.default/libs/fotorama/fotorama.js','/bitrix/templates/.default/libs/fancybox/jquery.fancybox.js','/bitrix/templates/.default/libs/swiper/js/swiper.js','/bitrix/templates/.default/libs/wow/wow.min.js','/bitrix/templates/.default/js/lazy.min.js','/bitrix/templates/.default/js/common.js','/bitrix/templates/.default/components/bitrix/menu/menu_top/script.js','/bitrix/templates/.default/components/bitrix/menu/menu_actionbar/script.js']);</script>
-<script type="text/javascript">BX.setCSSList(['/bitrix/templates/.default/components/bitrix/news/news_list_swiper/bitrix/news.list/.default/style.css','/bitrix/templates/.default/css/common.css','/bitrix/templates/.default/libs/fotorama/fotorama.css','/bitrix/templates/.default/libs/fancybox/jquery.fancybox.css','/bitrix/templates/.default/libs/swiper/css/swiper.css','/bitrix/templates/.default/libs/animate/animate.min.css','/bitrix/templates/.default/components/bitrix/menu/menu_top/style.css','/bitrix/templates/.default/components/bitrix/breadcrumb/breadcrumb/style.css','/bitrix/templates/.default/components/bitrix/news.list/number_widget/style.css','/bitrix/templates/.default/components/bitrix/menu/menu_bottom/style.css','/bitrix/templates/.default/components/bitrix/menu/menu_actionbar/style.css']);</script>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-                (function (m, e, t, r, i, k, a) {
-                    m[i] = m[i] || function () {
-                        (m[i].a = m[i].a || []).push(arguments)
-                    };
-                    m[i].l = 1 * new Date();
-                    k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-                })
-                (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-                ym("90840853", "init", {
-                    clickmap: true,
-                    trackLinks: true,
-                    accurateTrackBounce: true,
-                    webvisor: true,
-                    ecommerce: "dataLayer",
-                    params: {
-                        __ym: {
-                            "ymCmsPlugin": {
-                                "cms": "1c-bitrix",
-                                "cmsVersion": "22.0",
-                                "pluginVersion": "1.0.7",
-                                'ymCmsRip': 3815340157                            }
-                        }
-                    }
-                });
-
-                document.addEventListener("DOMContentLoaded", function() {
-                                    });
-
-            </script>
-<!-- /Yandex.Metrika counter -->
-<script type="text/javascript">
-            window.counters = ["90840853"];
-        </script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="сайт КАМАЗ, купить камаз, камаз, КАМАЗ, КамАЗ, грузовой автомобиль, самосвал, 5490" name="keywords"/>
+<meta content='Официальный сайт ПАО "КАМАЗ"' name="description"/>
+<script data-skip-moving="true" type="text/javascript">(function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);</script>
+<link href="/bitrix/css/main/font-awesome.css?143261605228777" rel="stylesheet" type="text/css"/>
+<link href="/bitrix/js/main/core/css/core.css?14326160503963" rel="stylesheet" type="text/css"/>
+<link href="/bitrix/js/main/core/css/core_popup.css?153224116917570" rel="stylesheet" type="text/css"/>
+<link href="/bitrix/js/main/core/css/core_date.css?153224110410289" rel="stylesheet" type="text/css"/>
+<link data-template-style="true" href="/bitrix/templates/.default/css/styles.less.css?170012811183626" rel="stylesheet" type="text/css"/>
+<link data-template-style="true" href="/bitrix/templates/.default/components/bitrix/search.form/.top/style.css?1688006939533" rel="stylesheet" type="text/css"/>
+<link data-template-style="true" href="/bitrix/panel/main/popup.css?146561057923084" rel="stylesheet" type="text/css"/>
+<link data-template-style="true" href="/bitrix/js/altasib.errorsend/css/window.css?15305134664771" rel="stylesheet" type="text/css"/>
+<link data-template-style="true" href="/bitrix/templates/.default/js/jquery/css/jquery.jscrollpane.css?1511940380922" rel="stylesheet" type="text/css"/>
+<link data-template-style="true" href="/bitrix/templates/.default/js/jquery/css/jquery.fancybox2.css?15119403803973" rel="stylesheet" type="text/css"/>
+<link data-template-style="true" href="/bitrix/templates/.default/css/template_styles_add.css?16503537163655" rel="stylesheet" type="text/css"/>
+<link data-template-style="true" href="/bitrix/templates/.default/css/fonts.css?14656100904001" rel="stylesheet" type="text/css"/>
+<link data-template-style="true" href="/bitrix/templates/.default/css/select2.css?155043823617741" rel="stylesheet" type="text/css"/>
+<link data-template-style="true" href="/bitrix/templates/main/styles.css?1608273126611" rel="stylesheet" type="text/css"/>
+<link data-template-style="true" href="/bitrix/templates/main/template_styles.css?16157767192541" rel="stylesheet" type="text/css"/>
+<link href="/press/releases/rss/" rel="alternate" title="/press/releases/rss/" type="application/rss+xml"/>
 <!-- dev2fun module opengraph -->
-<meta content="Новости" property="og:title">
-<meta content="https://e-cis.info/news/" property="og:url">
+<meta content="Официальный сайт ПАО " property="og:description" камаз""=""/>
+<meta content="https://kamaz.ru/press/releases/" property="og:url"/>
 <meta content="website" property="og:type"/>
-<meta content="Портал СНГ" property="og:site_name"/>
+<meta content="Официальный сайт ПАО 'КАМАЗ'" property="og:site_name"/>
+<meta content="ru_RU" property="og:locale"/>
 <!-- /dev2fun module opengraph -->
-<script>window.dataLayer = window.dataLayer || [];</script>
-<script src="/bitrix/cache/js/s1/news/template_1134821f9f94256f38f51fbae965ee90/template_1134821f9f94256f38f51fbae965ee90_v1.js?1654026738497047" type="text/javascript"></script>
-<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "18bf960621772176b8713164c50e3f20"]); _ba.push(["host", "e-cis.info"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
-</meta></meta></link></link></meta></head>
-<body>
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" name="SKYPE_TOOLBAR">
+<!--[if lt IE 9]><![endif]-->
+<link href="/bitrix/templates/main/icons/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+<!-- Ретаргетинг VK -->
+<!-- Ретаргетинг VK -->
+<!-- YA-->
+<meta content="04b531b9aae514f9" name="yandex-verification">
+<!-- YA-->
+</meta></link></meta></meta></head>
+<body class="">
+<div id="bx-panel-wrapper" style="position: relative; z-index: 100500 !important; top: 0 !important; left: 0 !important; width: 100% !important;"></div>
+<div class="bg-page-wrap">
+<div class="bg-page-b" style="background-repeat: no-repeat">
+<!-- <img src="/bitrix/templates/main/images/bg-page.jpg" alt=""/> -->
+</div>
+</div>
+<div class="wrap">
+<header>
+<div class="header-top-b">
+<div class="center-block">
+<a class="logo" href="/"><img alt="KAMAZ" src="/bitrix/templates/main/images/logo.png" title="KAMAZ"/></a>
+<div class="phone-b">
+<a href="/feedback/" target="_blank">Call-центр с 6:00 - 22:00 МСК</a> <br/>
+<span><i></i>8 (800) 555-00-99</span>
+</div>
+<div class="kmz-header-icons">
+<ul>
+<li class="kmz-lk"><a href="https://cbe.kamaz.ru" target="_blank"><span alt="Личный кабинет контрагента" class="mdi mdi-briefcase-account" title="Личный кабинет контрагента"></span></a></li>
+<li class="kmz-lk"><a href="https://clck.ru/eyAas" target="_blank"><span alt="Личный кабинет автовладельца" class="mdi mdi-account-circle" title="Личный кабинет автовладельца"></span></a></li>
+<li class="kmz-fb"><a alt="Обратная связь" href="/feedback/" title="Обратная связь"><span class="mdi mdi-email"></span></a></li>
+<li class="kmz-sm"><a alt="Карта сайта" href="/sitemap/" title="Карта сайта"><span class="mdi mdi-sitemap"></span></a></li>
+<li class="kmz-ct"><a alt="Контакты" href="/contacts/" title="Контакты"><span class="mdi mdi-map-marker"></span></a></li>
+</ul>
+</div>
+<!-- <nav class="authorization-b">
+                    <a href="/feedback/" class="icon-b mail" alt="Обратная связь" title="Обратная связь"></a>
+					<a href="/" class="icon-b home" alt="Главная страница" title="Главная страница"></a>
+					<a href="/sitemap/" class="icon-b site-map" alt="Карта сайта" title="Карта сайта"></a>
+					<a href="/contacts/" class="icon-b icon-2" alt="Контакты" title="Контакты"></a>
+					<a href="#" class="author-link link-first">Войти</a>
+					<a href="#" class="author-link">Зарегистрироваться</a> 
+				</nav> -->
+<div class="vacancy-button">
+<a href="/career/work/vacancies/">Хочу работать на «КАМАЗЕ»</a>
+</div>
+<div class="header-search-b">
+<form action="/search/">
+<input name="q" placeholder="Поиск" style="width: 230px;" type="text"/>
+<input class="icon-search" type="submit" value=""/>
+<input name="s" type="hidden" value="Y"/>
+</form>
+</div>
+<ul class="lang-vers-b">
+<li class="active"><a href="http://kamaz.ru/press/releases/">рус</a></li>
+<li><a href="http://kamaz.ru/en/">eng</a></li>
+</ul>
+</div>
+</div>
+<div class="header-bottom-b">
+<div class="center-block">
+<div class="menu-top">
+<menu>
+<li class="">
+<div>
+<a class="main-section" href="/about/">О компании</a>
+<div class="hidden-menu">
+<div class="menu-b-col">
+<menu>
+<li class="main_section"><a href="/about/index.php">О компании</a>
+</li>
+<li class=""><a href="/about/general-information/">Общая информация</a>
+</li>
+<li class=""><a href="/about/history/">История</a>
+</li>
+<li class=""><a href="/about/svedeniya/">Сведения о регистрации и товарном знаке</a>
+</li>
+<li class=""><a href="/about/awards/">Достижения и награды</a>
+</li>
+<li class=""><a href="/about/policy/">Политики</a>
+<ul>
+</ul>
+</li>
+<li class=""><a href="/about/development/">Устойчивое развитие</a>
+<ul>
+<li class=""><a href="/about/development/mission/">Миссия, видение</a></li>
+<li class=""><a href="/about/development/strategy/">Стратегия ПАО "КАМАЗ"</a></li>
+</ul>
+</li>
+<li class=""><a href="/about/group-companies/">Компании группы</a>
+</li>
+<li class=""><a href="http://kvantorium.ru/professions/">Виртуальный тур по учебным центрам ПАО «КАМАЗ»</a>
+</li>
+<li class=""><a href="/about/promo/" target="_blank">ПРОМЫШЛЕННЫЙ ТУРИЗМ</a>
+</li>
+</menu>
+</div>
+<div class="menu-b-col">
+<menu>
+<li class=""><a href="/about/compliance/">Комплаенс</a>
+<ul>
+</ul>
+</li>
+<li class=""><a href="/about/kamaz-master/">Команда "КАМАЗ-Мастер"</a>
+</li>
+<li class=""><a href="/about/npf-pervyy-promyshlennyy-alyans/">НПФ «Первый промышленный альянс»</a>
+<ul>
+</ul>
+</li>
+<li class=""><a href="/about/okhrana-truda/">Охрана труда</a>
+</li>
+</menu>
+</div>
+<div class="menu-b-col">
+<menu>
+<li class=""><a href="/about/quality/">Качество</a>
+<ul>
+<li class=""><a href="/about/quality/system/">Система менеджмента качества</a></li>
+<li class=""><a href="/about/quality/quality_policy/">Политика в области качества</a></li>
+<li class=""><a href="/about/quality/awards/">Награды в области качества</a></li>
+</ul>
+</li>
+<li class=""><a href="/about/production_system/">Производственная система</a>
+<ul>
+<li class=""><a href="/about/production_system/open_day/">«Ознакомительный семинар (промэкскурсия)»</a></li>
+<li class=""><a href="/about/production_system/konferentsii/">Мероприятия по бережливому производству</a></li>
+<li class=""><a href="/about/production_system/konkursy-po-proizvodstvu/">Конкурс по бережливому производству</a></li>
+<li class=""><a href="/about/production_system/zhurnal-po-berezhlivomu-proizvodstvu">Журнал по бережливому производству</a></li>
+</ul>
+</li>
+<li class=""><a href="/about/rmp/">Рабочее место поставщика</a>
+</li>
+<li class=""><a href="/about/edo/">Электронный документооборот</a>
+</li>
+</menu>
+</div>
+<div class="menu-b-col">
+<menu>
+<li class=""><a href="/about/supplier/">Закупки</a>
+<ul>
+<li class=""><a href="/about/supplier/basic_principles/">Управление закупочной деятельностью</a></li>
+<li class=""><a href="/about/supplier/purchasing_program/">Программа закупок</a></li>
+<li class=""><a href="/about/supplier/notification/">Извещения о закупках</a></li>
+<li class=""><a href="/about/supplier/notification/standard-forms-of-contracts.php">Договоры поставок</a></li>
+<li class=""><a href="/about/supplier/informatsiya-o-rezultatakh-zakupok/">Информация о результатах закупок</a></li>
+<li class=""><a href="/about/supplier/perechen-organov-po-sertifikatsii/">Перечень органов по сертификации IATF</a></li>
+<li class=""><a href="/about/supplier/potentsialnomu-postavshchiku/">Как стать поставщиком ПАО "КАМАЗ"</a></li>
+<li class=""><a href="/about/supplier/importozameshchenie/">Программа импортозамещения</a></li>
+<li class=""><a href="/about/supplier/portal/">Портал закупок</a></li>
+<li class=""><a href="/about/supplier/novosti-postavshchikam/">Новости поставщикам</a></li>
+<li class=""><a href="/about/arkhiv">АРХИВ</a></li>
+<li class=""><a href=""></a></li>
+<li class=""><a href=""></a></li>
+</ul>
+</li>
+<li class=""><a href="/about/tendery-dochernikh-obshchestv/">Тендеры дочерних обществ</a>
+<ul>
+</ul>
+</li>
+<li class=""><a href="/about/chattels/">Реализация движимого имущества</a>
+<ul>
+</ul>
+</li>
+<li class=""><a href="/about/implementation_of_real_estate/">Реализация объектов недвижимости</a>
+<ul>
+</ul>
+</li>
+</menu>
+</div>
+</div>
+</div>
+</li>
+<li class="">
+<div>
+<a class="main-section" href="/production/">Продукция</a>
+<div class="hidden-menu">
+<div class="menu-b-col">
+<menu>
+<li class="main_section"><a href="/production/index.php">Продукция</a>
+</li>
+<li class=""><a href="/production/new/">Новинки</a>
+</li>
+<li class=""><a href="/production/order/">Заявка на продукцию</a>
+</li>
+<li class=""><a href="/production/serial/">Серийные автомобили</a>
+<ul>
+<li class=""><a href="/production/serial/configurator/">Конфигуратор</a></li>
+<li class=""><a href="/production/serial/samosvaly/">Самосвалы</a></li>
+<li class=""><a href="/production/serial/sedelnye-tyagachi/">Седельные тягачи</a></li>
+<li class=""><a href="/production/serial/bortovye-avtomobili/">Бортовые автомобили</a></li>
+<li class=""><a href="/production/serial/avtomobil-s-kmu/">Автомобили с крано-манипуляторной установкой</a></li>
+<li class=""><a href="/production/serial/shassi/">Шасси</a></li>
+</ul>
+</li>
+</menu>
+</div>
+<div class="menu-b-col">
+<menu>
+<li class=""><a href="/production/gazoballonnaya-tekhnika/">Газобаллонная автотехника</a>
+</li>
+<li class=""><a href="/production/special/">Спецавтотехника</a>
+</li>
+<li class=""><a href="/production/buses/">Автобусы</a>
+</li>
+<li class=""><a href="/production/itis-kamaz/">ИТИС-КАМАZ</a>
+</li>
+<li class=""><a href="/production/trailers/">Прицепная техника</a>
+</li>
+<li class=""><a href="/production/printed-catalogs/">Печатные каталоги</a>
+</li>
+<li class=""><a href="/production/zavodu-izgotovitelyu-avtospetstekhniki/">Заводу-изготовителю автоспецтехники</a>
+<ul>
+</ul>
+</li>
+<li class=""><a href="/production/article/">Статьи</a>
+</li>
+</menu>
+</div>
+<div class="menu-b-col">
+<menu>
+<li class=""><a href="/production/parts/">Запасные части</a>
+<ul>
+<li class=""><a href="http://shop.kamaz.ru/">Интернет-магазин</a></li>
+<li class=""><a href="/production/parts/assortment-of-parts/">Ассортимент запасных частей</a></li>
+<li class=""><a href="/production/parts/protection-against-counterfeiting/">Защита от контрафакта</a></li>
+<li class=""><a href="http://azkamaz.ru/adress-reestr/">Где купить оригинальные запчасти?</a></li>
+<li class=""><a href="http://azkamaz.ru/parts/rasprodazha-nelikvidnoy-produktsii/">Распродажа неликвидной продукции</a></li>
+<li class=""><a href="/production/parts/faq/">Задать вопрос</a></li>
+</ul>
+</li>
+</menu>
+</div>
+<div class="menu-b-col">
+<menu>
+<li class=""><a href="/production/related/">Сопутствующая продукция</a>
+<ul>
+<li class=""><a href="/production/related/electrounits/">Электроагрегаты</a></li>
+<li class=""><a href="/production/related/engines/">Двигатели и силовые агрегаты</a></li>
+<li class=""><a href="/production/related/mini-tes/">Мини-ТЭС</a></li>
+<li class=""><a href="/production/produktsiya-diversifikatsii/departament-glavnogo-metrologa-/">Департамент главного метролога </a></li>
+</ul>
+</li>
+</menu>
+</div>
+</div>
+</div>
+</li>
+<li class="">
+<div>
+<a class="main-section" href="/purchase-and-services/">Покупка и сервис</a>
+<div class="hidden-menu">
+<div class="menu-b-col">
+<menu>
+<li class="main_section"><a href="/purchase-and-services/index.php">Покупка и сервис</a>
+</li>
+<li class=""><a href="/purchase-and-services/dealers/?dealer_type=dealer&amp;dealer_area=all">Дилеры</a>
+</li>
+<li class=""><a href="/purchase-and-services/become-dealer/">Как стать дилером</a>
+</li>
+<li class=""><a href="/purchase-and-services/become-partners/">Как стать официальным партнером</a>
+</li>
+<li class=""><a href="/purchase-and-services/dealers/?dealer_type=service&amp;dealer_area=all">Сервисные центры</a>
+</li>
+<li class=""><a href="/purchase-and-services/dealers/?dealer_type=store&amp;dealer_area=all">Розничные магазины запчастей</a>
+</li>
+<li class=""><a href="http://shop.kamaz.ru/" target="_blank">Интернет-магазин</a>
+</li>
+</menu>
+</div>
+<div class="menu-b-col">
+<menu>
+<li class=""><a href="https://cbe.kamaz.ru/">Личный кабинет контрагента</a>
+</li>
+<li class=""><a href="/purchase-and-services/lk/">Личный кабинет автовладельца</a>
+</li>
+<li class=""><a href="/purchase-and-services/spetspredlozheniya/">Спецпредложения</a>
+</li>
+<li class=""><a href="/purchase-and-services/lizing-ot-proizvoditelya/leasing/">Лизинг от производителя</a>
+</li>
+<li class=""><a href="/purchase-and-services/programma-trade-in/">ПРОГРАММА TRADE-IN</a>
+</li>
+<li class=""><a href="/purchase-and-services/lizingovye-programmy-s-partnerami/">Лизинговые программы с партнерами</a>
+</li>
+<li class=""><a href="/purchase-and-services/prodlennaya-garantiya/">Продленная гарантия</a>
+</li>
+</menu>
+</div>
+<div class="menu-b-col">
+<menu>
+<li class=""><a href="/purchase-and-services/services/">Сервис</a>
+<ul>
+<li class=""><a href="/purchase-and-services/services/sluzhba-pomoshchi-klientam/">Служба помощи клиентам</a></li>
+<li class=""><a href="/purchase-and-services/services/firmennyy-servis/">Фирменный сервис</a></li>
+<li class=""><a href="/purchase-and-services/services/service/">Техническое обслуживание</a></li>
+<li class=""><a href="/purchase-and-services/services/organizatsionno-tekhnicheskie-meropriyatiya/">Организационно-технические мероприятия</a></li>
+<li class=""><a href="/purchase-and-services/services/suvenirnaya-produktsiya/">Сувенирная продукция</a></li>
+<li class=""><a href="/purchase-and-services/services/originalnye-zapasnye-chasti/">Оригинальные запасные части</a></li>
+<li class=""><a href="/purchase-and-services/services/delivery/">Доставка автотехники</a></li>
+<li class=""><a href="/purchase-and-services/services/garantiya/">Гарантия</a></li>
+<li class=""><a href="/purchase-and-services/services/podmennyi-avtomobile/">Подменный автомобиль</a></li>
+<li class=""><a href="https://guide.kamaz.ru/">Эксплуатационная документация</a></li>
+</ul>
+</li>
+</menu>
+</div>
+</div>
+</div>
+</li>
+<li class="">
+<div>
+<a class="main-section" href="/investors-and-shareholders/">Инвесторам и акционерам</a>
+<div class="hidden-menu">
+<div class="menu-b-col">
+<menu>
+<li class="main_section"><a href="/investors-and-shareholders/index.php">Инвесторам и акционерам</a>
+</li>
+<li class=""><a href="/investors-and-shareholders/general-manager/">Генеральный директор</a>
+</li>
+<li class=""><a href="/investors-and-shareholders/board-of-directors/">Совет директоров</a>
+<ul>
+</ul>
+</li>
+<li class=""><a href="/investors-and-shareholders/board/">Правление</a>
+</li>
+<li class=""><a href="/investors-and-shareholders/audit-committee/">Ревизионная комиссия</a>
+</li>
+<li class=""><a href="/investors-and-shareholders/auditors/">Аудитор</a>
+</li>
+<li class=""><a href="/investors-and-shareholders/korporativnyy-sekretar-pao-kamaz/">Корпоративный секретарь</a>
+</li>
+</menu>
+</div>
+<div class="menu-b-col">
+<menu>
+<li class=""><a href="/investors-and-shareholders/financial-statements/">Финансовая отчетность</a>
+<ul>
+<li class=""><a href="/investors-and-shareholders/financial-statements/ifrs/">Финансовая отчётность по МСФО</a></li>
+<li class=""><a href="/investors-and-shareholders/financial-statements/ras/">Финансовая отчётность по РСБУ</a></li>
+</ul>
+</li>
+<li class=""><a href="/investors-and-shareholders/stocks/">Ценные бумаги и уставный капитал</a>
+<ul>
+<li class=""><a href="/investors-and-shareholders/stocks/shareholders/">Акционерный капитал</a></li>
+<li class=""><a href="/investors-and-shareholders/stocks/Stock-market/">Рынок акций</a></li>
+<li class=""><a href="/investors-and-shareholders/stocks/bonds/">Облигации </a></li>
+<li class=""><a href="/investors-and-shareholders/stocks/issue-documents/stocks/index.php">Эмиссионные документы</a></li>
+<li class=""><a href="/investors-and-shareholders/stocks/Distribution/">Распределение прибыли (история дивидендных выплат)</a></li>
+</ul>
+</li>
+</menu>
+</div>
+<div class="menu-b-col">
+<menu>
+<li class=""><a href="/investors-and-shareholders/information-disclosure/">Раскрытие информации</a>
+<ul>
+<li class=""><a href="/investors-and-shareholders/information-disclosure/annual-report/">Годовой отчёт</a></li>
+<li class=""><a href="/investors-and-shareholders/information-disclosure/otchet-ob-ustoychivom-razvitii/">Отчет об устойчивом развитии</a></li>
+<li class=""><a href="/investors-and-shareholders/information-disclosure/quarterly-reports/">Ежеквартальные отчёты</a></li>
+<li class=""><a href="/investors-and-shareholders/information-disclosure/essential-facts/">Сообщения о существенных фактах</a></li>
+<li class=""><a href="/investors-and-shareholders/information-disclosure/list-of-affiliates/">Список аффилированных лиц</a></li>
+<li class=""><a href="/investors-and-shareholders/information-disclosure/charter-and-internal-documents/">Устав</a></li>
+<li class=""><a href="/investors-and-shareholders/information-disclosure/new-edition/">Внутренние документы</a></li>
+<li class=""><a href="/investors-and-shareholders/information-disclosure/corporate-events-calendar/">Календарь корпоративных событий</a></li>
+<li class=""><a href="/investors-and-shareholders/information-disclosure/green-financing/">«Зеленое» финансирование</a></li>
+</ul>
+</li>
+<li class=""><a href="/investors-and-shareholders/organization-controlled-by-the-issuer-having-substantial-significance-for-it/">Подконтрольные эмитенту организации</a>
+<ul>
+</ul>
+</li>
+<li class=""><a href="/investors-and-shareholders/insider/">Инсайдерам</a>
+</li>
+</menu>
+</div>
+<div class="menu-b-col">
+<menu>
+<li class=""><a href="/investors-and-shareholders/shareholders/">Акционерам</a>
+<ul>
+<li class=""><a href="/investors-and-shareholders/shareholders/meeting-of-shareholders/">Собрания акционеров</a></li>
+<li class=""><a href="/investors-and-shareholders/forum/forum4/">Форум акционеров</a></li>
+<li class=""><a href="/investors-and-shareholders/shareholders/registrar/">Реестродержатель</a></li>
+<li class=""><a href="/investors-and-shareholders/shareholders/banking-details/">Банковские реквизиты</a></li>
+<li class=""><a href="/investors-and-shareholders/shareholders/izveshcheniya-o-sdelkakh/">Извещения о сделках, в совершении которых имеется заинтересованность</a></li>
+</ul>
+</li>
+<li class=""><a href="/investors-and-shareholders/providing-information/">Предоставление информации</a>
+</li>
+<li class=""><a href="/investors-and-shareholders/contacts-for-investors-and-shareholders/">Контакты для инвесторов и акционеров</a>
+</li>
+<li class=""><a href="/investors-and-shareholders/lk-shareholder">Личный кабинет акционера</a>
+</li>
+<li class=""><a href="/investors-and-shareholders/faq/">Часто задаваемые вопросы</a>
+</li>
+</menu>
+</div>
+</div>
+</div>
+</li>
+<li class="">
+<div>
+<a class="main-section" href="/career/">Карьера</a>
+<div class="hidden-menu">
+<div class="menu-b-col">
+<menu>
+<li class=""><a href="/career/why-kamaz/">Почему «КАМАЗ»</a>
+<ul>
+<li class=""><a href="/career/why-kamaz/personnel-policy/">Кадровая политика</a></li>
+<li class=""><a href="/career/why-kamaz/preimushchestva/">Преимущества</a></li>
+<li class=""><a href="/career/why-kamaz/nashi-tsennosti/">Наши ценности</a></li>
+<li class=""><a href="/career/why-kamaz/kamaz-faces/">Лица «КАМАЗа»</a></li>
+<li class=""><a href="/career/why-kamaz/zadat-vopros/">Вопрос-ответ</a></li>
+</ul>
+</li>
+</menu>
+</div>
+<div class="menu-b-col">
+<menu>
+<li class=""><a href="/career/work/">Работа в компании</a>
+<ul>
+<li class=""><a href="/career/work/vacancies/">Вакансии</a></li>
+<li class=""><a href="/career/work/send-summary/">Отправить резюме</a></li>
+<li class=""><a href="/career/work/shift-method/">Вахтовый метод</a></li>
+<li class=""><a href="/career/work/foreign/">Иностранным гражданам</a></li>
+<li class=""><a href="/career/work/inogorod/">Иногородним</a></li>
+</ul>
+</li>
+</menu>
+</div>
+<div class="menu-b-col">
+<menu>
+<li class=""><a href="/career/students/">Студентам</a>
+<ul>
+<li class=""><a href="/career/students/praktika/">Практика</a></li>
+<li class=""><a href="/career/students/tselevoe-obuchenie/">Целевая подготовка</a></li>
+</ul>
+</li>
+</menu>
+</div>
+<div class="menu-b-col">
+<menu>
+<li class=""><a href="/career/sotrudnikam/">Сотрудникам</a>
+<ul>
+<li class=""><a href="/career/sotrudnikam/friend/">Акция «Приведи друга»</a></li>
+<li class=""><a href="/career/sotrudnikam/loylty/">Программа лояльности</a></li>
+<li class=""><a href="/career/sotrudnikam/mobile-app/">Мобильное приложение</a></li>
+<li class=""><a href="/career/sotrudnikam/education/">Корпоративный учебный центр</a></li>
+<li class=""><a href="/career/sotrudnikam/league-good-deeds/">Лига добрых дел</a></li>
+<li class=""><a href="/career/sotrudnikam/youth/">Молодежная организация</a></li>
+</ul>
+</li>
+</menu>
+</div>
+<div class="menu-b-col">
+<menu>
+<li class=""><a href="/career/contacts/">Контакты</a>
+<ul>
+<li class=""><a href="/career/contacts/contacts/">Контакты</a></li>
+<li class=""><a href="/career/contacts/zadat-vopros/">Задать вопрос</a></li>
+<li class=""><a href="/career/contacts/obrsvyaz/">Ваша обратная связь</a></li>
+<li class=""><a href="/career/contacts/ekskurs/">Экскурсия на «КАМАЗ»</a></li>
+</ul>
+</li>
+</menu>
+</div>
+</div>
+</div>
+</li>
+<li class="active">
+<div>
+<a class="main-section" href="/press/">Пресс-центр</a>
+<div class="hidden-menu">
+<div class="menu-b-col">
+<menu>
+<li class="main_section"><a href="/press/index.php">Пресс-центр</a>
+</li>
+<li class="active"><a href="/press/releases/">Новости</a>
+</li>
+<li class=""><a href="http://vestikamaza.ru/gazeta/">Газета «Вести КАМАЗа»</a>
+</li>
+</menu>
+</div>
+<div class="menu-b-col">
+<menu>
+<li class=""><a href="/press/interview/">Интервью</a>
+</li>
+<li class=""><a href="/press/media/">СМИ о нас</a>
+</li>
+<li class=""><a href="/press/photo/">Фотогалерея</a>
+</li>
+</menu>
+</div>
+<div class="menu-b-col">
+<menu>
+<li class=""><a href="/press/video/">Видеогалерея</a>
+</li>
+<li class=""><a href="/press/tv/">ТВ Вести КАМАЗа</a>
+</li>
+<li class=""><a href="/press/tv_archive/">ТВ Вести КАМАЗа (архив по август 2022 года)</a>
+</li>
+<li class=""><a href="/press/corporate-magazine/">Корпоративный журнал</a>
+</li>
+</menu>
+</div>
+<div class="menu-b-col">
+<menu>
+<li class=""><a href="/press/contacts/">Контакты пресс-службы</a>
+</li>
+</menu>
+</div>
+</div>
+</div>
+</li>
+</menu>
+</div>
+</div>
+</div>
+</header>
+<div class="middle">
+<div class="center-block padding-b">
+<div class="page-top-b clearfix">
+<nav class="crumbs"><a href="/">Главная</a> <span class="icon-c">&gt;</span> <a href="/" title='официальный сайт ПАО "КАМАЗ"'>официальный сайт ПАО "КАМАЗ"</a> <span class="icon-c">&gt;</span> <a href="/press/" title="Пресс-центр">Пресс-центр</a> <span class="icon-c">&gt;</span> <a href="/press/releases/" title="Новости">Новости</a> <span class="icon-c">&gt;</span> <span class="active">Новости</span></nav> <nav class="icon-link">
+<div class="wrap-shar display">
+<a class="shar" href=""></a>
+<div class="shar-list" id="share-list">
+<ul>
+<li>
+<a data-id="vkontakte" href="" rel="nofollow" target="_blank">
+<span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_vkontakte"></span></span>
+<i calss="icon-1"></i>ВКонтакте				</a>
+</li>
+<li>
+<a data-id="facebook" href="" rel="nofollow" target="_blank">
+<span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_facebook"></span></span>
+<i calss="icon-2"></i>Facebook				</a>
+</li>
+<li>
+<a data-id="gplus" href="" rel="nofollow" target="_blank">
+<span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_gplus"></span></span>
+<i calss="icon-3"></i>Google+				</a>
+</li>
+<li>
+<a data-id="twitter" href="" rel="nofollow" target="_blank">
+<span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_twitter"></span></span>
+<i calss="icon-4"></i>Twitter				</a>
+</li>
+<li>
+<a data-id="linkedin" href="" rel="nofollow" target="_blank">
+<span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_linkedin"></span></span>
+<i calss="icon-5"></i>LinkedIn				</a>
+</li>
+<li>
+<a data-id="lj" href="" rel="nofollow" target="_blank">
+<span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_lj"></span></span>
+<i calss="icon-6"></i>LiveJournal				</a>
+</li>
+<li>
+<a data-id="moikrug" href="" rel="nofollow" target="_blank">
+<span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_moikrug"></span></span>
+<i calss="icon-7"></i>Мой круг				</a>
+</li>
+<li>
+<a data-id="odnoklassniki" href="" rel="nofollow" target="_blank">
+<span class="b-share-popup__icon"><span class="b-share-icon b-share-icon_odnoklassniki"></span></span>
+<i calss="icon-9"></i>Одноклассники				</a>
+</li>
+</ul>
+</div>
+</div>
+<span class="ya_share" data-desc="" data-img="" data-link="https://kamaz.ru/press/releases/" data-title="" style="display: none"></span>
+<a alt="Подписка" class="mail" href="/subscribe/?sf_RUB_ID[]=22" title="Подписка"></a><a alt="RSS" class="rss" href="rss/" target="_blank" title="RSS"></a> </nav>
+</div>
+<div class="clear"></div>
+<div class="column l-col">
+</div>
+<div class="column r-col">
+<div class="title-b-page">
+<h1>Новости</h1> </div>
+<div id="ajax_filter">
+<a class="rss-link" href="/press/releases/rss/" target="_self" title="RSS"></a>
+<div class="filter-b wider">
+<form action="/press/releases/" class="smartfilter" method="get" name="arPressFilter_form">
+<div class="input-b display year">
+<div class="title">Год</div> <select class="customSelect" name="year">
+<option value="YEAR_NULL">Все</option>
+<option value="arPressFilter_YEAR_2479467106">2024</option>
+<option value="arPressFilter_YEAR_229457857">2023</option>
+<option value="arPressFilter_YEAR_2057965399">2022</option>
+<option value="arPressFilter_YEAR_3819134701">2021</option>
+<option value="arPressFilter_YEAR_2493804155">2020</option>
+<option value="arPressFilter_YEAR_3327493404">2019</option>
+<option value="arPressFilter_YEAR_2974987658">2018</option>
+<option value="arPressFilter_YEAR_569223195">2017</option>
+<option value="arPressFilter_YEAR_1458215053">2016</option>
+<option value="arPressFilter_YEAR_3487811895">2015</option>
+<option value="arPressFilter_YEAR_3102013857">2014</option>
+<option value="arPressFilter_YEAR_645950466">2013</option>
+<option value="arPressFilter_YEAR_1367825556">2012</option>
+<option value="arPressFilter_YEAR_3364752686">2011</option>
+<option value="arPressFilter_YEAR_3213442488">2010</option>
+<option value="arPressFilter_YEAR_3746477149">2009</option>
+<option value="arPressFilter_YEAR_2823390411">2008</option>
+<option value="arPressFilter_YEAR_955685210">2007</option>
+<option value="arPressFilter_YEAR_1341237708">2006</option>
+<option value="arPressFilter_YEAR_3606640758">2005</option>
+<option value="arPressFilter_YEAR_2717894880">2004</option>
+<option value="arPressFilter_YEAR_1067146563">2003</option>
+</select>
+<input id="arPressFilter_YEAR_2479467106" name="arPressFilter_YEAR_2479467106" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_229457857" name="arPressFilter_YEAR_229457857" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_2057965399" name="arPressFilter_YEAR_2057965399" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_3819134701" name="arPressFilter_YEAR_3819134701" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_2493804155" name="arPressFilter_YEAR_2493804155" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_3327493404" name="arPressFilter_YEAR_3327493404" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_2974987658" name="arPressFilter_YEAR_2974987658" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_569223195" name="arPressFilter_YEAR_569223195" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_1458215053" name="arPressFilter_YEAR_1458215053" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_3487811895" name="arPressFilter_YEAR_3487811895" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_3102013857" name="arPressFilter_YEAR_3102013857" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_645950466" name="arPressFilter_YEAR_645950466" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_1367825556" name="arPressFilter_YEAR_1367825556" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_3364752686" name="arPressFilter_YEAR_3364752686" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_3213442488" name="arPressFilter_YEAR_3213442488" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_3746477149" name="arPressFilter_YEAR_3746477149" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_2823390411" name="arPressFilter_YEAR_2823390411" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_955685210" name="arPressFilter_YEAR_955685210" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_1341237708" name="arPressFilter_YEAR_1341237708" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_3606640758" name="arPressFilter_YEAR_3606640758" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_2717894880" name="arPressFilter_YEAR_2717894880" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_YEAR_1067146563" name="arPressFilter_YEAR_1067146563" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<i class="border"></i>
+</div>
+<div class="input-b display month">
+<div class="title">Месяц</div> <select class="customSelect" name="month">
+<option value="MONTH_NULL">Все</option>
+<option value="arPressFilter_MONTH_2212294583">Январь</option>
+<option value="arPressFilter_MONTH_450215437">Февраль</option>
+<option value="arPressFilter_MONTH_1842515611">Март</option>
+<option value="arPressFilter_MONTH_4088798008">Апрель</option>
+<option value="arPressFilter_MONTH_2226203566">Май</option>
+<option value="arPressFilter_MONTH_498629140">Июнь</option>
+<option value="arPressFilter_MONTH_1790921346">Июль</option>
+<option value="arPressFilter_MONTH_4194326291">Август</option>
+<option value="arPressFilter_MONTH_2366072709">Сентябрь</option>
+<option value="arPressFilter_MONTH_2707236321">Октябрь</option>
+<option value="arPressFilter_MONTH_3596227959">Ноябрь</option>
+<option value="arPressFilter_MONTH_1330857165">Декабрь</option>
+</select>
+<input id="arPressFilter_MONTH_2212294583" name="arPressFilter_MONTH_2212294583" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_MONTH_450215437" name="arPressFilter_MONTH_450215437" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_MONTH_1842515611" name="arPressFilter_MONTH_1842515611" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_MONTH_4088798008" name="arPressFilter_MONTH_4088798008" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_MONTH_2226203566" name="arPressFilter_MONTH_2226203566" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_MONTH_498629140" name="arPressFilter_MONTH_498629140" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_MONTH_1790921346" name="arPressFilter_MONTH_1790921346" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_MONTH_4194326291" name="arPressFilter_MONTH_4194326291" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_MONTH_2366072709" name="arPressFilter_MONTH_2366072709" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_MONTH_2707236321" name="arPressFilter_MONTH_2707236321" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_MONTH_3596227959" name="arPressFilter_MONTH_3596227959" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<input id="arPressFilter_MONTH_1330857165" name="arPressFilter_MONTH_1330857165" onclick="smartFilter.click(this)" style="display:none;" type="checkbox" value="Y"/>
+<i class="border"></i>
+</div>
+<div class="input-b display calendar">
+<div class="title">Дата</div>
+<input id="ACTIVE_TO" name="ACTIVE_TO" type="text" value=""/><img alt="Выбрать дату в календаре" border="0" class="calendar-icon" onclick="BX.calendar({node:this, field:'ACTIVE_TO', form: 'arPressFilter_form', bTime: false, currentTime: '1707864847', bHideTime: true});" onmouseout="BX.removeClass(this, 'calendar-icon-hover');" onmouseover="BX.addClass(this, 'calendar-icon-hover');" src="/bitrix/templates/.default/images/icon-calendar.png"/> </div>
+<button class="apply-filter" id="set_filter" name="set_filter" onclick="smartFilter.submit(this);return false;" value="Y">Показать</button>
+<button class="reset-filter-b" id="del_filter" name="del_filter" onclick="smartFilter.submit(this);return false;" value="Y">Сбросить фильтр</button>
+<div class="modef" id="modef" style="display:none">
+<a class="showchild" href=""></a>
+<!--<span class="ecke"></span>-->
+</div>
+</form>
+</div>
+<br/>
+<div class="news-list clearfix">
+<div class="news-list-item" id="bx_3218110189_252867">
+<div class="img">
+<a href="/press/releases/nulevoy_avans_dlya_klientov_kamaz_lizinga_1/"><img alt="Нулевой аванс для клиентов «КАМАЗ-ЛИЗИНГа»" height="202" src="/upload/resize_cache/iblock/94b/150_1000_1/94bc7a6a3c6403e6c367f3a7426b7708.jpg" title="Нулевой аванс для клиентов «КАМАЗ-ЛИЗИНГа»" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							13 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/nulevoy_avans_dlya_klientov_kamaz_lizinga_1/">Нулевой аванс для клиентов «КАМАЗ-ЛИЗИНГа»</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	 Лизинговая компания «КАМАЗ» напоминает партнёрам о действующем для них специальном продукте «Юбилейный» с нулевым авансом.
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="news-list-item" id="bx_3218110189_252865">
+<div class="img">
+<a href="/press/releases/na_kamaze_uvelichen_razmer_kompensatsiy/"><img alt="На «КАМАЗе» увеличен размер компенсаций" height="112" src="/upload/resize_cache/iblock/eeb/150_1000_1/eeba75d55db2e324a6eb731d18149c59.JPG" title="На «КАМАЗе» увеличен размер компенсаций" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							13 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/na_kamaze_uvelichen_razmer_kompensatsiy/">На «КАМАЗе» увеличен размер компенсаций</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	 «КАМАЗ» увеличил размер компенсаций для сотрудников: на эти цели компания выделит свыше 251 млн рублей.
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="news-list-item" id="bx_3218110189_252872">
+<div class="img">
+<a href="/press/releases/avtobusy_nefaz_dlya_naberezhnykh_chelnov_1/"><img alt="Автобусы НЕФАЗ для Набережных Челнов" height="99" src="/upload/resize_cache/iblock/a5a/150_1000_1/a5a9145f35cfe72bcfd436465d9856fc.jpeg" title="Автобусы НЕФАЗ для Набережных Челнов" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							13 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/avtobusy_nefaz_dlya_naberezhnykh_chelnov_1/">Автобусы НЕФАЗ для Набережных Челнов</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	 Сегодня, 13 февраля, в Набережных Челнах состоялась торжественная передача муниципалитету десяти автобусов НЕФАЗ. Всего до конца марта в городской автопарк будет поставлено 46 таких автобусов.
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="news-list-item" id="bx_3218110189_252864">
+<div class="img">
+<a href="/press/releases/generalnyy_direktor_kamaza_vystupil_na_kollegii_minpromtorga_rt/"><img alt="Генеральный директор «КАМАЗа» выступил на Коллегии Минпромторга РТ" height="99" src="/upload/resize_cache/iblock/4b0/150_1000_1/4b0b3618f1a671ffd3a4767b54a50fe6.jpg" title="Генеральный директор «КАМАЗа» выступил на Коллегии Минпромторга РТ" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							13 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/generalnyy_direktor_kamaza_vystupil_na_kollegii_minpromtorga_rt/">Генеральный директор «КАМАЗа» выступил на Коллегии Минпромторга РТ</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	Генеральный директор ПАО «КАМАЗ» Сергей Когогин выступил с докладом о роботизации производства в рамках заседания итоговой Коллегии министерства промышленности и торговли Республики Татарстан, состоявшейся в понедельник, 12 февраля, в Казани.
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="news-list-item" id="bx_3218110189_252843">
+<div class="img">
+<a href="/press/releases/dvigateli_tmz_sootvetstvuyut_trebovaniyam_tekhnicheskogo_reglamenta_tamozhennogo_soyuza/"><img alt="Двигатели ТМЗ соответствуют требованиям технического регламента Таможенного союза" height="100" src="/upload/resize_cache/iblock/d0d/150_1000_1/d0d9cdb2ae2a0e2cf9dd7c759f987e65.jpg" title="Двигатели ТМЗ соответствуют требованиям технического регламента Таможенного союза" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							12 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/dvigateli_tmz_sootvetstvuyut_trebovaniyam_tekhnicheskogo_reglamenta_tamozhennogo_soyuza/">Двигатели ТМЗ соответствуют требованиям технического регламента Таможенного союза</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	На Тутаевском моторном заводе, дочернем предприятии «КАМАЗа» в Ярославской области, прошёл инспекционный контроль за продукцией, сертифицированной на соответствие требованиям технического регламента Таможенного союза.
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="news-list-item" id="bx_3218110189_252842">
+<div class="img">
+<a href="/press/releases/lokalizatsiya_avtokomponentov_dlya_kabiny_k5_opyt_prz/"><img alt="Локализация автокомпонентов для кабины К5: опыт ПРЗ" height="100" src="/upload/resize_cache/iblock/0ae/150_1000_1/0aebbad00290937b9d8a3f78d52f69d7.jpg" title="Локализация автокомпонентов для кабины К5: опыт ПРЗ" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							12 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/lokalizatsiya_avtokomponentov_dlya_kabiny_k5_opyt_prz/">Локализация автокомпонентов для кабины К5: опыт ПРЗ</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	В течение 2023 года на «КАМАЗе» продолжалась масштабная программа по локализации и импортозамещению комплектующих изделий автомобилей КАМАЗ-54901. Одной из наиболее сложных задач в рамках этой работы было освоение производства лонжеронов.
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="news-list-item" id="bx_3218110189_252824">
+<div class="img">
+<a href="/press/releases/predstaviteli_gruppy_oat_na_lyzhnom_festivale/"><img alt="Представители Группы ОАТ на лыжном фестивале" height="100" src="/upload/resize_cache/iblock/613/150_1000_1/61373a7a791107b3c2108ec2d666a5bc.jpg" title="Представители Группы ОАТ на лыжном фестивале" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							11 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/predstaviteli_gruppy_oat_na_lyzhnom_festivale/">Представители Группы ОАТ на лыжном фестивале</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	Сотрудники Сердобского филиала ООО «ДААЗ» (предприятие Группы ОАТ, входящей в структуру ПАО «КАМАЗ») приняли участие в лыжном фестивале «Сокольи горы», состоявшемся в Самаре.
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="news-list-item" id="bx_3218110189_252822">
+<div class="img">
+<a href="/press/releases/na_kamaze_sostoyalsya_konkurs_nastavnikov/"><img alt="На «КАМАЗе» состоялся конкурс наставников" height="97" src="/upload/resize_cache/iblock/e74/150_1000_1/e748a6481a591986d137ce83ab291349.jpg" title="На «КАМАЗе» состоялся конкурс наставников" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							11 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/na_kamaze_sostoyalsya_konkurs_nastavnikov/">На «КАМАЗе» состоялся конкурс наставников</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	На автомобильном заводе ПАО «КАМАЗ» подвели итоги конкурса наставников.
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="news-list-item" id="bx_3218110189_252821">
+<div class="img">
+<a href="/press/releases/predpriyatie_gruppy_oat_proshlo_audit_po_ekostandartu/"><img alt="Предприятие Группы ОАТ прошло аудит по экостандарту" height="150" src="/upload/resize_cache/iblock/8de/150_1000_1/8de97c944987d246ccfbd14d0659acfd.jpg" title="Предприятие Группы ОАТ прошло аудит по экостандарту" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							10 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/predpriyatie_gruppy_oat_proshlo_audit_po_ekostandartu/">Предприятие Группы ОАТ прошло аудит по экостандарту</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	В ООО «Автосвет» (предприятие Группы ОАТ, входящей в структуру ПАО «КАМАЗ») состоялся второй надзорный аудит, который подтвердил соответствие системы экологического менеджмента требованиям стандарта ISO 14001:2015.
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="news-list-item" id="bx_3218110189_252820">
+<div class="img">
+<a href="/press/releases/toplivo_so_skidkoy_pri_oformlenii_kamaza_v_lizing/"><img alt="Топливо со скидкой при оформлении КАМАЗа в лизинг" height="126" src="/upload/resize_cache/iblock/d6e/150_1000_1/d6eae306edbc04e8adf8699e02f72b9e.JPG" title="Топливо со скидкой при оформлении КАМАЗа в лизинг" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							10 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/toplivo_so_skidkoy_pri_oformlenii_kamaza_v_lizing/">Топливо со скидкой при оформлении КАМАЗа в лизинг</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	Лизинговая компания «КАМАЗ» напоминает об акции, проводимой совместно с сервисом заправок «Топливо+».
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="news-list-item" id="bx_3218110189_252819">
+<div class="img">
+<a href="/press/releases/na_kamaze_nametili_plany_po_kulturno_massovym_i_sportivnym_meropriyatiyam/"><img alt="На «КАМАЗе» наметили планы по культурно-массовым и спортивным мероприятиям" height="99" src="/upload/resize_cache/iblock/014/150_1000_1/0142b47adcfcca46ed797dce2ce20864.jpg" title="На «КАМАЗе» наметили планы по культурно-массовым и спортивным мероприятиям" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							10 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/na_kamaze_nametili_plany_po_kulturno_massovym_i_sportivnym_meropriyatiyam/">На «КАМАЗе» наметили планы по культурно-массовым и спортивным мероприятиям</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	В здании аппарата объединённой первичной профсоюзной организации ПАО «КАМАЗ» прошли комиссии по культурно-массовым мероприятиям, физической культуре и спорту.
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="news-list-item" id="bx_3218110189_252826">
+<div class="img">
+<a href="/press/releases/novoe_naznachenie_na_kamaze_5/"><img alt="Новое назначение на «КАМАЗе»" height="100" src="/upload/resize_cache/iblock/70d/150_1000_1/70d91b9cd250360e0b38e616305c35bb.jpg" title="Новое назначение на «КАМАЗе»" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							9 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/novoe_naznachenie_na_kamaze_5/">Новое назначение на «КАМАЗе»</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	 С 12 февраля 2024 года директором завода двигателей ПАО «КАМАЗ» назначен Олег Косарев, ранее занимавший должность исполнительного директора АО «КАМА ДИЗЕЛЬ».
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="news-list-item" id="bx_3218110189_252817">
+<div class="img">
+<a href="/press/releases/kamaz_posetila_sopredsedatel_varmsu/"><img alt="«КАМАЗ» посетила сопредседатель ВАРМСУ" height="100" src="/upload/resize_cache/iblock/649/150_1000_1/649239095b4cbd1b49996b705f25bf4a.jpg" title="«КАМАЗ» посетила сопредседатель ВАРМСУ" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							9 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/kamaz_posetila_sopredsedatel_varmsu/">«КАМАЗ» посетила сопредседатель ВАРМСУ</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	 В рамках делового визита в Республику Татарстан «КАМАЗ» посетила сопредседатель Всероссийской ассоциации развития местного самоуправления (ВАРМСУ) Ирина Гусева.
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="news-list-item" id="bx_3218110189_252823">
+<div class="img">
+<a href="/press/releases/afk_sistema_i_kamaz_podpisali_soglashenie_o_sotrudnichestve_v_oblasti_vodorodnykh_tekhnologiy/"><img alt="АФК «Система» и «КАМАЗ» подписали соглашение о сотрудничестве  в области водородных технологий" height="99" src="/upload/resize_cache/iblock/108/150_1000_1/10837f1d4d904e449561478dcb6f5065.jpg" title="АФК «Система» и «КАМАЗ» подписали соглашение о сотрудничестве  в области водородных технологий" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							9 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/afk_sistema_i_kamaz_podpisali_soglashenie_o_sotrudnichestve_v_oblasti_vodorodnykh_tekhnologiy/">АФК «Система» и «КАМАЗ» подписали соглашение о сотрудничестве  в области водородных технологий</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	 ПАО АФК «Система» (MOEX: AFKS) (далее – АФК «Система» или Корпорация), публичная российская инвестиционная компания, и ПАО «КАМАЗ» заключили соглашение о сотрудничестве в области развития водородных технологий.
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="news-list-item" id="bx_3218110189_252813">
+<div class="img">
+<a href="/press/releases/na_kuznechnom_zavode_proverili_proizvodstvennye_protsessy_v_formate_go_see/"><img alt="На кузнечном заводе проверили производственные процессы  в формате Go&amp;See" height="106" src="/upload/resize_cache/iblock/53b/150_1000_1/53bc5cc8edeefd2d3a6d6d095ac2e9a9.jpg" title="На кузнечном заводе проверили производственные процессы  в формате Go&amp;See" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							9 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/na_kuznechnom_zavode_proverili_proizvodstvennye_protsessy_v_formate_go_see/">На кузнечном заводе проверили производственные процессы  в формате Go&amp;See</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	Первый заместитель генерального директора «КАМАЗа» – исполнительный директор Владимир Курганов возобновил традицию обхода производственных площадок в формате Go&amp;See. Первым объектом посещения стал кузнечный завод.
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="news-list-item" id="bx_3218110189_252776">
+<div class="img">
+<a href="/press/releases/strakhovanie_kasko_dlya_klientov_kamaz_lizinga/"><img alt="Страхование КАСКО для клиентов «КАМАЗ-ЛИЗИНГа»" height="139" src="/upload/resize_cache/iblock/c20/150_1000_1/c20e905592ce038c8efbb2d237b62daa.jpg" title="Страхование КАСКО для клиентов «КАМАЗ-ЛИЗИНГа»" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							8 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/strakhovanie_kasko_dlya_klientov_kamaz_lizinga/">Страхование КАСКО для клиентов «КАМАЗ-ЛИЗИНГа»</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	Лизинговая компания «КАМАЗ» сообщает своим клиентам, что в 2024 году страхование автотехники на шасси КАМАЗ, приобретённой в лизинг от производителя, осуществляют четыре компании: АО «СОГАЗ», ПАО «САК «ЭНЕРГОГАРАНТ», САО «ВСК», ПАО «ГРУППА РЕНЕССАНС СТРАХОВАНИЕ»
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="news-list-item" id="bx_3218110189_252774">
+<div class="img">
+<a href="/press/releases/nefaz_pristupil_k_realizatsii_postavlennykh_planov/"><img alt="«НЕФАЗ» приступил к реализации поставленных планов" height="112" src="/upload/resize_cache/iblock/31d/150_1000_1/31ddf0a8bf05a76f3ac3ee0385f68fe0.jpg" title="«НЕФАЗ» приступил к реализации поставленных планов" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							8 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/nefaz_pristupil_k_realizatsii_postavlennykh_planov/">«НЕФАЗ» приступил к реализации поставленных планов</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	 В 2024 году бизнес-план ПАО «НЕФАЗ», дочернего предприятия «КАМАЗа» в Башкирии, предусматривает выпуск в общей сложности 2,3 тыс. единиц пассажирской техники (автобусы, электротранспорт), более 7,1 тыс. единиц спецнадстроек (самосвальные установки, вахтовые автомобили) и 1,8 тыс. единиц прицепной техники.
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="news-list-item" id="bx_3218110189_252771">
+<div class="img">
+<a href="/press/releases/kamaz_podvyel_finansovye_itogi_za_2023_god_po_rsbu/"><img alt="«КАМАЗ» подвёл финансовые итоги за 2023 год по РСБУ" height="84" src="/upload/resize_cache/iblock/897/150_1000_1/897beae2bf47cc78f681f68c4e673497.jpg" title="«КАМАЗ» подвёл финансовые итоги за 2023 год по РСБУ" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							8 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/kamaz_podvyel_finansovye_itogi_za_2023_god_po_rsbu/">«КАМАЗ» подвёл финансовые итоги за 2023 год по РСБУ</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	 ПАО «КАМАЗ» опубликовало финансовые результаты за 2023 год по РСБУ. В результате деятельности компании в отчётном периоде получена чистая прибыль в размере 12 млрд 703 млн рублей.
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="news-list-item" id="bx_3218110189_252764">
+<div class="img">
+<a href="/press/releases/aeroport_begishevo_priznan_luchshim_v_rossii/"><img alt="Аэропорт Бегишево признан лучшим в России" height="84" src="/upload/resize_cache/iblock/0c8/150_1000_1/0c8f9dbc3f398b07d85de2a6c29e7296.jpg" title="Аэропорт Бегишево признан лучшим в России" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							7 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/aeroport_begishevo_priznan_luchshim_v_rossii/">Аэропорт Бегишево признан лучшим в России</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	Аэропорт Бегишево, дочернее предприятие «КАМАЗа», признан лучшим аэропортом страны в рамках национальной премии «Воздушные Ворота России».
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="news-list-item" id="bx_3218110189_252748">
+<div class="img">
+<a href="/press/releases/razdatochnye_korobki_dlya_avtomobiley_kamaz_budet_vypuskat_pao_tmz/"><img alt="Раздаточные коробки для автомобилей КАМАЗ будет выпускать ПАО «ТМЗ»" height="100" src="/upload/resize_cache/iblock/286/150_1000_1/286fe3186dfc2206c678ce4c8fd6041c.jpg" title="Раздаточные коробки для автомобилей КАМАЗ будет выпускать ПАО «ТМЗ»" width="150"/></a>
+</div>
+<div class="data">
+<div class="date">
+							7 Февраля 2024						</div>
+<div class="title">
+<a href="/press/releases/razdatochnye_korobki_dlya_avtomobiley_kamaz_budet_vypuskat_pao_tmz/">Раздаточные коробки для автомобилей КАМАЗ будет выпускать ПАО «ТМЗ»</a>
+</div>
+<div class="text"><p style="text-align: justify;">
+	«КАМАЗ» передаст производство раздаточных коробок на площадку Тутаевского моторного завода, дочернего предприятия в Ярославской области.
+</p></div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="pagination_wrapper clearfix">
+<div class="pagination">
+<ul>
+<li class="prev disabled">
+<a href="" target="_self">Пред.</a>
+</li>
+<li class="active"><a href="/press/releases/" target="_self">1</a></li>
+<li><a href="/press/releases/?PAGEN_1=2" target="_self">2</a></li>
+<li><a href="/press/releases/?PAGEN_1=3" target="_self">3</a></li>
+<li><a href="/press/releases/?PAGEN_1=4" target="_self">4</a></li>
+<li><a href="/press/releases/?PAGEN_1=5" target="_self">5</a></li>
+<li class="next"><a href="/press/releases/?PAGEN_1=2" target="_self">След.</a></li>
+</ul>
+</div>
+</div> </div> </div>
+<div class="bottom-page-b">
+<div class="scroll-top">
+<a href="#">Наверх</a>
+</div>
+<div class="clear"></div>
+</div>
+<nav class="banner full-page">
+<!--'start_frame_cache_y0XwfU'--><!--'end_frame_cache_y0XwfU'--><!--'start_frame_cache_2DJmFo'--><!--'end_frame_cache_2DJmFo'--> </nav>
+<div class="clear clear-footer"></div>
+</div>
+</div>
+</div>
+<footer>
+<div class="fotter-top-b">
+<div class="center-block">
+<div id="bx_incl_area_11_1"></div> <menu class="footer-menu left">
+<li>
+<a href="/about/">О компании</a>
+<menu>
+<li><a class="link" href="/about/history/">История компании</a></li>
+<li><a class="link" href="/about/development/mission/">Устойчивое развитие</a></li>
+<li><a class="link" href="/about/group-companies/">Компании группы</a></li>
+<li><a class="link" href="/about/kamaz-master/">КАМАЗ-мастер</a></li>
+<li><a class="link" href="/contacts/">Офисы</a></li>
+</menu></li> 
+<li>
+<a href="/production/">Продукция</a>
+<menu>
+<li><a class="link" href="/production/parts/">Запасные части</a></li>
+<li><a class="link" href="/production/produktsiya-diversifikatsii/">Продукция диверсификации</a></li>
+</menu></li> 
+<li>
+<a href="/purchase-and-services/">Покупка и сервис</a>
+<menu>
+<li><a class="link" href="/purchase-and-services/dealers/?dealer_type=dealer&amp;dealer_area=all">Дилеры</a></li>
+<li><a class="link" href="/purchase-and-services/lizing-ot-proizvoditelya/leasing/">Лизинг от производителя</a></li>
+<li><a class="link" href="https://market.kamaz.ru/">Маркетплейс техники КАМАЗ</a></li>
+<li><a class="link" href="/purchase-and-services/dealers/?dealer_type=service&amp;dealer_area=all">Сервисы</a></li>
+<li><a class="link" href="/purchase-and-services/lizingovye-programmy-s-partnerami/">Лизинговые программы с партнерами</a></li>
+<li><a class="link" href="http://tfk-kamaz.ru/servis-kamaz/">Сервисные центры ТФК КАМАЗ</a></li>
+</menu></li> 
+<li>
+<a href="/investors-and-shareholders/">Инвесторам и акционерам</a>
+<menu>
+<li><a class="link" href="/investors-and-shareholders/information-disclosure/">Раскрытие информации</a></li>
+<li><a class="link" href="/investors-and-shareholders/financial-statements/">Финансовая отчетность</a></li>
+<li><a class="link" href="/investors-and-shareholders/faq/">Частые вопросы</a></li>
+<li><a class="link" href="http://www.e-disclosure.ru/portal/company.aspx?id=33">Раскрытие информации на странице ООО "Интерфакс - Центр раскрытия корпоративной информации"</a></li>
+</menu></li>
+</menu>
+<menu class="footer-menu right border-left">
+<li>
+<a href="/contacts/">
+					Контакты				</a>
+</li>
+<li>
+<a href="/career/work/vacancies/">
+					Вакансии				</a>
+</li>
+<li>
+<a href="/about/policy/procurement-policy/">
+					Закупки				</a>
+</li>
+<li>
+<a href="/purchase-and-services/">
+					Дилерам				</a>
+</li>
+<li>
+<a href="/about/promo/">
+					Пром. Туризм				</a>
+</li>
+<li>
+<a href="/press/">
+					Пресс-центр				</a>
+</li>
+</menu>
+<div class="clear"> </div>
+<div class="contact-info">
+<div class="adress-b">						
+							423827 рф, рЕСПУБЛИКА ТАТАРСТАН, Г. нАБЕРЕЖНЫЕ чЕЛНЫ, ПРОСПЕКТ АВТОЗАВОДСКИЙ, 2						</div>
+<div class="phone-b">
+<a alt="Обратная связь" href="/feedback/" target="_blank" title="Обратная связь">Call-центр с 6:00 - 22:00 МСК</a>
+<br/>
+<span><i></i>8 (800) 555-00-99</span>
+<a class="email-b" href="mailto:callcentre@kamaz.org">callcentre@kamaz.org</a>
+</div>
+</div>
+<nav class="soc-b">
+<a alt="ВКонтакте" class="vk" href="http://vk.com/club1191183" target="_blank" title="ВКонтакте"></a>
+<a alt="Youtube" class="yt" href="https://www.youtube.com/c/%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%D0%9A%D0%90%D0%9C%D0%90%D0%971969" target="_blank" title="Youtube"></a>
+<a alt="Дзен" class="zen" href="https://dzen.ru/vestikamaza" target="_blank" title="Дзен"></a>
+<a alt="Одноклассники" class="ok" href="https://ok.ru/kamazgroup" target="_blank" title="Одноклассники"></a>
+<a alt="Телеграм" class="tg" href="https://t.me/pao_kamaz" target="_blank" title="Телеграм"></a>
+<a alt="TikTok" class="tt" href="https://www.tiktok.com/@kamaz_official" target="_blank" title="TikTok"></a>
+<a alt="rutube" class="rtb" href="https://rutube.ru/channel/23325369/" target="_blank" title="rutube"></a> </nav>
+</div>
+</div>
+<div class="footer-bottom-b">
+<div class="center-block">
+<div class="license">
+            			© Пао “камаз” 1999-2024<br/>
+<span>Все права на материалы опубликованные на сайте, защищены в соответствии с российским и международным законодательством об авторском праве и смежных правах</span> </div>
+<div class="defa">
+<span>Разработка<br/>сайтa</span>
+<a class="defa-logo" href="http://www.defa.ru" target="_blank"><img alt="DEFA" src="/bitrix/templates/main/images/logo-defa.png" title="DEFA"/></a> </div>
+</div>
+</div>
+</footer>
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=27083789&amp;from=informer" rel="nofollow" target="_blank"><img alt="Яндекс.Метрика" class="ym-advanced-informer" data-cid="27083789" data-lang="ru" src="https://informer.yandex.ru/informer/27083789/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"/></a>
+<!-- /Yandex.Metrika informer -->
 <!-- Yandex.Metrika counter -->
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/27083789" style="position:absolute; left:-9999px;"/></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<style>
+        nav.icon-link .wrap-shar { display: none; }
+        nav.icon-link a.print { display: none; }
+        </style>
+<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'WEEK_START':'1','AMPM_MODE':false});(window.BX||top.BX).message({'MONTH_1':'Январь','MONTH_2':'Февраль','MONTH_3':'Март','MONTH_4':'Апрель','MONTH_5':'Май','MONTH_6':'Июнь','MONTH_7':'Июль','MONTH_8':'Август','MONTH_9':'Сентябрь','MONTH_10':'Октябрь','MONTH_11':'Ноябрь','MONTH_12':'Декабрь','MONTH_1_S':'Января','MONTH_2_S':'Февраля','MONTH_3_S':'Марта','MONTH_4_S':'Апреля','MONTH_5_S':'Мая','MONTH_6_S':'Июня','MONTH_7_S':'Июля','MONTH_8_S':'Августа','MONTH_9_S':'Сентября','MONTH_10_S':'Октября','MONTH_11_S':'Ноября','MONTH_12_S':'Декабря','MON_1':'Янв','MON_2':'Фев','MON_3':'Мар','MON_4':'Апр','MON_5':'Май','MON_6':'Июн','MON_7':'Июл','MON_8':'Авг','MON_9':'Сен','MON_10':'Окт','MON_11':'Ноя','MON_12':'Дек','DAY_OF_WEEK_0':'Воскресенье','DAY_OF_WEEK_1':'Понедельник','DAY_OF_WEEK_2':'Вторник','DAY_OF_WEEK_3':'Среда','DAY_OF_WEEK_4':'Четверг','DAY_OF_WEEK_5':'Пятница','DAY_OF_WEEK_6':'Суббота','DOW_0':'Вс','DOW_1':'Пн','DOW_2':'Вт','DOW_3':'Ср','DOW_4':'Чт','DOW_5':'Пт','DOW_6':'Сб','FD_SECOND_AGO_0':'#VALUE# секунд назад','FD_SECOND_AGO_1':'#VALUE# секунду назад','FD_SECOND_AGO_10_20':'#VALUE# секунд назад','FD_SECOND_AGO_MOD_1':'#VALUE# секунду назад','FD_SECOND_AGO_MOD_2_4':'#VALUE# секунды назад','FD_SECOND_AGO_MOD_OTHER':'#VALUE# секунд назад','FD_SECOND_DIFF_0':'#VALUE# секунд','FD_SECOND_DIFF_1':'#VALUE# секунда','FD_SECOND_DIFF_10_20':'#VALUE# секунд','FD_SECOND_DIFF_MOD_1':'#VALUE# секунда','FD_SECOND_DIFF_MOD_2_4':'#VALUE# секунды','FD_SECOND_DIFF_MOD_OTHER':'#VALUE# секунд','FD_SECOND_SHORT':'#VALUE#с','FD_MINUTE_AGO_0':'#VALUE# минут назад','FD_MINUTE_AGO_1':'#VALUE# минуту назад','FD_MINUTE_AGO_10_20':'#VALUE# минут назад','FD_MINUTE_AGO_MOD_1':'#VALUE# минуту назад','FD_MINUTE_AGO_MOD_2_4':'#VALUE# минуты назад','FD_MINUTE_AGO_MOD_OTHER':'#VALUE# минут назад','FD_MINUTE_DIFF_0':'#VALUE# минут','FD_MINUTE_DIFF_1':'#VALUE# минута','FD_MINUTE_DIFF_10_20':'#VALUE# минут','FD_MINUTE_DIFF_MOD_1':'#VALUE# минута','FD_MINUTE_DIFF_MOD_2_4':'#VALUE# минуты','FD_MINUTE_DIFF_MOD_OTHER':'#VALUE# минут','FD_MINUTE_0':'#VALUE# минут','FD_MINUTE_1':'#VALUE# минуту','FD_MINUTE_10_20':'#VALUE# минут','FD_MINUTE_MOD_1':'#VALUE# минуту','FD_MINUTE_MOD_2_4':'#VALUE# минуты','FD_MINUTE_MOD_OTHER':'#VALUE# минут','FD_MINUTE_SHORT':'#VALUE#мин','FD_HOUR_AGO_0':'#VALUE# часов назад','FD_HOUR_AGO_1':'#VALUE# час назад','FD_HOUR_AGO_10_20':'#VALUE# часов назад','FD_HOUR_AGO_MOD_1':'#VALUE# час назад','FD_HOUR_AGO_MOD_2_4':'#VALUE# часа назад','FD_HOUR_AGO_MOD_OTHER':'#VALUE# часов назад','FD_HOUR_DIFF_0':'#VALUE# часов','FD_HOUR_DIFF_1':'#VALUE# час','FD_HOUR_DIFF_10_20':'#VALUE# часов','FD_HOUR_DIFF_MOD_1':'#VALUE# час','FD_HOUR_DIFF_MOD_2_4':'#VALUE# часа','FD_HOUR_DIFF_MOD_OTHER':'#VALUE# часов','FD_HOUR_SHORT':'#VALUE#ч','FD_YESTERDAY':'вчера','FD_TODAY':'сегодня','FD_TOMORROW':'завтра','FD_DAY_AGO_0':'#VALUE# дней назад','FD_DAY_AGO_1':'#VALUE# день назад','FD_DAY_AGO_10_20':'#VALUE# дней назад','FD_DAY_AGO_MOD_1':'#VALUE# день назад','FD_DAY_AGO_MOD_2_4':'#VALUE# дня назад','FD_DAY_AGO_MOD_OTHER':'#VALUE# дней назад','FD_DAY_DIFF_0':'#VALUE# дней','FD_DAY_DIFF_1':'#VALUE# день','FD_DAY_DIFF_10_20':'#VALUE# дней','FD_DAY_DIFF_MOD_1':'#VALUE# день','FD_DAY_DIFF_MOD_2_4':'#VALUE# дня','FD_DAY_DIFF_MOD_OTHER':'#VALUE# дней','FD_DAY_AT_TIME':'#DAY# в #TIME#','FD_DAY_SHORT':'#VALUE#д','FD_MONTH_AGO_0':'#VALUE# месяцев назад','FD_MONTH_AGO_1':'#VALUE# месяц назад','FD_MONTH_AGO_10_20':'#VALUE# месяцев назад','FD_MONTH_AGO_MOD_1':'#VALUE# месяц назад','FD_MONTH_AGO_MOD_2_4':'#VALUE# месяца назад','FD_MONTH_AGO_MOD_OTHER':'#VALUE# месяцев назад','FD_MONTH_DIFF_0':'#VALUE# месяцев','FD_MONTH_DIFF_1':'#VALUE# месяц','FD_MONTH_DIFF_10_20':'#VALUE# месяцев','FD_MONTH_DIFF_MOD_1':'#VALUE# месяц','FD_MONTH_DIFF_MOD_2_4':'#VALUE# месяца','FD_MONTH_DIFF_MOD_OTHER':'#VALUE# месяцев','FD_MONTH_SHORT':'#VALUE#мес','FD_YEARS_AGO_0':'#VALUE# лет назад','FD_YEARS_AGO_1':'#VALUE# год назад','FD_YEARS_AGO_10_20':'#VALUE# лет назад','FD_YEARS_AGO_MOD_1':'#VALUE# год назад','FD_YEARS_AGO_MOD_2_4':'#VALUE# года назад','FD_YEARS_AGO_MOD_OTHER':'#VALUE# лет назад','FD_YEARS_DIFF_0':'#VALUE# лет','FD_YEARS_DIFF_1':'#VALUE# год','FD_YEARS_DIFF_10_20':'#VALUE# лет','FD_YEARS_DIFF_MOD_1':'#VALUE# год','FD_YEARS_DIFF_MOD_2_4':'#VALUE# года','FD_YEARS_DIFF_MOD_OTHER':'#VALUE# лет','FD_YEARS_SHORT_0':'#VALUE#л','FD_YEARS_SHORT_1':'#VALUE#г','FD_YEARS_SHORT_10_20':'#VALUE#л','FD_YEARS_SHORT_MOD_1':'#VALUE#г','FD_YEARS_SHORT_MOD_2_4':'#VALUE#г','FD_YEARS_SHORT_MOD_OTHER':'#VALUE#л','CAL_BUTTON':'Выбрать','CAL_TIME_SET':'Установить время','CAL_TIME':'Время','FD_LAST_SEEN_TOMORROW':'завтра в #TIME#','FD_LAST_SEEN_NOW':'только что','FD_LAST_SEEN_TODAY':'сегодня в #TIME#','FD_LAST_SEEN_YESTERDAY':'вчера в #TIME#','FD_LAST_SEEN_MORE_YEAR':'более года назад'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_KMZ','SERVER_TZ_OFFSET':'10800','SITE_ID':'ru','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1707854047','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'a65861451d01051c29bbe55ac25958ca'});</script><script src="/bitrix/js/main/core/core.js?1532241171125972" type="text/javascript"></script>
+<script src="/bitrix/js/main/core/core_popup.js?153224117170773" type="text/javascript"></script>
+<script src="/bitrix/js/main/core/core_date.js?153224116660200" type="text/javascript"></script>
+<script src="//kamaz.ru/bitrix/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="/bitrix/js/main/core/core_ajax.js?153224117141004" type="text/javascript"></script>
+<script src="/bitrix/js/main/core/core_window.js?153224109797284" type="text/javascript"></script>
+<script type="text/javascript">
+var ALXerrorLogoImgSrc='/bitrix/images/altasib.errorsend/altasib.errorsend.png';
+var ALXerrorSendMessages={
+	'head':'Найденная Вами ошибка в тексте',
+	'footer':'<b>Послать сообщение об ошибке автору?</b><br/><span style="font-size:10px;color:#7d7d7d">(ваш браузер останется на той же странице)</span>',
+	'comment':'Комментарий для автора (необязательно)',
+	'TitleForm':'Сообщение об ошибке',
+	'ButtonSend':'Отправить',
+	'LongText':'Вы выбрали слишком большой объем текста.',
+	'LongText2':'Попробуйте ещё раз.',
+	'text_ok':'Ваше сообщение отправлено.',
+	'text_ok2':'Спасибо за внимание!'
+}
+</script>
+<script async="" src="/bitrix/js/altasib.errorsend/error.js" type="text/javascript"></script>
+<script type="text/javascript">BX.message({'FANCYBOX2_CLOSE':'Закрыть','FANCYBOX2_PREV':'Назад','FANCYBOX2_NEXT':'Вперед'})</script>
+<script src="/js/html5shiv.js"></script><script charset="utf-8" src="https://yandex.st/share/share.js" type="text/javascript"></script>
+<script src="/bitrix/templates/.default/js/jquery/jquery.mousewheel.min.js?15166277741045" type="text/javascript"></script>
+<script src="/bitrix/templates/.default/js/jquery/jquery.migrate.min.js?14656101467199" type="text/javascript"></script>
+<script src="/bitrix/templates/.default/js/jquery/jquery.jscrollpane.min.js?146561014514111" type="text/javascript"></script>
+<script src="/bitrix/templates/.default/js/jquery/jquery.dot.min.js?14656101413333" type="text/javascript"></script>
+<script src="/bitrix/templates/.default/js/jquery/jquery.styleForms.js?15119532959291" type="text/javascript"></script>
+<script src="/bitrix/templates/.default/js/jquery/jquery.modernizr.min.js?146561014615496" type="text/javascript"></script>
+<script src="/bitrix/templates/.default/js/jquery/jquery.fancybox2.min.js?146561014323215" type="text/javascript"></script>
+<script src="/bitrix/templates/.default/js/jquery/jquery.maskedinput.min.js?15129253634324" type="text/javascript"></script>
+<script src="/bitrix/templates/.default/js/jquery/jquery.cookie.min.js?14656101411139" type="text/javascript"></script>
+<script src="/bitrix/templates/.default/js/jquery/jquery.jcarousel.min.js?146561014417209" type="text/javascript"></script>
+<script src="/bitrix/templates/.default/js/jquery/jquery.jcarousel.connected-carousels.js?15166277541603" type="text/javascript"></script>
+<script src="/bitrix/templates/.default/js/scripts.js?16745498419986" type="text/javascript"></script>
+<script src="/bitrix/templates/.default/js/fancySelect.js?15167811514446" type="text/javascript"></script>
+<script src="/bitrix/templates/.default/js/yashare.js?1511940380471" type="text/javascript"></script>
+<script src="/bitrix/templates/.default/js/select2/select2.min.js?155043951267994" type="text/javascript"></script>
+<script src="/bitrix/templates/.default/js/select2/i18n/ru.js?15504392591132" type="text/javascript"></script>
+<script src="/bitrix/templates/.default/components/kamaz/catalog.smart.filter/.default/script.js?14656102284775" type="text/javascript"></script>
+<script src="/bitrix/templates/.default/js/jquery/jquery.caroufredsel.min.js?146561014154780" type="text/javascript"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "ab6530297d3f6fec49110cda47e6337c"]); _ba.push(["host", "kamaz.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=TiyRy*ktIZ/oRitYxfNbuXvwmJdAae/WT1qMUj68m2PJt807PnSpJ14G9PV1brisDYsJe/nwsKgcQxD0XVUFfFFUhG99tAcNKjCPoyZghSNcUkf6NF10QzGpUzrz*HbzUBrrqqdS*EPgW7/kLrgFd0EFisAuXTTG9NGPPVfVLm0-';</script>
+<script>
+	var smartFilter = new JCSmartFilter('/press/releases/');
+</script><script type="text/javascript">if(window.BX)BX.ready(function() {(new BX.CMenuOpener({'parent':'bx_incl_area_11_1','id':'comp_11_1','component_id':'3554c1a150c82ffba0d17fa0fb6e2253','HINT':{'TITLE':'Пункты меню  с произвольными url','TEXT':'(компонент defa:menu.sections.with.custom.url)<br />Дополнение меню названиями секций с произвольными url'},'menu':[{'ICONCLASS':'bx-context-toolbar-settings-icon','TITLE':'','TEXT':'Редактировать параметры компонента','ONCLICK':'(new BX.CDialog({\'content_url\':\'/bitrix/admin/component_props.php?component_name=defa%3Amenu.sections.with.custom.url&component_template=&template_id=main&lang=ru&src_path=%2F.bottom.menu_ext.php&src_line=13&src_page=%2Fpress%2Freleases%2F&src_site=ru&siteTemplateId=main\',\'width\':\'\',\'height\':\'\',\'min_width\':\'450\'})).Show()','DEFAULT':true,'TYPE':'components2_props'},{'TYPE':'components2_submenu','TEXT':'components2_submenu','ICON':'parameters-2','MENU':[{'ICONCLASS':'bx-context-toolbar-settings-icon','TITLE':'','TEXT':'Редактировать параметры компонента','ONCLICK':'(new BX.CDialog({\'content_url\':\'/bitrix/admin/component_props.php?component_name=defa%3Amenu.sections.with.custom.url&component_template=&template_id=main&lang=ru&src_path=%2F.bottom.menu_ext.php&src_line=13&src_page=%2Fpress%2Freleases%2F&src_site=ru&siteTemplateId=main\',\'width\':\'\',\'height\':\'\',\'min_width\':\'450\'})).Show()','DEFAULT':true,'TYPE':'components2_props'},{'TEXT':'Пункты меню  с произвольными url (defa:menu.sections.with.custom.url)','ICON':'parameters-2','MENU':[{'ICONCLASS':'del-cache','TITLE':'','TEXT':'Обновить кеш компонента','ONCLICK':'jsComponentUtils.ClearCache(\'component_name=defa%3Amenu.sections.with.custom.url&site_id=ru&sessid=37a9185d9883dc2db2b817f4d7730a5a\');'},{'SEPARATOR':'Y'},{'ICONCLASS':'','TITLE':'Временно отключить компонент с сохранением настроек','TEXT':'Отключить компонент','ONCLICK':'jsComponentUtils.EnableComponent(\'component_name=defa%3Amenu.sections.with.custom.url&lang=ru&src_path=%2F.bottom.menu_ext.php&src_line=13&src_site=ru&active=N&sessid=37a9185d9883dc2db2b817f4d7730a5a\');'}]}]}]})).Show()});</script><script type="text/javascript">if(window.BX&&BX.admin)BX.admin.setComponentBorder('bx_incl_area_11_1')</script>
 <script type="text/javascript">
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(55339717, "init", {
+   ym(27083789, "init", {
         clickmap:true,
         trackLinks:true,
         accurateTrackBounce:true,
         webvisor:true
    });
-</script>
-<noscript><div><img alt="" src="https://mc.yandex.ru/watch/55339717" style="position:absolute; left:-9999px;"/></div></noscript>
-<!-- /Yandex.Metrika counter -->
-<!-- wrap-top -->
-<div class="wrap wrap-top d-none d-lg-block">
-<div class="container">
-<div class="row align-items-center">
-<div class="col">
-<!-- top-link -->
-<div class="top-link d-flex justify-content-between">
-<div class="top-link-item">
-<img alt="Председательство России" src="/upload/medialibrary/8f8/russian.png" title="Председательство России"/> <a href="https://cis.minsk.by/thematic/58/2024/1">Председательство России</a>
-</div>
-<div class="top-link-item">
-<img alt="Год волонтерского движения" src="/upload/medialibrary/895/volonter01.png" title="Год волонтерского движения"/><a href="https://cis.minsk.by/thematic/59/2024/0">Год волонтерского движения</a>
-</div>
-<div class="top-link-item">
-<img alt="Культурная столица – Самарканд" src="/upload/medialibrary/01e/samarkand.png" title="Культурная столица – Самарканд"/><a href="https://cis.minsk.by/thematic/62/2024/2">Культурная столица – Самарканд</a>
-</div>
-<div class="top-link-item">
-<img alt="Спортивная столица – Гюмри" src="/upload/medialibrary/12345/gumri.png" title="Спортивная столица – Гюмри"/> <a href="https://cis.minsk.by/thematic/61/2024/3">Спортивная столица – Гюмри</a>
-</div>
-<div class="top-link-item">
-<img alt="Молодежная столица – Ташкент" src="/upload/medialibrary/12345/tashkent.png" title="Молодежная столица – Ташкент"/> <a href="https://cis.minsk.by/thematic/60/2024/4">Молодежная столица – Ташкент</a>
-</div>
-<div class="top-link-item">
-<img alt="" src="/bitrix/templates/.default/img/mir.png"/>
-<a href="https://mir24.tv/" rel="nofollow" target="_blank">МИР-24</a>
-<a href="http://www.mirtv.ru/" rel="nofollow" target="_blank">МИР-ТВ</a>
-<a href="http://radiomir.fm/" rel="nofollow" target="_blank">Радио МИР</a> </div>
-</div>
-<!-- /.top-link -->
-</div>
-<div class="col d-none">
-<!-- top-contact -->
-<div class="top-contact">
-<a href="">Контакты</a>
-<a href="#">Задать вопрос</a>
-</div>
-<!-- /.top-contact -->
-</div>
-<div class="col order-md-3 order-sm-2 d-none">
-<!-- top-social -->
-<div class="top-social">
-<span>Мы в соцсетях:</span>
-<!-- <a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a> -->
-<a class="vk" href="#"><i aria-hidden="true" class="fa fa-vk"></i></a>
-<a class="youtube" href="#"><i aria-hidden="true" class="fa fa-youtube-play"></i></a>
-</div>
-<!-- /.top-social -->
-</div>
-</div>
-</div>
-</div>
-<!-- /.wrap-top -->
-<!-- wrap-flag -->
-<div class="wrap wrap-flag d-none d-md-block">
-<div class="container-fluid">
-<div class="row no-gutters">
-<div class="col">
-<div class="flag-item" data-hour="1">
-<a href="/country/azerbaydzhan/">
-<img alt="Азербайджан" src="/upload/iblock/c8d/c8d8ba71e82bceac962cf2f745ca6e4a.jpg"/>
-<div class="flag-item-text">
-<span class="country">Азербайджан</span>
-<span class="state">Баку </span>
-<span class="time"></span>
-</div>
-</a>
-</div>
-</div>
-<div class="col">
-<div class="flag-item" data-hour="1">
-<a href="/country/armeniya/">
-<img alt="Армения" src="/upload/iblock/ca3/ca3ecfe4b707cf129d9a2598c35090d6.jpg"/>
-<div class="flag-item-text">
-<span class="country">Армения</span>
-<span class="state">Ереван</span>
-<span class="time"></span>
-</div>
-</a>
-</div>
-</div>
-<div class="col">
-<div class="flag-item" data-hour="0">
-<a href="/country/belarus/">
-<img alt="Беларусь" src="/upload/iblock/49f/49fdd0a7ae64b425898ffdea42b4f61a.jpg"/>
-<div class="flag-item-text">
-<span class="country">Беларусь</span>
-<span class="state">Минск</span>
-<span class="time"></span>
-</div>
-</a>
-</div>
-</div>
-<div class="col">
-<div class="flag-item" data-hour="3">
-<a href="/country/kz/">
-<img alt="Казахстан" src="/upload/iblock/728/728e9d79bf898c0457f9936180abaab2.jpg"/>
-<div class="flag-item-text">
-<span class="country">Казахстан</span>
-<span class="state">Астана</span>
-<span class="time"></span>
-</div>
-</a>
-</div>
-</div>
-<div class="col">
-<div class="flag-item" data-hour="3">
-<a href="/country/kyrgyzstan/">
-<img alt="Кыргызстан" src="/upload/iblock/3f4/3f45f0136d738a07aac427d95d2efa48.jpg"/>
-<div class="flag-item-text">
-<span class="country">Кыргызстан</span>
-<span class="state">Бишкек</span>
-<span class="time"></span>
-</div>
-</a>
-</div>
-</div>
-<div class="col">
-<div class="flag-item" data-hour="-1">
-<a href="/country/moldova/">
-<img alt="Молдова" src="/upload/iblock/d14/d143e7d393dfaf0792df2f9da0c5dd17.jpg"/>
-<div class="flag-item-text">
-<span class="country">Молдова</span>
-<span class="state">Кишинев</span>
-<span class="time"></span>
-</div>
-</a>
-</div>
-</div>
-<div class="col">
-<div class="flag-item" data-hour="0">
-<a href="/country/ru/">
-<img alt="Россия" src="/upload/iblock/a8e/a8e7c19eb7336f9f6b4a2a854b9f698a.jpg"/>
-<div class="flag-item-text">
-<span class="country">Россия</span>
-<span class="state">Москва</span>
-<span class="time"></span>
-</div>
-</a>
-</div>
-</div>
-<div class="col">
-<div class="flag-item" data-hour="2">
-<a href="/country/tadzhikistan/">
-<img alt="Таджикистан" src="/upload/iblock/168/168578460d872b1ef3ad1e520a0e849e.jpg"/>
-<div class="flag-item-text">
-<span class="country">Таджикистан</span>
-<span class="state">Душанбе</span>
-<span class="time"></span>
-</div>
-</a>
-</div>
-</div>
-<div class="col">
-<div class="flag-item" data-hour="2">
-<a href="/country/turkmenistan/">
-<img alt="Туркменистан" src="/upload/iblock/cea/ceaf77dc25b2b34a81ef1e6acd95745d.jpg"/>
-<div class="flag-item-text">
-<span class="country">Туркменистан</span>
-<span class="state">Ашхабад</span>
-<span class="time"></span>
-</div>
-</a>
-</div>
-</div>
-<div class="col">
-<div class="flag-item" data-hour="2">
-<a href="/country/uzbekistan/">
-<img alt="Узбекистан" src="/upload/iblock/5c3/5c3530276e03f79a62c358d4c2265bee.jpg"/>
-<div class="flag-item-text">
-<span class="country">Узбекистан</span>
-<span class="state">Ташкент</span>
-<span class="time"></span>
-</div>
-</a>
-</div>
-</div>
-<div class="col">
-<div class="flag-item" data-hour="-1">
-<a href="/country/ukraina/">
-<img alt="Украина" src="/upload/iblock/f05/3fskca60rosbyon4heri6vtli35xdxsy.jpg"/>
-<div class="flag-item-text">
-<span class="country">Украина</span>
-<span class="state">Киев</span>
-<span class="time"></span>
-</div>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- /.wrap-flag -->
-<!-- wrap-header -->
-<div class="wrap wrap-header">
-<div class="container">
-<div class="row">
-<div class="col">
-<nav class="navbar d-flex d-flex justify-content-between align-items-center">
-<!-- logo -->
-<div class="navbar-logo">
-<a href="/">
-<div class="logo-img"><img alt="" src="/bitrix/templates/.default/img/logo.png"/></div>
-<div class="logo-text">
-									ИНТЕРНЕТ-ПОРТАЛ СНГ
-									<span>ПРОСТРАНСТВО ИНТЕГРАЦИИ</span>
-</div>
-</a>
-</div>
-<!-- /.logo -->
-<div class="navbar-nav d-flex">
-<!-- menu -->
-							﻿
-<ul class="menu d-none d-xl-block">
-<li class=""><a href="http://www.cis.minsk.by/">Сайт Исполкома СНГ</a></li>
-<li class="active"><a href="/news/">Новости</a>
-<ul class="sub-menu">
-<li><a href="/news/564/">Новости СНГ</a></li>
-<li><a href="/news/565/">Анонсы событий СНГ</a></li>
-<li><a href="/news/566/">Аналитика и комментарии</a></li>
-<li><a href="/news/567/">В странах Содружества</a></li>
-<li><a href="/news/568/">Содружество интеграций</a></li>
-<li><a href="/news/569/">Инновации и наука</a></li>
-</ul></li>
-<li class=""><a href="/cooperation/">Направления сотрудничества</a>
-<ul class="sub-menu">
-<li><a href="/cooperation/2840/">Гуманитарное сотрудничество</a></li>
-<li><a href="/cooperation/3239/">Межпарламентское сотрудничество</a></li>
-<li><a href="/cooperation/2861/">Межрегиональное и приграничное сотрудничество</a></li>
-<li><a href="/cooperation/2822/">Общеполитические вопросы</a></li>
-<li><a href="/cooperation/2834/">Правовое сотрудничество</a></li>
-<li><a href="/cooperation/2828/">Сотрудничество в сфере безопасности</a></li>
-<li><a href="/cooperation/2978/">Сотрудничество в сфере межгосударственного обмена научно-технической информацией</a></li>
-<li><a href="/cooperation/2825/">Сотрудничество в сфере финансов</a></li>
-<li><a href="/cooperation/2837/">Экономическое сотрудничество</a></li>
-</ul></li>
-<li class=""><a href="/page/">Информация</a>
-<ul class="sub-menu">
-<li><a href="/page/3502/">О Содружестве</a></li>
-<li><a href="/page/3367/">Органы СНГ</a></li>
-<li><a href="/page/3383/">Выборы и референдумы СНГ</a></li>
-<li><a href="/page/3372/">Документы СНГ</a></li>
-<li><a href="/page/3698/">Сборник аналитических материалов Исполкома СНГ</a></li>
-<li><a href="/page/3466/">Исполнительный комитет СНГ</a></li>
-<li><a href="/page/3533/">Информагентства стран СНГ</a></li>
-<li><a href="/page/3441/">Разное</a></li>
-</ul></li>
-<li class=""><a href="/reestr/">Реестр документов</a>
-<ul class="sub-menu">
-<li><a href="https://cis.minsk.by/reestrv2/">Единый реестр правовых актов и других документов Содружества Независимых Государств</a></li>
-<li><a href="/cooperation/3745/86862/">Реестр (Перечень) подписанных международных документов о межрегиональном и приграничном сотрудничестве государств – участников СНГ</a></li>
-<li><a href="https://e-cis.info/upload/iblock/75d/75d278cb324da14f09cb31ce5b9d1f7c.xlsx">Перечень конкурентноспособной продукции государств – участников СНГ</a></li>
-</ul></li>
-<li class=""><a href="/gallery/">Фотогалерея</a></li>
-</ul>
-<!-- /.menu -->
-<!-- search -->
-<div class="navbar-button">
-<button class="btn-search" type="submit"><i class="fa fa-search"></i></button>
-</div>
-<!-- /.search -->
-<!-- toggler -->
-<div class="navbar-button d-block d-xl-none">
-<button class="btn-toggler" data-target="#actionbar" type="button"><i class="fa fa-bars"></i></button>
-</div>
-<!-- /.toggler -->
-</div>
-</nav>
-<div class="form-search-wrap">
-<form action="/search/" class="form-search">
-<div class="row">
-<div class="col-12 col-sm-8 col-md-10">
-<input class="form-control" maxlength="250" name="q" placeholder="Введите текст для поиска..." size="15" type="text" value=""/>
-</div>
-<div class="col-12 col-sm-4 col-md-2">
-<input class="btn btn-block btn-search-submit" name="s" type="submit" value="Искать"/>
-</div>
-</div>
-</form>
-</div>
-</div>
-</div>
-<!-- /.row -->
-</div>
-</div>
-<!-- /.wrap-header -->
-<!-- wrap-breadcrumb -->
-<div class="wrap wrap-breadcrumb">
-<div class="container">
-<div class="row">
-<div class="col-12">
-<div class="breadcrumb-box" itemprop="http://schema.org/breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-<div class="breadcrumb-item" id="bx_breadcrumb_0" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-<a href="/" itemprop="url" title="Главная">
-<span itemprop="name">Главная</span>
-</a>
-<meta content="1" itemprop="position"/>
-</div>
-<div class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-<i class="fa fa-angle-right"></i>
-<span itemprop="name">Новости</span>
-<meta content="2" itemprop="position"/>
-</div><div style="clear:both"></div></div> </div>
-</div>
-</div>
-</div>
-<!-- /.wrap-breadcrumb -->
-<!-- wrap-content -->
-<div class="wrap wrap-content">
-<div class="container">
-<div class="row">
-<div class="col-sm-7 col-md-7 col-lg-8 col-xl-9">
-<div class="news-filter-box mb-5">
-<a class="active" href="/news/?year=2024">2024</a>
-<a href="/news/?year=2023">2023</a>
-<a href="/news/?year=2022">2022</a>
-<a href="/news/?year=2021">2021</a>
-<a href="/news/?year=2020">2020</a>
-<a href="/news/?year=2019">2019</a>
-<a href="/news/?year=2018">2018</a>
-</div>
-<div class="news-filter-box mb-30">
-<a href="/news/?year=2024&amp;month=01">Янв</a>
-<a href="/news/?year=2024&amp;month=02">Фев</a>
-<a href="/news/?year=2024&amp;month=03">Мар</a>
-<a href="/news/?year=2024&amp;month=04">Апр</a>
-<a href="/news/?year=2024&amp;month=05">Май</a>
-<a href="/news/?year=2024&amp;month=06">Июн</a>
-<a href="/news/?year=2024&amp;month=07">Июл</a>
-<a href="/news/?year=2024&amp;month=08">Авг</a>
-<a href="/news/?year=2024&amp;month=09">Сен</a>
-<a href="/news/?year=2024&amp;month=10">Окт</a>
-<a href="/news/?year=2024&amp;month=11">Ноя</a>
-<a href="/news/?year=2024&amp;month=12">Дек</a>
-</div>
-<!-- news-box -->
-<div class="news-box">
-<div class="row">
-<div class="col-12 wow fadeInUp">
-<div class="box-name d-flex justify-content-between align-items-center">
-<h1>Все новости</h1>
-</div>
-<!-- /.new-box-name -->
-</div>
-<div class="col-12">
-<div class="row">
-<div class="wow fadeInUp col-12 col-lg-6 col-xl-4" id="bx_651765591_115893">
-<div class="news-item-big">
-<div class="image">
-<a href="/news/564/115893/">
-<img alt="" class="lazy" data-src="/upload/iblock/dfc/jiwqic2g2teoxh87shanw3tsggtypqv4.jpg" height="320" width="480"/>
-</a>
-</div>
-<div class="name"><a href="/news/564/115893/">Заявление Миссии наблюдателей от Содружества Независимых Государств по результатам наблюдения за подготовкой и проведением внеочередных выборов Президента Азербайджанской Республики</a></div>
-<div class="date">
-<div><i class="fa fa-calendar-check-o"></i>13 фев 2024</div>
-<div><a href="/news/564/"><i class="fa fa-newspaper-o"></i>Новости СНГ</a></div>
-</div>
-</div>
-</div>
-<div class="wow fadeInUp col-12 col-lg-6 col-xl-4" id="bx_651765591_115896">
-<div class="news-item-big">
-<div class="image">
-<a href="/news/564/115896/">
-<img alt="" class="lazy" data-src="/upload/resize_cache/iblock/d81/500_355_1/sxouyqgd2j9i1xhb7vga3f6s12og914p.jpg" height="333" width="500"/>
-</a>
-</div>
-<div class="name"><a href="/news/564/115896/">Представители Исполкома СНГ приняли участие в конференции по вопросам обеспечения безопасности на транспорте</a></div>
-<div class="date">
-<div><i class="fa fa-calendar-check-o"></i>13 фев 2024</div>
-<div><a href="/news/564/"><i class="fa fa-newspaper-o"></i>Новости СНГ</a></div>
-</div>
-</div>
-</div>
-<div class="wow fadeInUp col-12 col-lg-6 col-xl-4" id="bx_651765591_115894">
-<div class="news-item-big">
-<div class="image">
-<a href="/news/564/115894/">
-<img alt="" class="lazy" data-src="/upload/resize_cache/iblock/d29/500_355_1/i7psf39vi3065agjoqnojbq6na9woesa.jpg" height="333" width="500"/>
-</a>
-</div>
-<div class="name"><a href="/news/564/115894/">В СНГ на экспертном уровне доработан и согласован проект Конвенции о правовом статусе делегаций, направляемых в государства – участники Содружества</a></div>
-<div class="date">
-<div><i class="fa fa-calendar-check-o"></i>13 фев 2024</div>
-<div><a href="/news/564/"><i class="fa fa-newspaper-o"></i>Новости СНГ</a></div>
-</div>
-</div>
-</div>
-<div class="wow fadeInUp col-12 col-lg-6 col-xl-4" id="bx_651765591_115879">
-<div class="news-item-big">
-<div class="image">
-<a href="/news/566/115879/">
-<img alt="" class="lazy" data-src="/upload/resize_cache/iblock/a91/500_355_1/035f9uefj44iq2l7787ihl58t7cncuaq.jpeg" height="344" width="500"/>
-</a>
-</div>
-<div class="name"><a href="/news/566/115879/">Москва ожидает от партнеров по СНГ более четкой позиции по неприятию антироссийских резолюций в ООН</a></div>
-<div class="date">
-<div><i class="fa fa-calendar-check-o"></i>13 фев 2024</div>
-<div><a href="/news/566/"><i class="fa fa-newspaper-o"></i>Аналитика и комментарии</a></div>
-</div>
-</div>
-</div>
-<div class="wow fadeInUp col-12 col-lg-6 col-xl-4" id="bx_651765591_115874">
-<div class="news-item-big">
-<div class="image">
-<a href="/news/569/115874/">
-<img alt="" class="lazy" data-src="/upload/resize_cache/iblock/093/500_355_1/gm2q2nkhtm0lzxorpgdrhk2dcpuzm12a.jpg" height="333" width="500"/>
-</a>
-</div>
-<div class="name"><a href="/news/569/115874/">Старшеклассники Туркменистана приглашаются к участию в олимпиаде по русскому языку</a></div>
-<div class="date">
-<div><i class="fa fa-calendar-check-o"></i>13 фев 2024</div>
-<div><a href="/news/569/"><i class="fa fa-newspaper-o"></i>Инновации и наука</a></div>
-</div>
-</div>
-</div>
-<div class="wow fadeInUp col-12 col-lg-6 col-xl-4" id="bx_651765591_115865">
-<div class="news-item-big">
-<div class="image">
-<a href="/news/567/115865/">
-<img alt="" class="lazy" data-src="/upload/resize_cache/iblock/816/500_355_1/54c98jx6yo2bw0bcuzhqmchtb42bv9oz.jpg" height="355" width="473"/>
-</a>
-</div>
-<div class="name"><a href="/news/567/115865/">В Московской области России запущено новое производство ноутбуков, серверов и принтеров </a></div>
-<div class="date">
-<div><i class="fa fa-calendar-check-o"></i>13 фев 2024</div>
-<div><a href="/news/567/"><i class="fa fa-newspaper-o"></i>В странах Содружества</a></div>
-</div>
-</div>
-</div>
-<div class="wow fadeInUp col-12 col-lg-6 col-xl-4" id="bx_651765591_115859">
-<div class="news-item-big">
-<div class="image">
-<a href="/news/568/115859/">
-<img alt="" class="lazy" data-src="/upload/resize_cache/iblock/4ea/500_355_1/dra10phd22bcpwys438tn0cbqrt7hi3v.jpg" height="282" width="500"/>
-</a>
-</div>
-<div class="name"><a href="/news/568/115859/">Союзная дипломатия: Беларусь и Россия скоординировали работу на международной арене </a></div>
-<div class="date">
-<div><i class="fa fa-calendar-check-o"></i>13 фев 2024</div>
-<div><a href="/news/568/"><i class="fa fa-newspaper-o"></i>Содружество интеграций</a></div>
-</div>
-</div>
-</div>
-<div class="wow fadeInUp col-12 col-lg-6 col-xl-4" id="bx_651765591_115878">
-<div class="news-item-big">
-<div class="image">
-<a href="/news/566/115878/">
-<img alt="" class="lazy" data-src="/upload/resize_cache/iblock/ab7/500_355_1/q0vkmcwtb18sc62s9443e0snfffxitbm.jpeg" height="280" width="500"/>
-</a>
-</div>
-<div class="name"><a href="/news/566/115878/">Беларусь рассматривает возможность подключиться к строительству атомного флота России</a></div>
-<div class="date">
-<div><i class="fa fa-calendar-check-o"></i>13 фев 2024</div>
-<div><a href="/news/566/"><i class="fa fa-newspaper-o"></i>Аналитика и комментарии</a></div>
-</div>
-</div>
-</div>
-<div class="wow fadeInUp col-12 col-lg-6 col-xl-4" id="bx_651765591_115864">
-<div class="news-item-big">
-<div class="image">
-<a href="/news/567/115864/">
-<img alt="" class="lazy" data-src="/upload/resize_cache/iblock/fba/500_355_1/7he6oej2gv0atmfatfrc8m1puxit25i4.jpg" height="281" width="500"/>
-</a>
-</div>
-<div class="name"><a href="/news/567/115864/">В Узбекистане будет создана Инжиниринговая компания развития инфраструктуры </a></div>
-<div class="date">
-<div><i class="fa fa-calendar-check-o"></i>13 фев 2024</div>
-<div><a href="/news/567/"><i class="fa fa-newspaper-o"></i>В странах Содружества</a></div>
-</div>
-</div>
-</div>
-<div class="wow fadeInUp col-12 col-lg-6 col-xl-4" id="bx_651765591_115858">
-<div class="news-item-big">
-<div class="image">
-<a href="/news/568/115858/">
-<img alt="" class="lazy" data-src="/upload/resize_cache/iblock/45e/500_355_1/ykbrth3frimgtros49yhy8lpathu6dfz.jpg" height="355" width="442"/>
-</a>
-</div>
-<div class="name"><a href="/news/568/115858/">Трансформацию СВМДА в «полный формат» обсудили Генеральный секретарь организации К.Сарыбай и Министр иностранных дел России С.Лавров </a></div>
-<div class="date">
-<div><i class="fa fa-calendar-check-o"></i>13 фев 2024</div>
-<div><a href="/news/568/"><i class="fa fa-newspaper-o"></i>Содружество интеграций</a></div>
-</div>
-</div>
-</div>
-<div class="wow fadeInUp col-12 col-lg-6 col-xl-4" id="bx_651765591_115877">
-<div class="news-item-big">
-<div class="image">
-<a href="/news/566/115877/">
-<img alt="" class="lazy" data-src="/upload/resize_cache/iblock/d90/500_355_1/yypmpxosu3kk02fsh7cl01lp40trikp3.jpeg" height="311" width="500"/>
-</a>
-</div>
-<div class="name"><a href="/news/566/115877/">Постпред России А.Грозов: доля расчётов в нацвалютах между странами СНГ превысила 85%</a></div>
-<div class="date">
-<div><i class="fa fa-calendar-check-o"></i>13 фев 2024</div>
-<div><a href="/news/566/"><i class="fa fa-newspaper-o"></i>Аналитика и комментарии</a></div>
-</div>
-</div>
-</div>
-<div class="wow fadeInUp col-12 col-lg-6 col-xl-4" id="bx_651765591_115872">
-<div class="news-item-big">
-<div class="image">
-<a href="/news/569/115872/">
-<img alt="" class="lazy" data-src="/upload/resize_cache/iblock/7a9/500_355_1/xhf2193tomrk3u8pzye2djd17kupejcd.jpg" height="281" width="500"/>
-</a>
-</div>
-<div class="name"><a href="/news/569/115872/">Мобильное приложение для экстренной помощи разработали в Таджикистане</a></div>
-<div class="date">
-<div><i class="fa fa-calendar-check-o"></i>13 фев 2024</div>
-<div><a href="/news/569/"><i class="fa fa-newspaper-o"></i>Инновации и наука</a></div>
-</div>
-</div>
-</div>
-<div class="wow fadeInUp col-12 col-lg-6 col-xl-4" id="bx_651765591_115863">
-<div class="news-item-big">
-<div class="image">
-<a href="/news/567/115863/">
-<img alt="" class="lazy" data-src="/upload/resize_cache/iblock/7a9/500_355_1/ncbg3r1tu78vm0ivnhv8rvev81v8km6n.jpg" height="281" width="500"/>
-</a>
-</div>
-<div class="name"><a href="/news/567/115863/">Широкое производство энергосберегающего оборудования снизит энергопотребление в Казахстане </a></div>
-<div class="date">
-<div><i class="fa fa-calendar-check-o"></i>13 фев 2024</div>
-<div><a href="/news/567/"><i class="fa fa-newspaper-o"></i>В странах Содружества</a></div>
-</div>
-</div>
-</div>
-<div class="wow fadeInUp col-12 col-lg-6 col-xl-4" id="bx_651765591_115857">
-<div class="news-item-big">
-<div class="image">
-<a href="/news/568/115857/">
-<img alt="" class="lazy" data-src="/upload/resize_cache/iblock/6a0/500_355_1/uxo9f6npbjbyjxf2wrqjxl51x2qw8v50.jpg" height="341" width="500"/>
-</a>
-</div>
-<div class="name"><a href="/news/568/115857/">Узбекистан – Беларусь: будет расширено сотрудничество в сфере образования </a></div>
-<div class="date">
-<div><i class="fa fa-calendar-check-o"></i>13 фев 2024</div>
-<div><a href="/news/568/"><i class="fa fa-newspaper-o"></i>Содружество интеграций</a></div>
-</div>
-</div>
-</div>
-<div class="wow fadeInUp col-12 col-lg-6 col-xl-4" id="bx_651765591_115880">
-<div class="news-item-big">
-<div class="image">
-<a href="/news/566/115880/">
-<img alt="" class="lazy" data-src="/upload/resize_cache/iblock/af1/500_355_1/hkmk4l622ekj9lbeo3og1jtidw8u7xou.jpeg" height="279" width="500"/>
-</a>
-</div>
-<div class="name"><a href="/news/566/115880/">Белорусский эксперт – о необходимости борьбы за сохранение исторической памяти</a></div>
-<div class="date">
-<div><i class="fa fa-calendar-check-o"></i>13 фев 2024</div>
-<div><a href="/news/566/"><i class="fa fa-newspaper-o"></i>Аналитика и комментарии</a></div>
-</div>
-</div>
-</div>
-<div class="wow fadeInUp col-12 col-lg-6 col-xl-4" id="bx_651765591_115871">
-<div class="news-item-big">
-<div class="image">
-<a href="/news/569/115871/">
-<img alt="" class="lazy" data-src="/upload/resize_cache/iblock/b98/500_355_1/2wyjaof9os28wftbnf8pleu7suckogb2.jpg" height="333" width="500"/>
-</a>
-</div>
-<div class="name"><a href="/news/569/115871/">В Российской академии наук призвали начать борьбу за мигрантов</a></div>
-<div class="date">
-<div><i class="fa fa-calendar-check-o"></i>13 фев 2024</div>
-<div><a href="/news/569/"><i class="fa fa-newspaper-o"></i>Инновации и наука</a></div>
-</div>
-</div>
-</div>
-<div class="wow fadeInUp col-12 col-lg-6 col-xl-4" id="bx_651765591_115862">
-<div class="news-item-big">
-<div class="image">
-<a href="/news/567/115862/">
-<img alt="" class="lazy" data-src="/upload/resize_cache/iblock/be1/500_355_1/dwnju06rvhxovinfn8nmtjtmgot77ctc.jpg" height="333" width="500"/>
-</a>
-</div>
-<div class="name"><a href="/news/567/115862/">Молодежь Кыргызстана начнут привлекать в сельское хозяйство </a></div>
-<div class="date">
-<div><i class="fa fa-calendar-check-o"></i>13 фев 2024</div>
-<div><a href="/news/567/"><i class="fa fa-newspaper-o"></i>В странах Содружества</a></div>
-</div>
-</div>
-</div>
-<div class="wow fadeInUp col-12 col-lg-6 col-xl-4" id="bx_651765591_115856">
-<div class="news-item-big">
-<div class="image">
-<a href="/news/568/115856/">
-<img alt="" class="lazy" data-src="/upload/resize_cache/iblock/83d/500_355_1/8q2o56qzlcnmpi3ifgpyjuvqg3y0p4mm.jpg" height="279" width="500"/>
-</a>
-</div>
-<div class="name"><a href="/news/568/115856/">Беларусь и Россия в 2023 году договорились о скидках на ж/д перевозки до 40% </a></div>
-<div class="date">
-<div><i class="fa fa-calendar-check-o"></i>13 фев 2024</div>
-<div><a href="/news/568/"><i class="fa fa-newspaper-o"></i>Содружество интеграций</a></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- /.news-box -->
-<br/><div class="pagination">
-<!--<span class="forum-page-title">Страницы:</span>-->
-<span class="forum-page-first forum-page-current">1</span>
-<a class="" href="/news/?PAGEN_1=2">2</a>
-<a class="" href="/news/?PAGEN_1=3">3</a>
-<a class="" href="/news/?PAGEN_1=4">4</a>
-<a class="" href="/news/?PAGEN_1=5">5</a>
-<span class="forum-page-dots">...</span>
-<a href="/news/?PAGEN_1=51">51</a>
-<a class="forum-page-next" href="/news/?PAGEN_1=2">След.</a>
-</div>
-</div>
-<!-- sidebar -->
-<div class="col-sm-5 col-md-5 col-lg-4 col-xl-3">
-<!-- Баннеры Верх -->
-<div class="sidebar-box wow fadeInUp" id="bx_1373509569_96631">
-<a href="http://ania-news.info/exhibition30/" target="_blank">
-<img alt="" class="lazy" data-src="/upload/iblock/d6c/d6c31e7a733bd3ac2ad2255db0aac3f1.jpg" height="195" width="550"/>
-</a>
-</div>
-<!-- /.Баннеры Верх -->
-<!-- Цитаты -->
-<!-- sidebar-box -->
-<div class="sidebar-box wow fadeInUp">
-<div class="box-name d-flex justify-content-between align-items-center">
-<h2>Цитаты о СНГ</h2>
-<a href="/quotes/">Все цитаты</a>
-</div>
-<!-- quote-box -->
-<div class="quote-box">
-<div class="quote-item" id="bx_3485106786_115083">
-<div class="quote-item-name">
-<div class="image">
-<span><img alt="" src="/upload/resize_cache/iblock/e0e/80_80_2/e0ee9bc0105db26828958e58d45d6367.jpg"/></span>
-</div>
-<div class="name">
-				Касым-Жомарт Токаев 				<span>Президент Республики Казахстан</span>
-</div>
-</div>
-<div class="quote-item-text">
-<i aria-hidden="true" class="fa fa-quote-left"></i>
-			Ключевой задачей остается развитие тесных торгово-экономических связей. Рынки стран Содружества традиционно являются приоритетными для нас.			<hr/>
-<span>13.10.2023</span>
-<span>Заседание Совета глав государств СНГ</span>
-<!-- <span></span> -->
-</div>
-</div>
-<div class="quote-item" id="bx_3485106786_115013">
-<div class="quote-item-name">
-<div class="image">
-<span><img alt="" src="/upload/resize_cache/iblock/5e4/80_80_2/5e4e75b7ebd7380d9401e622a2582815.jpg"/></span>
-</div>
-<div class="name">
-				Владимир Путин				<span>Президент Российской Федерации</span>
-</div>
-</div>
-<div class="quote-item-text">
-<i aria-hidden="true" class="fa fa-quote-left"></i>
-			/…/ Мы уделим самое пристальное внимание дальнейшему укреплению экономического сотрудничества в рамках СНГ.			<hr/>
-<span>26.12.2023</span>
-<span>Неформальная встреча глав государств – участников СНГ</span>
-<!-- <span></span> -->
-</div>
-</div>
-<div class="quote-item" id="bx_3485106786_112878">
-<div class="quote-item-name">
-<div class="image">
-<span><img alt="" src="/upload/resize_cache/iblock/069/80_80_2/jhwxc7lljr4lzxwa0gvevteqtx8l37dv.jpg"/></span>
-</div>
-<div class="name">
-				Сердар Бердымухамедов				<span>Президент Туркменистана</span>
-</div>
-</div>
-<div class="quote-item-text">
-<i aria-hidden="true" class="fa fa-quote-left"></i>
-			Уверен, что взаимодействие государств в формате Содружества является важным фактором обеспечения условий для успешного продвижения сотрудничества по актуальным вопросам. 			<hr/>
-<span>13.10.2023</span>
-<span>Заседание Совета глав государств СНГ</span>
-<!-- <span></span> -->
-</div>
-</div>
-<div class="quote-item" id="bx_3485106786_113226">
-<div class="quote-item-name">
-<div class="image">
-<span><img alt="" src="/upload/resize_cache/iblock/82c/80_80_2/82ce2b624516becf78511be5d93967cc.jpg"/></span>
-</div>
-<div class="name">
-				Михаил Мишустин				<span>Премьер-министр Российской Федерации</span>
-</div>
-</div>
-<div class="quote-item-text">
-<i aria-hidden="true" class="fa fa-quote-left"></i>
-			Мы считаем безусловным приоритетом укрепление связки между Содружеством Независимых Государств и Евразийским экономическим союзом. 			<hr/>
-<span>26.10.2023</span>
-<span>Заседание Совета глав правительств СНГ</span>
-<!-- <span>г. Бишкек</span> -->
-</div>
-</div>
-<div class="quote-item" id="bx_3485106786_110334">
-<div class="quote-item-name">
-<div class="image">
-<span><img alt="" src="/upload/resize_cache/iblock/82c/80_80_2/82ce2b624516becf78511be5d93967cc.jpg"/></span>
-</div>
-<div class="name">
-				Михаил Мишустин				<span>Премьер-министр Российской Федерации</span>
-</div>
-</div>
-<div class="quote-item-text">
-<i aria-hidden="true" class="fa fa-quote-left"></i>
-			Россия искренне заинтересована в дальнейшем укреплении и взаимодействии в Содружестве Независимых Государств. За три десятилетия мы создали прочную нормативно-правовую базу для сотрудничества и в торгово-экономической сфере, и, что очень важно, в социально-гуманитарной сфере, которая непосредственно затрагивает интересы всех граждан стран-участниц. Наши народы объединяет многовековая история, наш общий культурный и цивилизационный код. 			<hr/>
-<span>08.06.2023</span>
-<span>Заседание Совета глав правительств СНГ</span>
-<!-- <span>Сочи</span> -->
-</div>
-</div>
-</div>
-<!-- /.quote-box -->
-</div>
-<!-- /.sidebar-box -->
-<!-- /.Цитаты -->
-<!-- Цифра дня -->
-<!-- sidebar-box -->
-<div class="sidebar-box wow fadeInUp">
-<div class="box-name">
-<h2>30 лет СНГ: Цифра дня</h2>
-</div>
-<div class="number-box">
-<div>
-<div class="number-box__item" id="bx_3099439860_93337">
-<div class="number-box__item-number">
-<span class="number">148,8</span>
-<span class="dimension">млрд долл.</span>
-</div>
-<div class="number-box__item-text">
-					На такую сумму в целом по Содружеству в 2020 году произведено продукции сельского хозяйства, что на 186 % больше чем в 2000 году.				</div>
-</div>
-</div>
-</div>
-</div>
-<!-- /.sidebar-box -->
-<!-- /.Цифра дня -->
-<!-- Заседания -->
-<div class="sidebar-box wow fadeInUp">
-<div class="box-name mb-0">
-<h2>Заседания органов СНГ</h2>
-</div>
-<div id="accordion">
-<!-- card -->
-<div class="card" id="bx_565502798_66269">
-<div class="card-header" id="heading0">
-<button aria-controls="collapseOne" aria-expanded="false" class="collapse-btn collapsed" data-target="#collapse0" data-toggle="collapse">
-					Совет глав государств СНГ				</button>
-</div>
-<div aria-labelledby="heading0" class="collapse" data-parent="#accordion" id="collapse0">
-<div class="card-body">
-<!-- collapse-box -->
-<div class="collapse-box">
-<img alt="" class="lazy" data-src="/upload/iblock/76c/76c8b935d2a4c51443aae861e10ace91.jpg" height="400" width="600"/>
-<div class="collapse-box-text">
-<div class="collapse-box-text-table">
-<div class="collapse-box-text-cell">
-<a href="/page/3463/104111/">
-<span>Итоги</span>2023 год, 13 октября									</a>
-<a href="/page/3379/81549/">
-<span>Анонс</span>2024 год, 8 октября									</a>
-<a href="/page/3379/">Перейти в Раздел</a>
-</div>
-</div>
-</div>
-</div>
-<!-- /.collapse-box -->
-</div>
-</div>
-</div>
-<!-- /.card -->
-<!-- card -->
-<div class="card" id="bx_565502798_66270">
-<div class="card-header" id="heading1">
-<button aria-controls="collapseOne" aria-expanded="false" class="collapse-btn collapsed" data-target="#collapse1" data-toggle="collapse">
-					Совет глав правительств СНГ				</button>
-</div>
-<div aria-labelledby="heading1" class="collapse" data-parent="#accordion" id="collapse1">
-<div class="card-body">
-<!-- collapse-box -->
-<div class="collapse-box">
-<img alt="" class="lazy" data-src="/upload/iblock/5f9/5f917775b6ae55e7d83882e976771897.jpg" height="400" width="600"/>
-<div class="collapse-box-text">
-<div class="collapse-box-text-table">
-<div class="collapse-box-text-cell">
-<a href="/page/3885/113228/">
-<span>Итоги</span>2023 год, 26 октября									</a>
-<a href="/page/3375/81552/">
-<span>Анонс</span>2024 год, май									</a>
-<a href="/page/3375/">Перейти в Раздел</a>
-</div>
-</div>
-</div>
-</div>
-<!-- /.collapse-box -->
-</div>
-</div>
-</div>
-<!-- /.card -->
-<!-- card -->
-<div class="card" id="bx_565502798_66271">
-<div class="card-header" id="heading2">
-<button aria-controls="collapseOne" aria-expanded="false" class="collapse-btn collapsed" data-target="#collapse2" data-toggle="collapse">
-					Совет министров иностранных дел СНГ				</button>
-</div>
-<div aria-labelledby="heading2" class="collapse" data-parent="#accordion" id="collapse2">
-<div class="card-body">
-<!-- collapse-box -->
-<div class="collapse-box">
-<img alt="" class="lazy" data-src="/upload/iblock/541/541a7f2d66cad6ba4575ddbad58f6ef4.jpg" height="400" width="600"/>
-<div class="collapse-box-text">
-<div class="collapse-box-text-table">
-<div class="collapse-box-text-cell">
-<a href="/page/3884/112721/">
-<span>Итоги</span>2023 год, 12 октября									</a>
-<a href="/page/3376/81554/">
-<span>Анонс</span>2024 год,  12 апреля									</a>
-<a href="/page/3376/">Перейти в Раздел</a>
-</div>
-</div>
-</div>
-</div>
-<!-- /.collapse-box -->
-</div>
-</div>
-</div>
-<!-- /.card -->
-<!-- card -->
-<div class="card" id="bx_565502798_74533">
-<div class="card-header" id="heading3">
-<button aria-controls="collapseOne" aria-expanded="false" class="collapse-btn collapsed" data-target="#collapse3" data-toggle="collapse">
-					Экономический cовет СНГ				</button>
-</div>
-<div aria-labelledby="heading3" class="collapse" data-parent="#accordion" id="collapse3">
-<div class="card-body">
-<!-- collapse-box -->
-<div class="collapse-box">
-<img alt="" class="lazy" data-src="/upload/iblock/6d5/tj885l8rn03yohoj0z6e5u819t4w9nge.jpg" height="400" width="562"/>
-<div class="collapse-box-text">
-<div class="collapse-box-text-table">
-<div class="collapse-box-text-cell">
-<a href="/page/3883/114286/">
-<span>Итоги</span>2023 год, 8 декабря 									</a>
-<a href="/page/3412/81556/">
-<span>Анонс</span>2024 год, 29 марта									</a>
-<a href="/page/3412/">Перейти в Раздел</a>
-</div>
-</div>
-</div>
-</div>
-<!-- /.collapse-box -->
-</div>
-</div>
-</div>
-<!-- /.card -->
-<!-- card -->
-<div class="card" id="bx_565502798_74534">
-<div class="card-header" id="heading4">
-<button aria-controls="collapseOne" aria-expanded="false" class="collapse-btn collapsed" data-target="#collapse4" data-toggle="collapse">
-					Совет постоянных полномочных представителей СНГ				</button>
-</div>
-<div aria-labelledby="heading4" class="collapse" data-parent="#accordion" id="collapse4">
-<div class="card-body">
-<!-- collapse-box -->
-<div class="collapse-box">
-<img alt="" class="lazy" data-src="/upload/iblock/c8c/c8c593be03171fdd8f7c721fad2d964b.jpg" height="400" width="600"/>
-<div class="collapse-box-text">
-<div class="collapse-box-text-table">
-<div class="collapse-box-text-cell">
-<a href="/page/3918/115348/">
-<span>Итоги</span>2024 год, 23 января									</a>
-<a href="/page/3378/81557/">
-<span>Анонс</span>2024 год, 27 февраля									</a>
-<a href="/page/3378/">Перейти в Раздел</a>
-</div>
-</div>
-</div>
-</div>
-<!-- /.collapse-box -->
-</div>
-</div>
-</div>
-<!-- /.card -->
-<!-- card -->
-<div class="card" id="bx_565502798_74535">
-<div class="card-header" id="heading5">
-<button aria-controls="collapseOne" aria-expanded="false" class="collapse-btn collapsed" data-target="#collapse5" data-toggle="collapse">
-					Комиссия по экономическим вопросам при Экономическом совете СНГ				</button>
-</div>
-<div aria-labelledby="heading5" class="collapse" data-parent="#accordion" id="collapse5">
-<div class="card-body">
-<!-- collapse-box -->
-<div class="collapse-box">
-<img alt="" class="lazy" data-src="/upload/iblock/e64/e648537f8ea034f9091c3e872037ee9a.jpg" height="400" width="600"/>
-<div class="collapse-box-text">
-<div class="collapse-box-text-table">
-<div class="collapse-box-text-cell">
-<a href="/page/3915/115343/">
-<span>Итоги</span>2024 год, 23 января 									</a>
-<a href="/page/3405/81558/">
-<span>Анонс</span>2024 год, 21 февраля									</a>
-<a href="/page/3405/">Перейти в Раздел</a>
-</div>
-</div>
-</div>
-</div>
-<!-- /.collapse-box -->
-</div>
-</div>
-</div>
-<!-- /.card -->
-</div>
-</div>
-<!-- /.sidebar-box -->
-<!-- /.Заседания -->
-<!-- Дни рождения -->
-<!-- sidebar-box -->
-<div class="sidebar-box wow fadeInUp">
-<div class="box-name">
-<h2>Поздравляем с Днём рождения!</h2>
-</div>
-<div class="birthday-box">
-<div>
-<div class="birthday-box-item" id="bx_1454625752_115576">
-<img alt="Мирослав Йенча" src="/upload/iblock/d62/7l0tvi2kysovpds9b8n7ev3wxc7wsoc0.jpg"/>
-<div class="text">
-<div class="name">Мирослав Йенча</div>
-<div class="work">Помощник Генерального секретаря Организации Объединенных Наций по делам Европы, Центральной Азии и Америки</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- /.sidebar-box -->
-<!-- /.Дни рождения -->
-<!-- Баннеры Низ -->
-<div class="sidebar-box wow fadeInUp" id="bx_3322728009_68231">
-<a href="http://today.e-cis.info/" target="_blank">
-<img alt="" class="lazy" data-src="/upload/iblock/610/61015a7795551b8f088b4baf16cd590b.jpg" height="390" width="550"/>
-</a>
-</div>
-<div class="sidebar-box wow fadeInUp" id="bx_3322728009_68232">
-<a href="https://may9.ru/" target="_blank">
-<img alt="" class="lazy" data-src="/upload/iblock/43b/43b04b47fae751857e194de3ba3a2e00.jpg" height="390" width="550"/>
-</a>
-</div>
-<!-- /.Баннеры Низ -->
-</div>
-<!-- /sidebar -->
-</div>
-</div>
-</div>
-<!-- /.wrap-content -->
-<!-- wrap-footer -->
-<div class="wrap wrap-footer wow fadeInUp">
-<div class="container">
-<div class="row">
-<div class="col-12 col-sm-6 col-md-3">
-<div class="footer-box">
-<div class="h4 footer-title">Навигация</div>
-<ul class="footer-nav">
-<li><a class="selected" href="/news/">Новости</a></li>
-<li><a href="/cooperation/">Направления сотрудничества</a></li>
-<li><a href="/page/">Информация</a></li>
-<li><a href="https://cis.minsk.by/reestrv2/">Реестр документов</a></li>
-<li><a href="http://www.cis.minsk.by/">Сайт Исполкома СНГ</a></li>
-</ul>
-</div>
-</div>
-<div class="col-12 col-sm-6 col-md-3">
-<div class="footer-box">
-<div class="h4 footer-title">Полезные ссылки</div>
-<ul class="footer-nav">
-<li><a href="/cooperation/3234/81677/">Найти работу в СНГ</a></li>
-<li><a href="http://www.exponet.ru/">Выставки в СНГ</a></li>
-<li><a href="http://www.library.ru/3/biblionet/?rub=15">Библиотеки стран СНГ</a></li>
-<li><a href="/page/3610/">Сайты Госуслуг</a></li>
-<li><a href="https://dgp.mid.ru/currentinfo/dipcalendar/index.php">Дипломатический календарь</a></li>
-</ul>
-</div>
-</div>
-<div class="col-12 col-sm-12 col-md-6">
-<div class="h4 footer-title">Контакты</div>
-<div class="row">
-<div class="col-12 col-sm-6">
-<div class="footer-contact">
-<div class="address"><i class="fa fa-map-marker"></i>220030, Минск, ул. Кирова, 17</div>
-<div class="phone"><i class="fa fa-phone"></i>(+37517) 215-50-01</div>
-<div class="email"><i class="fa fa-envelope"></i><a href="mailto:cr@cis.minsk.by">cr@cis.minsk.by</a></div>
-</div>
-</div>
-<div class="col-12 col-sm-6">
-<div class="footer-contact">
-<div class="address"><i class="fa fa-map-marker"></i>115035, Москва, Софийская наб., 34c1</div>
-<div class="phone"><i class="fa fa-phone"></i>(+7495) 190-54-00</div>
-<div class="email"><i class="fa fa-envelope"></i><a href="mailto:info@e-cis.info">info@e-cis.info</a></div>
-</div>
-</div>
-</div>
-<!-- /.row -->
-<div class="footer-social mb-20">
-<span class="h4 footer-title pr-5 d-none">Мы в соц.сетях:</span>
-<!--<a href="https://www.facebook.com/%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BC%D0%B8%D1%82%D0%B5%D1%82-%D0%A1%D0%9D%D0%93-197597774076390/" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>	-->
-<a class="vk" href="https://vk.com/public146247711"><i aria-hidden="true" class="fa fa-vk"></i></a>
-<a class="youtube" href="https://www.youtube.com/channel/UCIdVPIgcrAG3U64ic0hMppw"><i aria-hidden="true" class="fa fa-youtube"></i></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- /.wrap-footer -->
-<!-- wrap-copyright -->
-<div class="wrap wrap-copyright">
-<div class="container">
-<div class="row">
-<div class="col-12">
-<div class="copy text-center">
-<font color="white">© 2019–2024 Интернет-портал СНГ.  Создан по решению Совета глав государств СНГ</font>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- /.wrap-copyright -->
-<div class="actionbar-wrap" id="actionbar">
-<div class="actionbar-close">
-<i class="fa fa-close"></i>
-</div>
-<div class="actionbar-box">
-<!-- menu -->
-			﻿
-<ul class="actionbar-menu">
-<li class="">
-<a href="http://www.cis.minsk.by/">Сайт Исполкома СНГ</a>
-</li>
-<li class="active">
-<a href="/news/">
-					Новости					
-					<span class="toggle"><i class="fa fa-angle-down"></i></span>
-</a>
-<ul class="sub-menu">
-<li>
-<a href="/news/564/">Новости СНГ</a>
-</li>
-<li>
-<a href="/news/565/">Анонсы событий СНГ</a>
-</li>
-<li>
-<a href="/news/566/">Аналитика и комментарии</a>
-</li>
-<li>
-<a href="/news/567/">В странах Содружества</a>
-</li>
-<li>
-<a href="/news/568/">Содружество интеграций</a>
-</li>
-<li>
-<a href="/news/569/">Инновации и наука</a>
-</li>
-</ul></li>
-<li class="">
-<a href="/cooperation/">
-					Направления сотрудничества					
-					<span class="toggle"><i class="fa fa-angle-down"></i></span>
-</a>
-<ul class="sub-menu">
-<li>
-<a href="/cooperation/2840/">Гуманитарное сотрудничество</a>
-</li>
-<li>
-<a href="/cooperation/3239/">Межпарламентское сотрудничество</a>
-</li>
-<li>
-<a href="/cooperation/2861/">Межрегиональное и приграничное сотрудничество</a>
-</li>
-<li>
-<a href="/cooperation/2822/">Общеполитические вопросы</a>
-</li>
-<li>
-<a href="/cooperation/2834/">Правовое сотрудничество</a>
-</li>
-<li>
-<a href="/cooperation/2828/">Сотрудничество в сфере безопасности</a>
-</li>
-<li>
-<a href="/cooperation/2978/">Сотрудничество в сфере межгосударственного обмена научно-технической информацией</a>
-</li>
-<li>
-<a href="/cooperation/2825/">Сотрудничество в сфере финансов</a>
-</li>
-<li>
-<a href="/cooperation/2837/">Экономическое сотрудничество</a>
-</li>
-</ul></li>
-<li class="">
-<a href="/page/">
-					Информация					
-					<span class="toggle"><i class="fa fa-angle-down"></i></span>
-</a>
-<ul class="sub-menu">
-<li>
-<a href="/page/3502/">О Содружестве</a>
-</li>
-<li>
-<a href="/page/3367/">Органы СНГ</a>
-</li>
-<li>
-<a href="/page/3383/">Выборы и референдумы СНГ</a>
-</li>
-<li>
-<a href="/page/3372/">Документы СНГ</a>
-</li>
-<li>
-<a href="/page/3698/">Сборник аналитических материалов Исполкома СНГ</a>
-</li>
-<li>
-<a href="/page/3466/">Исполнительный комитет СНГ</a>
-</li>
-<li>
-<a href="/page/3533/">Информагентства стран СНГ</a>
-</li>
-<li>
-<a href="/page/3441/">Разное</a>
-</li>
-</ul></li>
-<li class="">
-<a href="/reestr/">
-					Реестр документов					
-					<span class="toggle"><i class="fa fa-angle-down"></i></span>
-</a>
-<ul class="sub-menu">
-<li>
-<a href="https://cis.minsk.by/reestrv2/">Единый реестр правовых актов и других документов Содружества Независимых Государств</a>
-</li>
-<li>
-<a href="/cooperation/3745/86862/">Реестр (Перечень) подписанных международных документов о межрегиональном и приграничном сотрудничестве государств – участников СНГ</a>
-</li>
-<li>
-<a href="https://e-cis.info/upload/iblock/75d/75d278cb324da14f09cb31ce5b9d1f7c.xlsx">Перечень конкурентноспособной продукции государств – участников СНГ</a>
-</li>
-</ul></li>
-<li class="">
-<a href="/gallery/">Фотогалерея</a>
-</li>
-</ul>
-<!-- /.menu -->
-</div>
-</div>
-<div class="actionbar-overlay"></div>
-<!-- table modal -->
-<div class="modal fade" id="tableModal" role="dialog" tabindex="-1">
-<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-<div class="modal-content">
-<span aria-label="Close" class="close" data-dismiss="modal"><i class="fa fa-times"></i></span>
-<div class="row">
-<div class="col-12">
-<div class="modal-table-text">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- /.table modal -->
-<a class="link__old-portal" href="http://old.e-cis.info">Старая версия сайта (Архив)</a>
+</script><script src="/bitrix/templates/main/script.js" type="text/javascript"></script>
 </body>
 </html>

@@ -182,3 +182,9 @@
 
 22:48:01 === media.cis.All_News ===
 22:48:18 === media.cis.All_News ===
+22:54:07 === corporate.kamaz.All_News ===
+22:56:52 === corporate.kamaz.All_News ===
+22:56:52 KAMAZ Новости +20
+22:56:52 === Dry run complete, +20 in 0.21 sec ===
+
+

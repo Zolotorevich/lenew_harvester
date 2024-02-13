@@ -55,6 +55,7 @@ class CrawlersFactory():
             'mechel.All_News',
             'fesco.All_News',
             'rkk_energua.All_News',
+            'kamaz.All_News',
         ]
     
 
