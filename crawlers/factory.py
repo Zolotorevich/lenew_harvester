@@ -48,6 +48,8 @@ class CrawlersFactory():
     corporate = [
             'mkb.All_News',
             'utair.All_News',
+            'henderson.All_News',
+            
         ]
     
 

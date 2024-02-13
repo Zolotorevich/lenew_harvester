@@ -60,3 +60,26 @@
 18:02:33 === Dry run complete, +6 in 0.22 sec ===
 
 
+18:04:34 === corporate ===
+18:04:34 ЮТэйр Новости +6
+18:04:35 Московский кредитный банк Новости +0
+18:04:35 === Dry run complete, +6 in 0.9 sec ===
+
+
+18:05:52 === corporate ===
+18:05:52 ЮТэйр Новости +6
+18:05:53 Московский кредитный банк Новости +10
+18:05:53 === Dry run complete, +16 in 1.03 sec ===
+
+
+18:14:56 === corporate.henderson.All_News ===
+18:14:56 [ERROR] Henderson Новости: Fail to load https://ir.henderson.ru/press-releases
+18:14:56 === Dry run complete, +0 in 0.12 sec ===
+
+
+18:15:07 === corporate.henderson.All_News ===
+18:17:59 === corporate.henderson.All_News ===
+18:18:00 Henderson Новости +3
+18:18:00 === Dry run complete, +3 in 1.17 sec ===
+
+
