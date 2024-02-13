@@ -27,3 +27,9 @@
 00:29:21 === Dry run complete, +9 in 0.19 sec ===
 
 
+01:57:36 === corporate.apteka_36.All_News ===
+01:59:05 === corporate.apteka_36.All_News ===
+01:59:05 Аптека 36,6 Новости +12
+01:59:05 === Dry run complete, +12 in 0.17 sec ===
+
+

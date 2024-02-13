@@ -63,6 +63,7 @@ class CrawlersFactory():
             'sollers.All_News',
             'novabev.All_News',
             'pik.All_News',
+            'apteka_36.All_News',
         ]
     
 
