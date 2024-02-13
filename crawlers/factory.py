@@ -53,6 +53,7 @@ class CrawlersFactory():
             'viborgsky_sudzavod.Korabel',
             'mechel.All_News',
             'fesco.All_News',
+            'rkk_energua.All_News',
         ]
     
 

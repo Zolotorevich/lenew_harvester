@@ -117,3 +117,19 @@
 19:37:18 === Dry run complete, +12 in 1.16 sec ===
 
 
+19:39:55 === corporate.rkk_energua.All_News ===
+19:43:51 === corporate.rkk_energua.All_News ===
+19:43:51 РКК Энергия Новости +20
+19:43:51 === Dry run complete, +20 in 0.25 sec ===
+
+
+19:44:37 === corporate.rkk_energua.All_News ===
+19:44:37 РКК Энергия Новости +20
+19:44:37 === Dry run complete, +20 in 0.21 sec ===
+
+
+19:45:00 === corporate.rkk_energua.All_News ===
+19:45:01 РКК Энергия Новости +20
+19:45:01 === Dry run complete, +20 in 0.21 sec ===
+
+
