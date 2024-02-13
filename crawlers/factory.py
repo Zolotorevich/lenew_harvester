@@ -61,6 +61,7 @@ class CrawlersFactory():
             'nornickel.All_News',
             'npo_nauka.All_News',
             'sollers.All_News',
+            'novabev.All_News',
         ]
     
 

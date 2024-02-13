@@ -10,3 +10,14 @@
 00:07:56 === Dry run complete, +9 in 0.12 sec ===
 
 
+00:15:51 === corporate.novabev.All_News ===
+00:15:51 [ERROR] Novabev Новости: HTTPSConnectionPool(host='novabev.com', port=443): Max retries exceeded with url: /press-room/lenta/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)')))
+00:15:51 === Dry run complete, +0 in 0.07 sec ===
+
+
+00:16:01 === corporate.novabev.All_News ===
+00:17:46 === corporate.novabev.All_News ===
+00:17:47 Novabev Новости +6
+00:17:47 === Dry run complete, +6 in 1.18 sec ===
+
+
