@@ -5,7 +5,6 @@ NOTE: query = /company/{%query%}.html
 """
 
 from crawlers.abstract import Crawler, News
-from debug import debug
 
 
 class Search_Korabel(Crawler):

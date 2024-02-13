@@ -105,3 +105,9 @@
 19:12:50 === Dry run complete, +15 in 0.23 sec ===
 
 
+19:20:39 === corporate.mechel.All_News ===
+19:23:43 === corporate.mechel.All_News ===
+19:23:43 Мечел Новости +10
+19:23:43 === Dry run complete, +10 in 0.26 sec ===
+
+

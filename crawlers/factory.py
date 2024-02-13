@@ -51,6 +51,7 @@ class CrawlersFactory():
             'henderson.All_News',
             'viborgsky_sudzavod.All_News',
             'viborgsky_sudzavod.Korabel',
+            'mechel.All_News',
         ]
     
 
