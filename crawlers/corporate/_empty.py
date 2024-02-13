@@ -11,7 +11,7 @@ from debug import debug
 class utair(Crawler):
     """Parent class"""
 
-    category: str = 'henderson'
+    category: str = 'CATEGORY'
 
     def __str__(self) -> str:
         return 'Henderson Parent Class'

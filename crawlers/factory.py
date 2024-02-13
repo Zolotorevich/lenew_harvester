@@ -56,6 +56,9 @@ class CrawlersFactory():
             'fesco.All_News',
             'rkk_energua.All_News',
             'kamaz.All_News',
+            'diasoft.All_News',
+            'obiedennenaya_vagon_company.All_News',
+            'nornickel.All_News',
         ]
     
 

@@ -188,3 +188,37 @@
 22:56:52 === Dry run complete, +20 in 0.21 sec ===
 
 
+23:03:23 === corporate.diasoft.All_News ===
+23:06:10 === corporate.diasoft.All_News ===
+23:06:10 Диасофт Новости +20
+23:06:10 === Dry run complete, +20 in 0.14 sec ===
+
+
+23:09:34 === corporate.obiedennenaya_vagon_company.All_News ===
+23:09:34 [ERROR] Объединённая Вагонная Компания Новости: HTTPSConnectionPool(host='www.uniwagon.com', port=443): Max retries exceeded with url: /multimedia/news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)')))
+23:09:34 === Dry run complete, +0 in 0.06 sec ===
+
+
+23:09:53 === corporate.obiedennenaya_vagon_company.All_News ===
+23:09:54 [ERROR] Объединённая Вагонная Компания Новости: HTTPSConnectionPool(host='www.uniwagon.com', port=443): Max retries exceeded with url: /multimedia/news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)')))
+23:09:54 === Dry run complete, +0 in 0.05 sec ===
+
+
+23:10:14 === corporate.obiedennenaya_vagon_company.All_News ===
+23:10:15 [ERROR] Объединённая Вагонная Компания Новости: HTTPSConnectionPool(host='www.uniwagon.com', port=443): Max retries exceeded with url: /multimedia/news/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)')))
+23:10:15 === Dry run complete, +0 in 0.06 sec ===
+
+
+23:10:25 === corporate.obiedennenaya_vagon_company.All_News ===
+23:12:31 === corporate.obiedennenaya_vagon_company.All_News ===
+23:12:32 Объединённая Вагонная Компания Новости +4
+23:12:32 === Dry run complete, +4 in 0.69 sec ===
+
+
+23:52:53 === corporate.nornickel.All_News ===
+23:53:32 === corporate.nornickel.All_News ===
+23:57:18 === corporate.nornickel.All_News ===
+23:57:21 Норникель Новости +10
+23:57:21 === Dry run complete, +10 in 2.49 sec ===
+
+
