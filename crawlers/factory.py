@@ -59,6 +59,8 @@ class CrawlersFactory():
             'diasoft.All_News',
             'obiedennenaya_vagon_company.All_News',
             'nornickel.All_News',
+            'npo_nauka.All_News',
+            
         ]
     
 

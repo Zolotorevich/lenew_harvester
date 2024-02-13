@@ -1,0 +1,6 @@
+00:01:20 === corporate.npo_nauka.All_News ===
+00:02:49 === corporate.npo_nauka.All_News ===
+00:02:49 НПО Наука Новости +10
+00:02:49 === Dry run complete, +10 in 0.16 sec ===
+
+
