@@ -4,3 +4,9 @@
 00:02:49 === Dry run complete, +10 in 0.16 sec ===
 
 
+00:06:30 === corporate.sollers.All_News ===
+00:07:56 === corporate.sollers.All_News ===
+00:07:56 Sollers Новости +9
+00:07:56 === Dry run complete, +9 in 0.12 sec ===
+
+

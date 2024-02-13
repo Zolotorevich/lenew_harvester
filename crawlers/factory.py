@@ -60,7 +60,7 @@ class CrawlersFactory():
             'obiedennenaya_vagon_company.All_News',
             'nornickel.All_News',
             'npo_nauka.All_News',
-            
+            'sollers.All_News',
         ]
     
 
