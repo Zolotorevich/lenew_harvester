@@ -33,3 +33,24 @@
 01:59:05 === Dry run complete, +12 in 0.17 sec ===
 
 
+02:02:20 === media.sdelanounas.All_News ===
+02:09:11 === media.sdelanounas.All_News ===
+02:09:11 [ERROR] Сделано у нас All News: 'NoneType' object has no attribute 'get_text'
+02:09:11 === Dry run complete, +0 in 0.22 sec ===
+
+
+02:10:16 === media.sdelanounas.All_News ===
+02:10:16 [ERROR] Сделано у нас All News: 'NoneType' object has no attribute 'get_text'
+02:10:16 === Dry run complete, +0 in 0.26 sec ===
+
+
+02:11:09 === media.sdelanounas.All_News ===
+02:11:09 [ERROR] Сделано у нас All News: 'NoneType' object has no attribute 'get_text'
+02:11:09 === Dry run complete, +0 in 0.23 sec ===
+
+
+02:12:24 === media.sdelanounas.All_News ===
+02:12:25 Сделано у нас All News +20
+02:12:25 === Dry run complete, +20 in 0.7 sec ===
+
+
