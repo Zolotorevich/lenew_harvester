@@ -174,3 +174,11 @@
 19:51:36 === Dry run complete, +688 in 12.18 sec ===
 
 
+22:38:35 === media.brics.All_News ===
+22:41:50 === media.brics.All_News ===
+22:41:50 BRICS All News +6
+22:41:50 === Dry run complete, +6 in 0.27 sec ===
+
+
+22:48:01 === media.cis.All_News ===
+22:48:18 === media.cis.All_News ===

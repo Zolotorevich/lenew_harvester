@@ -43,6 +43,7 @@ class CrawlersFactory():
             'tass.World',
             'tass.Society',
             'tass.Country',
+            'brics.All_News',
         ]
 
     corporate = [
