@@ -62,6 +62,7 @@ class CrawlersFactory():
             'npo_nauka.All_News',
             'sollers.All_News',
             'novabev.All_News',
+            'pik.All_News',
         ]
     
 

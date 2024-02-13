@@ -21,3 +21,9 @@
 00:17:47 === Dry run complete, +6 in 1.18 sec ===
 
 
+00:25:35 === corporate.pik.All_News ===
+00:29:21 === corporate.pik.All_News ===
+00:29:21 ПИК Новости +9
+00:29:21 === Dry run complete, +9 in 0.19 sec ===
+
+
