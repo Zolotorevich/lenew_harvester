@@ -36,15 +36,12 @@ class All_News(utair):
         news_container = soup.select('.hotnews-body')
 
         for news in news_container:
-            title = news.find('div', class_='hotnews-head')
-            preview = news.find('div', class_='hotnews-text')
-
             # Get info
             info = {
                 'category': self.category,
-                'title': title.get_text().strip(),
-                'url': 'https://www.utair.ru' + title.find('a').get('href'),
-                'preview': preview.find('p').get_text(),
+                'title': news.get_text(),
+                'url': 'https://www.utair.ru' + news.find('a').get('href'),
+                'preview': news.find('p').get_text(),
             }
 
             # Save result

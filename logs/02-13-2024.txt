@@ -83,3 +83,25 @@
 18:18:00 === Dry run complete, +3 in 1.17 sec ===
 
 
+18:59:04 === corporate.viborgsky_sudzavod.All_News ===
+19:00:43 === corporate.viborgsky_sudzavod.All_News ===
+19:00:44 Выборгский судозавод Новости +2
+19:00:44 === Dry run complete, +2 in 0.75 sec ===
+
+
+19:05:50 === corporate.viborgsky_sudzavod.Korabel ===
+19:09:24 === corporate.viborgsky_sudzavod.Korabel ===
+19:09:24 [ERROR] Search Korabel: vyborgshipyard: 'Korabel' object has no attribute 'category'
+19:09:24 === Dry run complete, +0 in 0.31 sec ===
+
+
+19:10:22 === corporate.viborgsky_sudzavod.Korabel ===
+19:10:23 Search Korabel: vyborgshipyard +15
+19:10:23 === Dry run complete, +15 in 0.25 sec ===
+
+
+19:12:49 === corporate.viborgsky_sudzavod.Korabel ===
+19:12:50 Search Korabel: vyborgshipyard +15
+19:12:50 === Dry run complete, +15 in 0.23 sec ===
+
+

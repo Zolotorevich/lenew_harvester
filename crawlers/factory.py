@@ -49,7 +49,8 @@ class CrawlersFactory():
             'mkb.All_News',
             'utair.All_News',
             'henderson.All_News',
-            
+            'viborgsky_sudzavod.All_News',
+            'viborgsky_sudzavod.Korabel',
         ]
     
 

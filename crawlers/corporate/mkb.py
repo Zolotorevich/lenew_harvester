@@ -43,12 +43,3 @@ class All_News(mkb):
 
             # Save result
             self.payload.append(News(**info))
-
-class Interfax(Search_Interfax):
-    """Search Interfax"""
-    
-    search_query: str = 'Московский кредитный банк'
-    payload: list[News] = []
-
-    def __str__(self) -> str:
-        return f'Search Interfax: {self.search_query}'
