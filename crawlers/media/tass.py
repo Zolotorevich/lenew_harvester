@@ -28,15 +28,12 @@ class TASS(Crawler):
         news_container = soup.select('#infinite_listing a')
 
         for news in news_container:
-            
-            # Find url
-            url = news.get('href')
-            
+
             # Get info
             info = {
                 'category': self.category,
-                'title': news.get_text(),
-                'url': 'https://www.tass.ru' + url,
+                'title': news.select('span[class*="tass_pkg_title-"]')[0].get_text(),
+                'url': 'https://www.tass.ru' + news.get('href'),
             }
 
             # Save result
